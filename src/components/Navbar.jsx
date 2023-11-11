@@ -7,11 +7,12 @@ import key from '../assets/Key.JPG'
 import sup from '../assets/customer-service-support.svg'
 
 
-import {AiOutlineSearch,AiFillCaretDown,AiFillCaretUp,AiOutlineClose,AiTwotoneMail,AiOutlineMenu} from 'react-icons/ai';
+import {AiOutlineSearch,AiFillCaretDown,AiFillCaretUp,AiOutlineClose,AiTwotoneMail,AiOutlineMenu,AiOutlineShoppingCart} from 'react-icons/ai';
 import { IoNotifications } from "react-icons/io5";
 import {MdOutlineFavoriteBorder} from  "react-icons/md";
 import {BsPhoneFill} from "react-icons/bs"
 import {BiSupport} from "react-icons/bi"
+
 const Navbar = () => {
   const [acc, setAcc] = useState(false);
   const [con, setCon] = useState(false);
@@ -22,9 +23,7 @@ const Navbar = () => {
   const [crt, setCrt] = useState(false);
     const [nav, setNav] = useState(false);
   
-    const handleNav = () => {
-      setNav(!nav);
-    };
+    
 
   const handleAcc = () => {
     setAcc(!acc);
@@ -65,7 +64,7 @@ const Navbar = () => {
     <div className= 'flex  items-center items-stretch h-[80px] max-w-full hidden md:flex  px-10 -my-2 mx-auto  text-[#000] border-b-[.7px] border-b-C7C5C'>
           
            <div className='flex items-center  '>
-           <img src={logo} className='w-full min-w-[160px] md:max-w-[160px] xl:max-w-[220px]  h-11 '  alt="" />
+           <img src={logo} className='w-full min-w-[160px] md:max-w-[160px] xl:max-w-[190px]  h-11 '  alt="" />
            </div>
        
            <div className='flex w-full max-w-[738px] min-w-[138px] items-center items-stretch h-10 mx-2 my-6 border-C7C5C1 border-[.1px] rounded-sm  '>
@@ -152,7 +151,7 @@ const Navbar = () => {
       </div>
 {/*Notif section end*/}
 
- <div className='flex-col items-center p-4 hover:bg-[#EFEFEF] cursor-pointer hidden xl:flex   '>
+ <div className='flex-col items-center p-4 hover:bg-[#EFEFEF] cursor-pointer hidden  lg:flex'>
   <ul className='  '>
  <li className='  hover:border-b-[#0072BA] hover:border-b-[.1px] h-10 w-40 '><p className='text-[#0072BA] text-2xl '>(800)224-4701</p></li>  
  <li className=''> <p className='text-[#362D2D] text-xs mx-1'>English: (800)222-4700</p></li>
@@ -256,8 +255,8 @@ const Navbar = () => {
 {acc ? <AiFillCaretUp className='mx-1' size={20}/> : <AiFillCaretDown className='mx-1' size={20}/>}
 </div>
        
-<div  onMouseEnter={handleCrt}  onMouseLeave={handleCrt} className='flex-col items-center hover:bg-[#EFEFEF] cursor-pointer  '>
-<div className='items-center p-4 '><img className='h-10 min-w-[45px] ' src={cart}></img></div>
+<div  onMouseEnter={handleCrt}  onMouseLeave={handleCrt} className='flex-col items-center hover:bg-[#EFEFEF] cursor-pointer p-2  '>
+<div className='items-center my-4 '><AiOutlineShoppingCart className='h-8 min-w-[37px] '></AiOutlineShoppingCart></div>
      
       <div className= {crt ? 'w-0 h-0 left-0 top-0 w-[60%] h-full  ease-in-out duration-0' : 'ease-in-out duration-0 fixed left-[-100%]'}>
        <div className='block absolute my-2 -mx-[168px]  w-60 border-C7C5C1 border-[.1px] ' >
