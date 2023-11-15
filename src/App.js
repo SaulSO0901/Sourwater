@@ -1,12 +1,14 @@
 import './App.css';
 import Navbar from './components/Navbar';
-import Calando from './components/calando';
+import MBNavbar from './components/MBNavbar';
+
 
 function App() {
   return (
     <div className="App">
       <Navbar></Navbar>
-      <Calando></Calando>
+      <MBNavbar></MBNavbar>
+    
     </div>
   );
 }
