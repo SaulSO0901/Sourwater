@@ -13,96 +13,219 @@ import {
     AiFillCaretLeft,
   } from "react-icons/ai";
   import { MdChevronRight } from "react-icons/md";
+import Studio from "../components/header-sections/Studio"
 
 const Header = () => {
     const [cat, setCat] = useState(false);
-    const [gtr, setGtr] = useState(false);
-    const [elc, setElc] = useState(false);
-    const [acg, setAcg] = useState(false);
+    
     const [ad, setAd] = useState(true);
-    const [amp, setAmp] = useState(false);
-    const [mre, setMre] = useState(false);
+    const [gtr, setGtr] = useState(false);
+    const [std, setStd] = useState(false);
+    const [mic, setMic] = useState(false);
+    const [liv, setLiv] = useState(false);
+    const [sft, setSft] = useState(false);
+    const [bss, setBss] = useState(false);
+    const [key, setKey] = useState(false);
+    const [drm, setDrm] = useState(false);
+    const [dj, setDj] = useState(false);
+    const [orc, setOrc] = useState(false);
+    const [ca, setCa] = useState(false);
+    const [acc, setAcc] = useState(false);
+    const [cc, setCc] = useState(false);
+    const [pf, setPf] = useState(false);
+    const [gex, setGex] = useState(false);
 
 
-    const handleMre= () => {
-      setElc(false);   
-      setAcg(false);
+    
+
+    const [one, setOne] = useState(false);
+    const [two, setTwo] = useState(false);
+    const [thr, setThr] = useState(false);
+    const [four, setFour] = useState(false);
+
+
+
+    const handleOne = () => {
       setAd(false);   
-      setAmp(false);
-setMre(true);
+      setTwo(false)
+      setOne(true);
+    };
+    const handleOne2 = () => {
+      setOne(false);
+    };
+    const handleTwo = () => {
+      setOne(false)
+      setAd(false);
+      setThr(false)   
+
+      setTwo(true);   
+    };
+    const handleTwo2 = () => {
+      setTwo(false);   
+    };
+    
+   
+    const handleThr= () => {
+      setOne(false);   
+      setTwo(false);
+      setAd(false);   
+      setFour(false)
+      setThr(true);
+
 
     };
     
-    const handleMre2= () => {
-     
-setMre(false);
+    const handleThr2= () => {
+      setThr(false);
+    };
+
+    const handleFour= () => {
+      setOne(false);   
+      setTwo(false);
+      setAd(false);   
+      setThr(false);
+setFour(true);
 
     };
-    const handleAmp= () => {
-      setElc(false);   
-      setAcg(false);
-      setAd(false);   
-      setMre(false)
-      setAmp(true);
-
+    const handleFour2= () => {
+      setFour(false);
 
     };
     
-    const handleAmp2= () => {
-      setAmp(false);
-    };
     const handleAd = () => {
-      setElc(false);   
-      setAcg(false);  
-      setMre(false)
-      setAmp(false);
+      setOne(false);   
+      setTwo(false);  
+      setThr(false)
+      setFour(false);
       setAd(true);   
   
 
 
     };
     const handleHdr = () => {
-      setElc(false);   
-      setAcg(false);   
+      setOne(false);   
+      setTwo(false);
+      setThr(false);   
+      setFour(false);      
       setAd(true);   
 
-    };
-    const handleAcg = () => {
-      setElc(false)
-      setAd(false);
-      setAmp(false)   
-
-      setAcg(!acg);   
-    };
-    const handleAcg2 = () => {
-      setAcg(false);   
     };
     
    
     const handleCat = () => {
     setCat(!cat);
+    setGtr(false);
+    setStd(false);
+    setMic(false);
+    setLiv(false);
+    setSft(false);
+    setBss(false);
+    setKey(false);
+    setDrm(false);
   };
-  
-  const handleElc = () => {
-    setAd(false);   
-    setAcg(false)
-    setElc(true);
-  };
-  const handleElc2 = () => {
-    setElc(false);
-  };
-  
+
   const handleCat2 = () => {
     setCat(false);
   };
 
   const handleGtr = () => {
     setGtr(true);
+    setMic(false);
+    setStd(false);
   };
   
   const handleGtr2 = () => {
     setGtr(false);
   };
+  const handleStd = () => {
+    setGtr(false);
+    setMic(false);
+    setStd(true);
+  };
+  
+  const handleStd2 = () => {
+    setGtr(false);
+  };
+
+  const handleMic = () => {
+    setGtr(false);
+    setStd(false);
+    setLiv(false);
+    setMic(true);
+   
+  };
+  
+  const handleMic2 = () => {
+    setMic(false);
+  };
+  const handleLiv = () => {
+    setGtr(false);
+    setStd(false);
+    setMic(false);
+    setSft(false);
+    setLiv(true);
+  };
+  
+  const handleLiv2 = () => {
+    setLiv(false);
+  };
+  const handleSft = () => {
+    setGtr(false);
+    setStd(false);
+    setMic(false);
+    setLiv(false);
+    setBss(false);
+    setSft(true);
+  };
+  
+  const handleSft2 = () => {
+    setSft(false);
+  };
+
+  const handleBss = () => {
+    setGtr(false);
+    setStd(false);
+    setMic(false);
+    setLiv(false);
+    setSft(false);
+    setKey(false)
+    setBss(true);
+  };
+  
+  const handleBss2 = () => {
+    setBss(false);
+  };
+
+  const handleKey = () => {
+    setGtr(false);
+    setStd(false);
+    setMic(false);
+    setLiv(false);
+    setSft(false);
+    setBss(false);
+    setDrm(false);
+    setKey(true);
+  };
+  
+  const handleKey2 = () => {
+    setKey(false);
+  };
+  const handleDrm = () => {
+    setGtr(false);
+    setStd(false);
+    setMic(false);
+    setLiv(false);
+    setSft(false);
+    setBss(false);
+    setKey(false);
+    setDrm(true);
+  };
+  
+  const handleDrm2 = () => {
+    setDrm(false);
+  };
+
+
 
   return (
     <div className='flex h-10 my-2 border-b-[.7px] border-b-C7C5C px-10 justify-between   '>
@@ -128,46 +251,90 @@ setMre(false);
           )}
                   </li>
 
-                  <li onMouseLeave={handleGtr2}  className=" p-[6px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
+                  <li onMouseEnter={handleStd}  className="flex items-center justify-between p-[6px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
                     <p className="text-[#362D2D]  ">Studio & Recording</p>
+                    {std ? (
+            <AiFillCaretLeft className="" size={15} />
+          ) : (
+            <AiFillCaretRight className="" size={15} />
+          )}
+                  
                   </li>
-                  <li className=" p-[7px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
+                  <li onMouseEnter={handleMic} className="flex items-center justify-between p-[6px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
                     <p className="text-[#362D2D] ">Microphones</p>
+                    {mic ? (
+            <AiFillCaretLeft className="" size={15} />
+          ) : (
+            <AiFillCaretRight className="" size={15} />
+          )}
                   </li>
-                  <li className=" p-[7px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
+                  <li onMouseEnter={handleLiv} className="flex items-center justify-between p-[6px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
                     <p className="text-[#362D2D]  ">Live Sound</p>
+                    {liv ? (
+            <AiFillCaretLeft className="" size={15} />
+          ) : (
+            <AiFillCaretRight className="" size={15} />
+          )}
                   </li>
-                  <li className=" p-[7px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
+                  <li onMouseEnter={handleSft} className="flex items-center justify-between p-[6px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
                     <p className="text-[#362D2D]  ">Software & Plug-ins</p>
+                    {sft ? (
+            <AiFillCaretLeft className="" size={15} />
+          ) : (
+            <AiFillCaretRight className="" size={15} />
+          )}
                   </li>
-                  <li className=" p-[7px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
+
+
+                  <li onMouseEnter={handleBss} className="flex items-center justify-between p-[6px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
                     <p className=" text-[#362D2D]  ">Bass</p>
+                    {bss ? (
+            <AiFillCaretLeft className="" size={15} />
+          ) : (
+            <AiFillCaretRight className="" size={15} />
+          )}
                   </li>
-                  <li className=" p-[7px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
+
+
+                  <li onMouseEnter={handleKey} className="flex items-center justify-between p-[6px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
                     <p className="text-[#362D2D] ">keyboards</p>
+                    {key ? (
+            <AiFillCaretLeft className="" size={15} />
+          ) : (
+            <AiFillCaretRight className="" size={15} />
+          )}
                   </li>
-                  <li className=" p-[7px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+
+
+
+                  <li onMouseEnter={handleDrm} className="flex items-center justify-between p-[6px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
                     <p className="text-[#362D2D]  ">Drums</p>
+                    {drm   ? (
+            <AiFillCaretLeft className="" size={15} />
+          ) : (
+            <AiFillCaretRight className="" size={15} />
+          )}
+                  
                   </li>
-                  <li className=" p-[7px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                  <li onMouseEnter={handleLiv} className="flex items-center justify-between p-[6px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
                     <p className="text-[#362D2D]  ">DJ / Electronic</p>
                   </li>
-                  <li className=" p-[7px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                  <li onMouseEnter={handleLiv} className="flex items-center justify-between p-[6px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
                     <p className="text-[#362D2D]  ">Band & Orchestra</p>
                   </li>
-                  <li className=" p-[7px]  border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                  <li onMouseEnter={handleLiv} className="flex items-center justify-between p-[6px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
                     <p className="text-[#362D2D]  ">Commercial Audio</p>
                   </li>
-                  <li className=" p-[7px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                  <li onMouseEnter={handleLiv} className="flex items-center justify-between p-[6px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
                     <p className="text-[#362D2D]  ">Accesories</p>
                   </li>
-                  <li className=" p-[7px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                  <li onMouseEnter={handleLiv} className="flex items-center justify-between p-[6px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
                     <p className="text-[#362D2D]  ">Content Creators</p>
                   </li>
-                  <li className=" p-[7px]  border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                  <li onMouseEnter={handleLiv} className="flex items-center justify-between p-[6px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
                     <p className="text-[#362D2D]  ">Explore our <b>product finders</b></p>
                   </li>
-                  <li className="p-[7px]  border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                  <li onMouseEnter={handleLiv} className="flex items-center justify-between p-[6px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
                     <p className="text-[#362D2D]  ">Gear Exchange</p>
                   </li>
                 </ul>
@@ -175,74 +342,88 @@ setMre(false);
 
               </div>
                      
+
+
+
+
+
+
+
+
+
+
+
+
               <div onMouseLeave={handleGtr2} 
-              className={gtr?"w-0 h-0 flex -my-[2px] cursor-pointer top-0  h-[583px] ease-in-out duration-0"
+              className={gtr?"w-0  flex -my-[2px] cursor-pointer top-0  h-[583px] ease-in-out duration-0"
                 : "ease-in-out duration-0 fixed left-[-100%]"} >
                       <div onMouseEnter={handleAd} className="flex-col   border-C7C5C1 border-[.1px] ">
-                      <h1 onMouseEnter={handleHdr}  className="p-2 w-[448px] text-3xl  border-b-[.7px] border-b-C7C5C1">Guitars</h1>
-
-                      <div className="flex border-b-[.0px] border-b-C7C5C1   ">
+                     <div className="flex items-center justify-between hover:bg-[#EFEFEF]  border-b-[.7px] border-b-C7C5C1">
+                      <h1 onMouseEnter={handleHdr}  className="p-2 w-[348px] text-2xl   text-[#362D2D] hover:text-[#0072BA] ">Guitars</h1>
+                      <p className="w-[100px]">View all</p>
+                    </div>
+                      <div className="flex border-b-[.0px] border-b-C7C5C1 h-full   ">
                       <div className=" w-56  ">
-                  
+                
                       <ul className="">
             
 
-                  <li  onMouseEnter={handleElc}   className="flex justify-between  p-[7px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                  <li  onMouseEnter={handleOne}   className="flex justify-between  p-[7px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
                     <p  className="">Electric Guitars</p>
                     <MdChevronRight size={20}></MdChevronRight>
 
                   </li>
-                  <li onMouseEnter={handleAcg}  className="flex justify-between  p-[7px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                  <li onMouseEnter={handleTwo}  className="flex justify-between  p-[7px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
                     <p className=" ">Acoustic Guitars</p>
                     <MdChevronRight size={20}></MdChevronRight>
                   </li>
-                  <li onMouseEnter={handleAmp} className="flex justify-between  p-[7px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                  <li onMouseEnter={handleThr} className="flex justify-between  p-[7px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
                     <p className=" ">Amps & Effects</p>
                     <MdChevronRight size={20}></MdChevronRight>
 
                   </li>
-                  <li onMouseEnter={handleMre} className="flex justify-between  p-[7px]  border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA]">
+                  <li onMouseEnter={handleFour} className="flex justify-between  p-[7px]  border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA]">
                     <p className="  ">More</p>
                     <MdChevronRight size={20}></MdChevronRight>
 
                   </li>
                   <div onMouseEnter={handleAd}>
-                  <li className="flex justify-between  p-[7px] hover:bg-[#EFEFEF]   text-[#0072BA] ">
+                  <li className="flex justify-between  p-[7px] hover:bg-[#EFEFEF] font-medium   text-[#0072BA] ">
                     <p className=" ">Sourwater Exclusives</p>
                 
 
                   </li>
-                  <li className="flex justify-between  p-[7px]  hover:bg-[#EFEFEF]  text-[#0072BA]">
+                  <li className="flex justify-between  p-[7px]  hover:bg-[#EFEFEF] font-medium text-[#0072BA]">
                     <p className=" ">Guitar Bundles</p>
                   
 
                   </li>
-                  <li className="flex justify-between  p-[7px] hover:bg-[#EFEFEF] text-[#0072BA]">
+                  <li className="flex justify-between  p-[7px] hover:bg-[#EFEFEF] font-medium text-[#0072BA]">
                     <p className="  ">Guitar Deals</p>
                  
                   </li>
-                  <li className="flex justify-between  p-[7px] hover:bg-[#EFEFEF] text-[#0072BA]">
+                  <li className="flex justify-between  p-[7px] hover:bg-[#EFEFEF] font-medium text-[#0072BA]">
                     <p className="  ">News & Research</p>
                  
                   </li>
-                  <li className="flex justify-between  p-[7px] hover:bg-[#EFEFEF] text-[#0072BA]">
+                  <li className="flex justify-between  p-[7px] hover:bg-[#EFEFEF] font-medium text-[#0072BA]">
                     <p className="  ">New Arrivals</p>
                  
                   </li>
-                  <li className="flex justify-between  p-[7px] hover:bg-[#EFEFEF] text-[#0072BA]">
+                  <li className="flex justify-between  p-[7px] hover:bg-[#EFEFEF] font-medium text-[#0072BA]">
                     <p className="  ">Shop By Brand</p>
                 
 
                   </li>
-                  <li className="flex justify-between p-[7px] hover:bg-[#EFEFEF] text-[#0072BA]">
+                  <li className="flex justify-between p-[7px] hover:bg-[#EFEFEF] font-medium text-[#0072BA]">
                     <p className="  ">Cable Finder</p>
                  
                   </li>
-                  <li className="flex justify-between  p-[7px] hover:bg-[#EFEFEF] text-[#0072BA]">
+                  <li className="flex justify-between  p-[7px] hover:bg-[#EFEFEF] font-medium text-[#0072BA]">
                     <p className="  ">Case Finder</p>
                  
                   </li>
-                  <li className="flex justify-between  p-[7px] hover:bg-[#EFEFEF] text-[#0072BA]">
+                  <li className="flex justify-between  p-[7px] hover:bg-[#EFEFEF] font-medium text-[#0072BA]">
                     <p className="  ">Guitar Workshop</p>
                  
                   </li>
@@ -253,17 +434,17 @@ setMre(false);
                       </div>
              
                       {/*ElECTRIC GUITAR SECTION*/}
-                      <ul className={ad?"flex-col border-l-[.1px]  p-[6.2px] w-52 items-center justify-center "
+                      <ul className={ad?"flex-col border-l-[.1px] h-[529px]  w-56 items-center justify-center "
                 :"hidden"}>
-<li className="flex items-center justify-center p-2">
-<img src={bf} alt="Black Friday"></img>
+<li className="flex items-center justify-center  h-[529px] p-[22px] ">
+<img className="" src={bf} alt="Black Friday"></img>
 </li>
 
 </ul>
 <ul>
-<div   className={elc?"-my-[1px]  w-0 h-0 flex cursor-pointer top-0  h-full  ease-in-out duration-0"
+<div   className={one?"-my-[1px]  w-0 h-0 flex cursor-pointer top-0  h-full  ease-in-out duration-0"
                 : "ease-in-out duration-0 fixed left-[-100%]"} >
-                      <div onMouseLeave={handleElc2}  className="flex-col  border-b-[.0px]   border-C7C5C1 border-[.1px] ">
+                      <div onMouseLeave={handleOne2}  className="flex-col  border-b-[.0px] border-r-[.0px] h-[529px] border-C7C5C1 border-[.1px] ">
 
                       <div onMouseLeave={handleAd} className="flex ">
                       <div className="flex w-56 ">
@@ -290,9 +471,13 @@ setMre(false);
                   <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
                     <p className=" ">Modeling Electric Guitars</p>
                   </li>
+                      <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] font-medium hover:text-[#0072BA] ">
+                    <p className=" ">View all Electric Guitars</p>
+                  </li>
+                 
                  
                 </ul>
-                <div onMouseEnter={handleElc2} className=" h-full w-10">
+                <div onMouseEnter={handleOne2} className=" h-full w-10">
                   </div>
                             </div>
                             
@@ -303,9 +488,9 @@ setMre(false);
 
                       <ul>
                         
-<div   className={acg?"-my-[1px]  w-0 h-0 flex cursor-pointer top-0  h-full  ease-in-out duration-0"
+<div   className={two?"-my-[1px]  w-0 h-0 flex cursor-pointer top-0  h-full  ease-in-out duration-0"
                 : "ease-in-out duration-0 fixed left-[-100%]"} >
-                      <div onMouseLeave={handleAcg2}  className="flex-col  border-b-[.0px]   border-C7C5C1 border-[.1px] ">
+                      <div onMouseLeave={handleTwo2}  className="flex-col  border-b-[.0px] border-r-[.0px] h-[529px]   border-C7C5C1 border-[.1px] ">
 
                       <div className="flex    ">
                       <div className="flex w-56 ">
@@ -334,7 +519,7 @@ setMre(false);
                   </li>
                  
                 </ul>
-                <div onMouseEnter={handleAcg2} className=" h-full w-10">
+                <div onMouseEnter={handleTwo2} className=" h-full w-10">
                   </div>
                             </div>
                             
@@ -344,9 +529,9 @@ setMre(false);
                       </ul>
 
                       <ul>
-<div   className={amp?"-my-[1px]  w-0 h-0 flex cursor-pointer top-0  h-full  ease-in-out duration-0"
+<div   className={thr?"-my-[1px]  w-0 h-0 flex cursor-pointer top-0  h-full  ease-in-out duration-0"
                 : "ease-in-out duration-0 fixed left-[-100%]"} >
-                      <div onMouseLeave={handleAmp2}  className="flex-col  border-b-[.0px]   border-C7C5C1 border-[.1px] ">
+                      <div onMouseLeave={handleThr2}  className="flex-col  border-b-[.0px] border-r-[.0px] h-[529px]    border-C7C5C1 border-[.1px] ">
 
                       <div onMouseLeave={handleAd} className="flex ">
                       <div className="flex w-56 ">
@@ -361,13 +546,13 @@ setMre(false);
                   <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
                     <p className="">Pedalboards & Power supplies</p>
                   </li>
-                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] font-medium ">
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] font-medium hover:text-[#0072BA]">
                     <p className="   ">View All Guitar Pedals & Effects</p>
                   </li>
                  
                  
                 </ul>
-                <div onMouseEnter={handleElc2} className=" h-full w-10">
+                <div onMouseEnter={handleThr2} className=" h-full w-10">
                   </div>
                             </div>
                             
@@ -377,38 +562,38 @@ setMre(false);
                       </ul>
 
                       <ul>
-<div   className={mre?"-my-[1px]  w-0 h-0 flex cursor-pointer top-0  h-full  ease-in-out duration-0"
+<div   className={four?"-my-[1px]  w-0 h-0 flex cursor-pointer top-0  h-full  ease-in-out duration-0"
                 : "ease-in-out duration-0 fixed left-[-100%]"} >
-                      <div onMouseLeave={handleMre2}  className="flex-col  border-b-[.0px]   border-C7C5C1 border-[.1px] ">
+                      <div onMouseLeave={handleFour2}  className="flex-col  border-b-[.0px] border-r-[.0px] h-[529px]   border-C7C5C1 border-[.1px] ">
 
                       <div onMouseLeave={handleAd} className="flex ">
                       <div className="flex w-56 ">
                   
                       <ul  className="flex-col w-[344px]">
                       <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
-                    <p className="">Solid Body Guitars</p>
+                    <p className="">Bass Guitars</p>
                   </li>
                   <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
-                    <p className=" ">Semi-Hollowbody Guitars</p>
+                    <p className=" ">Guitar Accessories</p>
                   </li>
                   <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
-                    <p className="">Baritone Guitars</p>
+                    <p className="">Guitar Wireless Systems</p>
                   </li>
                   <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
-                    <p className="   ">7-String guitars</p>
+                    <p className="   ">Ukeleles</p>
                   </li>
                   <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
-                    <p className=" ">8-String guitars</p>
+                    <p className=" ">Guitar Strings</p>
                   </li>
                   <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
-                    <p className=" ">Electric Guitar Packs</p>
+                    <p className=" ">Folk Instruments</p>
                   </li>
                   <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
-                    <p className=" ">Modeling Electric Guitars</p>
+                    <p className=" ">Guitar Method Books</p>
                   </li>
                  
                 </ul>
-                <div onMouseEnter={handleMre2} className=" h-full w-10">
+                <div onMouseEnter={handleFour2} className=" h-full w-10">
                   </div>
                             </div>
                             
@@ -423,6 +608,1974 @@ setMre(false);
 
                     
                 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{/*Studio Section*/}
+                <div onMouseLeave={handleStd2} 
+              className={std?"w-0  flex -my-[2px] cursor-pointer top-0  h-[583px] ease-in-out duration-0"
+                : "ease-in-out duration-0 fixed left-[-100%]"} >
+                      <div onMouseEnter={handleAd} className="flex-col   border-C7C5C1 border-[.1px] ">
+                      <div className="flex items-center justify-between hover:bg-[#EFEFEF]  border-b-[.7px] border-b-C7C5C1">
+                      <h1 onMouseEnter={handleHdr}  className="p-2 w-[348px] text-2xl   text-[#362D2D] hover:text-[#0072BA] ">Studio & Recording</h1>
+                      <p className="w-[100px]">View all</p>
+                    </div>
+                      <div className="flex border-b-[.0px] border-b-C7C5C1 h-full   ">
+                      <div className=" w-56  ">
+                
+                      <ul className="">
+            
+
+                  <li  onMouseEnter={handleOne}   className="flex justify-between  p-[7px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p  className="">Recording</p>
+                    <MdChevronRight size={20}></MdChevronRight>
+
+                  </li>
+                  <li onMouseEnter={handleTwo}  className="flex justify-between  p-[7px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">Computers & Software</p>
+                    <MdChevronRight size={20}></MdChevronRight>
+                  </li>
+                
+                  <li onMouseEnter={handleThr} className="flex justify-between  p-[7px]  border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA]">
+                    <p className="  ">More</p>
+                    <MdChevronRight size={20}></MdChevronRight>
+
+                  </li>
+                  <div onMouseEnter={handleAd}>
+                  <li className="flex justify-between  p-[7px] hover:bg-[#EFEFEF] font-medium   text-[#0072BA] ">
+                    <p className=" ">Sourwater Exclusives</p>
+                
+
+                  </li>
+                  <li className="flex justify-between  p-[7px]  hover:bg-[#EFEFEF] font-medium text-[#0072BA]">
+                    <p className=" ">Recording Bundles</p>
+                  
+
+                  </li>
+                  <li className="flex justify-between  p-[7px] hover:bg-[#EFEFEF] font-medium text-[#0072BA]">
+                    <p className="  ">Recording Deals</p>
+                 
+                  </li>
+                  <li className="flex justify-between  p-[7px] hover:bg-[#EFEFEF] font-medium text-[#0072BA]">
+                    <p className="  ">News & Research</p>
+                 
+                  </li>
+                  <li className="flex justify-between  p-[7px] hover:bg-[#EFEFEF] font-medium text-[#0072BA]">
+                    <p className="  ">New Arrivals</p>
+                 
+                  </li>
+                  <li className="flex justify-between  p-[7px] hover:bg-[#EFEFEF] font-medium text-[#0072BA]">
+                    <p className="  ">Shop By Brand</p>
+                
+
+                  </li>
+                  <li className="flex justify-between p-[7px] hover:bg-[#EFEFEF] font-medium text-[#0072BA]">
+                    <p className="  ">Cable Finder</p>
+                 
+                  </li>
+                  <li className="flex justify-between  p-[7px] hover:bg-[#EFEFEF] font-medium text-[#0072BA]">
+                    <p className="  ">Case Finder</p>
+                 
+                  </li>
+                  <li className="flex justify-between  p-[7px] hover:bg-[#EFEFEF] font-medium text-[#0072BA]">
+                    <p className="  ">Guitar Workshop</p>
+                 
+                  </li>
+                  
+                  </div>
+                </ul>
+                
+                      </div>
+             
+                      {/*Recording SECTION*/}
+                      <ul className={ad?"flex-col border-l-[.1px] h-[529px]  w-56 items-center justify-center "
+                :"hidden"}>
+<li className="flex items-center justify-center  h-[529px] p-[22px] ">
+<img className="" src={bf} alt="Black Friday"></img>
+</li>
+
+</ul>
+<ul>
+<div   className={one?"-my-[1px]  w-0 h-0 flex cursor-pointer top-0  h-full  ease-in-out duration-0"
+                : "ease-in-out duration-0 fixed left-[-100%]"} >
+                      <div onMouseLeave={handleOne2}  className="flex-col  border-b-[.0px] border-r-[.0px] h-[529px] border-C7C5C1 border-[.1px] ">
+
+                      <div onMouseLeave={handleAd} className="flex ">
+                      <div className="flex w-56 ">
+                  
+                      <ul  className="flex-col w-[344px]">
+                      <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Audio Interfaces</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">Microphones</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Studio Monitors</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="   ">Studio Mixers & Control surfaces</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">Preamp & Channel Strips</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">Signal Processing & 500 Series</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">audio Recorders</p>
+                  </li>
+                      <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D]  hover:text-[#0072BA] ">
+                    <p className=" ">Audio Players</p>
+                  </li>
+                 
+                 
+                </ul>
+                <div onMouseEnter={handleOne2} className=" h-full w-10">
+                  </div>
+                            </div>
+                            
+                      </div>
+                      </div>
+                      </div>
+                      </ul>
+
+                      <ul>
+                        
+<div   className={two?"-my-[1px]  w-0 h-0 flex cursor-pointer top-0  h-full  ease-in-out duration-0"
+                : "ease-in-out duration-0 fixed left-[-100%]"} >
+                      <div onMouseLeave={handleTwo2}  className="flex-col  border-b-[.0px] border-r-[.0px] h-[529px]   border-C7C5C1 border-[.1px] ">
+
+                      <div className="flex    ">
+                      <div className="flex w-56 ">
+                  
+                      <ul  className="flex-col w-[344px]">
+                      <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Computers</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">iOS / iPad</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Pro Tools</p>
+                  </li>
+                </ul>
+                <div onMouseEnter={handleTwo2} className=" h-full w-10">
+                  </div>
+                            </div>
+                            
+                      </div>
+                      </div>
+                      </div>
+                      </ul>
+
+                      <ul>
+<div   className={thr?"-my-[1px]  w-0 h-0 flex cursor-pointer top-0  h-full  ease-in-out duration-0"
+                : "ease-in-out duration-0 fixed left-[-100%]"} >
+                      <div onMouseLeave={handleThr2}  className="flex-col  border-b-[.0px] border-r-[.0px] h-[529px]    border-C7C5C1 border-[.1px] ">
+
+                      <div onMouseLeave={handleAd} className="flex ">
+                      <div className="flex w-56 ">
+                  
+                      <ul  className="flex-col w-[344px]">
+                      <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Headphones</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">Studio Furniture</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Acoustic Treatment</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D]  hover:text-[#0072BA]">
+                    <p className="   ">Audio Engineering Instructional Books</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA]">
+                    <p className="   ">Podcasting</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="   ">Video Creators</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D]  hover:text-[#0072BA]">
+                    <p className="   ">Video Equipment</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA]">
+                    <p className="   ">Livestreaming</p>
+                  </li>
+                 
+                 
+                </ul>
+                <div onMouseEnter={handleThr2} className=" h-full w-10">
+                  </div>
+                            </div>
+                            
+                      </div>
+                      </div>
+                      </div>
+                      </ul>
+
+                      <ul>
+<div   className={four?"-my-[1px]  w-0 h-0 flex cursor-pointer top-0  h-full  ease-in-out duration-0"
+                : "ease-in-out duration-0 fixed left-[-100%]"} >
+                      <div onMouseLeave={handleFour2}  className="flex-col  border-b-[.0px] border-r-[.0px] h-[529px]   border-C7C5C1 border-[.1px] ">
+
+                      <div onMouseLeave={handleAd} className="flex ">
+                      <div className="flex w-56 ">
+                  
+                      <ul  className="flex-col w-[344px]">
+                      <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Bass Guitars</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">Guitar Accessories</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Guitar Wireless Systems</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="   ">Ukeleles</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">Guitar Strings</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">Folk Instruments</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">Guitar Method Books</p>
+                  </li>
+                 
+                </ul>
+                <div onMouseEnter={handleFour2} className=" h-full w-10">
+                  </div>
+                            </div>
+                            
+                      </div>
+                      </div>
+                      </div>
+                      </ul>
+                      
+                      </div>
+                      </div>
+              
+
+                    
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{/*Mic Section*/}
+<div onMouseLeave={handleMic2} 
+              className={mic?"w-0  flex -my-[2px] cursor-pointer top-0  h-[583px] ease-in-out duration-0"
+                : "ease-in-out duration-0 fixed left-[-100%]"} >
+                      <div onMouseEnter={handleAd} className="flex-col   border-C7C5C1 border-[.1px] ">
+                      <div className="flex items-center justify-between hover:bg-[#EFEFEF]  border-b-[.7px] border-b-C7C5C1">
+                      <h1 onMouseEnter={handleHdr}  className="p-2 w-[348px] text-2xl   text-[#362D2D] hover:text-[#0072BA] ">Microphones</h1>
+                      <p className="w-[100px]">View all</p>
+                    </div>
+                      <div className="flex border-b-[.0px] border-b-C7C5C1 h-full   ">
+                      <div className=" w-56  ">
+                
+                      <ul className="">
+            
+
+                  <li  onMouseEnter={handleOne}   className="flex justify-between  p-[7px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p  className="">Microphones</p>
+                    <MdChevronRight size={20}></MdChevronRight>
+
+                  </li>
+                  <li onMouseEnter={handleTwo}  className="flex justify-between  p-[7px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">Wireless Systems</p>
+                    <MdChevronRight size={20}></MdChevronRight>
+                  </li>
+                
+                  <li onMouseEnter={handleThr} className="flex justify-between  p-[7px]  border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA]">
+                    <p className="  ">Microphone Accessories</p>
+                    <MdChevronRight size={20}></MdChevronRight>
+
+                  </li>
+                 
+                  <div onMouseEnter={handleAd}>
+                  <li className="flex justify-between  p-[7px] hover:bg-[#EFEFEF] font-medium   text-[#0072BA] ">
+                    <p className=" ">Sourwater Exclusives</p>
+                
+
+                  </li>
+                  <li className="flex justify-between  p-[7px]  hover:bg-[#EFEFEF] font-medium text-[#0072BA]">
+                    <p className=" ">Microphones Bundles</p>
+                  </li>
+                 
+                  <li className="flex justify-between p-[7px] hover:bg-[#EFEFEF] font-medium text-[#0072BA]">
+                    <p className="  ">Cable Finder</p>
+                 
+                  </li>
+                  <li className="flex justify-between  p-[7px] hover:bg-[#EFEFEF] font-medium text-[#0072BA]">
+                    <p className="  ">Case Finder</p>
+                 
+                  </li>
+                  <li className="flex justify-between  p-[7px] hover:bg-[#EFEFEF] font-medium text-[#0072BA]">
+                    <p className="  ">Guitar Workshop</p>
+                 
+                  </li>
+                  
+                  </div>
+                </ul>
+                
+                      </div>
+             
+                      {/*Microphones SECTION*/}
+                      <ul className={ad?"flex-col border-l-[.1px] h-[529px]  w-56 items-center justify-center "
+                :"hidden"}>
+<li className="flex items-center justify-center  h-[529px] p-[22px] ">
+<img className="" src={bf} alt="Black Friday"></img>
+</li>
+
+</ul>
+<ul>
+<div   className={one?"-my-[1px]  w-0 h-0 flex cursor-pointer top-0  h-full  ease-in-out duration-0"
+                : "ease-in-out duration-0 fixed left-[-100%]"} >
+                      <div onMouseLeave={handleOne2}  className="flex-col  border-b-[.0px] border-r-[.0px] h-[529px] border-C7C5C1 border-[.1px] ">
+
+                      <div onMouseLeave={handleAd} className="flex ">
+                      <div className="flex w-56 ">
+                  
+                      <ul  className="flex-col w-[344px]">
+                      <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Condenser Microphones</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">Dynamic Microphones</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Ribbon Microphones</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="   ">Drum Microphone Bundles</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">Headset Microphones</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">Lavalier Microphones</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">USB Microphones</p>
+                  </li>
+                      <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D]  hover:text-[#0072BA] ">
+                    <p className=" ">Shotgun Microphones</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D]  hover:text-[#0072BA] ">
+                    <p className=" ">Drum Microphone Bundles</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] font-medium hover:text-[#0072BA] ">
+                    <p className=" ">View all Microphones</p>
+                  </li>
+                 
+                 
+                </ul>
+                <div onMouseEnter={handleOne2} className=" h-full w-10">
+                  </div>
+                            </div>
+                            
+                      </div>
+                      </div>
+                      </div>
+                      </ul>
+
+                      <ul>
+                        
+<div   className={two?"-my-[1px]  w-0 h-0 flex cursor-pointer top-0  h-full  ease-in-out duration-0"
+                : "ease-in-out duration-0 fixed left-[-100%]"} >
+                      <div onMouseLeave={handleTwo2}  className="flex-col  border-b-[.0px] border-r-[.0px] h-[529px]   border-C7C5C1 border-[.1px] ">
+
+                      <div className="flex    ">
+                      <div className="flex w-56 ">
+                  
+                      <ul  className="flex-col w-[344px]">
+                      <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Handheld Microphone Wireless Systems</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">Headset Microphone Wireless Systems</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Lavalier Microphone Wireless Systems</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Guitar Wireless Systems</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">In-Ear Monitors</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Wireless Accessories</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] font-medium hover:text-[#0072BA] ">
+                    <p className="">View All Wireless Systems</p>
+                  </li>
+                </ul>
+                <div onMouseEnter={handleTwo2} className=" h-full w-10">
+                  </div>
+                            </div>
+                            
+                      </div>
+                      </div>
+                      </div>
+                      </ul>
+
+                      <ul>
+<div   className={thr?"-my-[1px]  w-0 h-0 flex cursor-pointer top-0  h-full  ease-in-out duration-0"
+                : "ease-in-out duration-0 fixed left-[-100%]"} >
+                      <div onMouseLeave={handleThr2}  className="flex-col  border-b-[.0px] border-r-[.0px] h-[529px]    border-C7C5C1 border-[.1px] ">
+
+                      <div onMouseLeave={handleAd} className="flex ">
+                      <div className="flex w-56 ">
+                  
+                      <ul  className="flex-col w-[344px]">
+                      <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Microphone Windscreens & Grilles</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">Microphone Clips</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Microphone Shockmounts</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D]  hover:text-[#0072BA]">
+                    <p className="   ">Microphone Stands</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="   ">Microphone Pop Filters</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D]  hover:text-[#0072BA]">
+                    <p className="   ">Microphone Cases & Bgas</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="   ">Microphones Cables</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="   ">Miscellaneous Mic Accessories</p>
+                  </li>
+                 
+                 
+                </ul>
+                <div onMouseEnter={handleThr2} className=" h-full w-10">
+                  </div>
+                            </div>
+                            
+                      </div>
+                      </div>
+                      </div>
+                      </ul>
+
+                      <ul>
+<div   className={four?"-my-[1px]  w-0 h-0 flex cursor-pointer top-0  h-full  ease-in-out duration-0"
+                : "ease-in-out duration-0 fixed left-[-100%]"} >
+                      <div onMouseLeave={handleFour2}  className="flex-col  border-b-[.0px] border-r-[.0px] h-[529px]   border-C7C5C1 border-[.1px] ">
+
+                      <div onMouseLeave={handleAd} className="flex ">
+                      <div className="flex w-56 ">
+                  
+                      <ul  className="flex-col w-[344px]">
+                      <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Bass Guitars</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">Guitar Accessories</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Guitar Wireless Systems</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="   ">Ukeleles</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">Guitar Strings</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">Folk Instruments</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">Guitar Method Books</p>
+                  </li>
+                 
+                </ul>
+                <div onMouseEnter={handleFour2} className=" h-full w-10">
+                  </div>
+                            </div>
+                            
+                      </div>
+                      </div>
+                      </div>
+                      </ul>
+                      
+                      </div>
+                      </div>
+              
+
+                    
+                </div>
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{/*Live Section*/}
+<div onMouseLeave={handleLiv2} 
+              className={liv?"w-0  flex -my-[2px] cursor-pointer top-0  h-[583px] ease-in-out duration-0"
+                : "ease-in-out duration-0 fixed left-[-100%]"} >
+                      <div onMouseEnter={handleAd} className="flex-col   border-C7C5C1 border-[.1px] ">
+                      <div className="flex items-center justify-between hover:bg-[#EFEFEF]  border-b-[.7px] border-b-C7C5C1">
+                      <h1 onMouseEnter={handleHdr}  className="p-2 w-[348px] text-2xl  text-[#362D2D] hover:text-[#0072BA] ">Live Sound & Lighting</h1>
+                      <p className="w-[100px]">View all</p>
+                    </div>
+                      <div className="flex border-b-[.0px] border-b-C7C5C1 h-full   ">
+                      <div className=" w-56  ">
+                
+                      <ul className="">
+            
+
+                  <li  onMouseEnter={handleOne}   className="flex justify-between  p-[7px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p  className="">Live Sound Mixers</p>
+                    <MdChevronRight size={20}></MdChevronRight>
+
+                  </li>
+                  <li onMouseEnter={handleTwo}  className="flex justify-between  p-[7px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">PA Systems & Speakers</p>
+                    <MdChevronRight size={20}></MdChevronRight>
+                  </li>
+                
+                  <li onMouseEnter={handleThr} className="flex justify-between  p-[7px]  border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA]">
+                    <p className="  ">Lighting</p>
+                    <MdChevronRight size={20}></MdChevronRight>
+
+                  </li>
+                  <div onMouseEnter={handleAd}>
+                  <li className="flex justify-between  p-[7px] hover:bg-[#EFEFEF] font-medium   text-[#0072BA] ">
+                    <p className=" ">Sourwater Exclusives</p>
+                
+
+                  </li>
+                  <li className="flex justify-between  p-[7px]  hover:bg-[#EFEFEF] font-medium text-[#0072BA]">
+                    <p className=" ">Live Sound Bundles</p>
+                  
+
+                  </li>
+                  <li className="flex justify-between  p-[7px] hover:bg-[#EFEFEF] font-medium text-[#0072BA]">
+                    <p className="  ">Live Sound Deals</p>
+                 
+                  </li>
+                  <li className="flex justify-between  p-[7px] hover:bg-[#EFEFEF] font-medium text-[#0072BA]">
+                    <p className="  ">News & Research</p>
+                 
+                  </li>
+                  <li className="flex justify-between  p-[7px] hover:bg-[#EFEFEF] font-medium text-[#0072BA]">
+                    <p className="  ">New Arrivals</p>
+                 
+                  </li>
+                  <li className="flex justify-between  p-[7px] hover:bg-[#EFEFEF] font-medium text-[#0072BA]">
+                    <p className="  ">Shop By Brand</p>
+                
+
+                  </li>
+                  <li className="flex justify-between p-[7px] hover:bg-[#EFEFEF] font-medium text-[#0072BA]">
+                    <p className="  ">Cable Finder</p>
+                 
+                  </li>
+                  <li className="flex justify-between  p-[7px] hover:bg-[#EFEFEF] font-medium text-[#0072BA]">
+                    <p className="  ">Case Finder</p>
+                 
+                  </li>
+                 
+                  
+                  </div>
+                </ul>
+                
+                      </div>
+             
+                      {/*Recording SECTION*/}
+                      <ul className={ad?"flex-col border-l-[.1px] h-[529px]  w-56 items-center justify-center "
+                :"hidden"}>
+<li className="flex items-center justify-center  h-[529px] p-[22px] ">
+<img className="" src={bf} alt="Black Friday"></img>
+</li>
+
+</ul>
+<ul>
+<div   className={one?"-my-[1px]  w-0 h-0 flex cursor-pointer top-0  h-full  ease-in-out duration-0"
+                : "ease-in-out duration-0 fixed left-[-100%]"} >
+                      <div onMouseLeave={handleOne2}  className="flex-col  border-b-[.0px] border-r-[.0px] h-[529px] border-C7C5C1 border-[.1px] ">
+
+                      <div onMouseLeave={handleAd} className="flex ">
+                      <div className="flex w-56 ">
+                  
+                      <ul  className="flex-col w-[344px]">
+                      <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Analog Mixers</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">Digital Mixers</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Powered Mixers</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="   ">Line Mixers</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">Mixer Accessories</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] font-medium hover:text-[#0072BA] ">
+                    <p className=" ">View All Mixers</p>
+                  </li>
+                 
+                 
+                 
+                </ul>
+                <div onMouseEnter={handleOne2} className=" h-full w-10">
+                  </div>
+                            </div>
+                            
+                      </div>
+                      </div>
+                      </div>
+                      </ul>
+
+                      <ul>
+                        
+<div   className={two?"-my-[1px]  w-0 h-0 flex cursor-pointer top-0  h-full  ease-in-out duration-0"
+                : "ease-in-out duration-0 fixed left-[-100%]"} >
+                      <div onMouseLeave={handleTwo2}  className="flex-col  border-b-[.0px] border-r-[.0px] h-[529px]   border-C7C5C1 border-[.1px] ">
+
+                      <div className="flex    ">
+                      <div className="flex w-56 ">
+                  
+                      <ul  className="flex-col w-[344px]">
+                      <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">PA Speakers</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">PA Subwoofers</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Stage Monitors</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">PA Systems</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Loudspeaker Managments</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">PA Speaker Accessories</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Commercial Speakers</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Home Speakers</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] font-medium hover:text-[#0072BA] ">
+                    <p className="">View All PA Systems</p>
+                  </li>
+
+                </ul>
+                <div onMouseEnter={handleTwo2} className=" h-full w-10">
+                  </div>
+                            </div>
+                            
+                      </div>
+                      </div>
+                      </div>
+                      </ul>
+
+                      <ul>
+<div   className={thr?"-my-[1px]  w-0 h-0 flex cursor-pointer top-0  h-full  ease-in-out duration-0"
+                : "ease-in-out duration-0 fixed left-[-100%]"} >
+                      <div onMouseLeave={handleThr2}  className="flex-col  border-b-[.0px] border-r-[.0px] h-[529px]    border-C7C5C1 border-[.1px] ">
+
+                      <div onMouseLeave={handleAd} className="flex ">
+                      <div className="flex w-56 ">
+                  
+                      <ul  className="flex-col w-[344px]">
+                      <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Lighting Controllers & Interfaces</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">Lighting Software</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">SpotLights</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D]  hover:text-[#0072BA]">
+                    <p className="   ">Par Cans</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA]">
+                    <p className="   ">Color & Wash Lights</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="   ">Strobes, Lasers. & Effects Lights</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="   ">Fog & Bubble Machines</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA]">
+                    <p className="   ">Lighting Stands & Trusses</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA]">
+                    <p className="   ">Lighting Clamps</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] font-medium text-[#362D2D] hover:text-[#0072BA]">
+                    <p className="   ">View all Lighting</p>
+                  </li>
+                 
+                </ul>
+                <div onMouseEnter={handleThr2} className=" h-full w-10">
+                  </div>
+                            </div>
+                            
+                      </div>
+                      </div>
+                      </div>
+                      </ul>
+
+                      <ul>
+<div   className={four?"-my-[1px]  w-0 h-0 flex cursor-pointer top-0  h-full  ease-in-out duration-0"
+                : "ease-in-out duration-0 fixed left-[-100%]"} >
+                      <div onMouseLeave={handleFour2}  className="flex-col  border-b-[.0px] border-r-[.0px] h-[529px]   border-C7C5C1 border-[.1px] ">
+
+                      <div onMouseLeave={handleAd} className="flex ">
+                      <div className="flex w-56 ">
+                  
+                      <ul  className="flex-col w-[344px]">
+                      <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Microphones</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">PA Crossovers</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Live Sound Monitoring</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="   ">Portable Racks & Cases</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">Signal Proccesing & 500 series</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">Live Sound Accessories</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">Staging</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA]">
+                    <p className="   ">Drum Shields</p>
+                  </li>
+                 
+                </ul>
+                <div onMouseEnter={handleFour2} className=" h-full w-10">
+                  </div>
+                            </div>
+                            
+                      </div>
+                      </div>
+                      </div>
+                      </ul>
+                      
+                      </div>
+                      </div>
+              
+
+                    
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div onMouseLeave={handleSft2} 
+              className={sft?"w-0  flex -my-[2px] cursor-pointer top-0  h-[583px] ease-in-out duration-0"
+                : "ease-in-out duration-0 fixed left-[-100%]"} >
+                      <div onMouseEnter={handleAd} className="flex-col   border-C7C5C1 border-[.1px] ">
+                     <div className="flex items-center justify-between hover:bg-[#EFEFEF]  border-b-[.7px] border-b-C7C5C1">
+                      <h1 onMouseEnter={handleHdr}  className="p-2 w-[348px] text-2xl   text-[#362D2D] hover:text-[#0072BA] ">Software & Plug-ins</h1>
+                      <p className="w-[100px]">View all</p>
+                    </div>
+                      <div className="flex border-b-[.0px] border-b-C7C5C1 h-full   ">
+                      <div className=" w-56  ">
+                
+                      <ul className="">
+            
+
+                  <li  onMouseEnter={handleOne}   className="flex justify-between  p-[7px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p  className="">DAW Software</p>
+                    <MdChevronRight size={20}></MdChevronRight>
+
+                  </li>
+                  <li onMouseEnter={handleTwo}  className="flex justify-between  p-[7px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">Plug-ins: Virtual Instruments</p>
+                    <MdChevronRight size={20}></MdChevronRight>
+                  </li>
+                  <li onMouseEnter={handleThr} className="flex justify-between  p-[7px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">Plug-ins:Virtual Processors</p>
+                    <MdChevronRight size={20}></MdChevronRight>
+
+                  </li>
+                  <li onMouseEnter={handleFour} className="flex justify-between  p-[7px]  border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA]">
+                    <p className="  ">More</p>
+                    <MdChevronRight size={20}></MdChevronRight>
+
+                  </li>
+                  <div onMouseEnter={handleAd}>
+                  <li className="flex justify-between  p-[7px] hover:bg-[#EFEFEF] font-medium   text-[#0072BA] ">
+                    <p className=" ">Sourwater Exclusives</p>
+                
+
+                  </li>
+                  <li className="flex justify-between  p-[7px]  hover:bg-[#EFEFEF] font-medium text-[#0072BA]">
+                    <p className=" ">Software Bundles</p>
+                  
+
+                  </li>
+                  <li className="flex justify-between  p-[7px] hover:bg-[#EFEFEF] font-medium text-[#0072BA]">
+                    <p className="  ">Software Deals</p>
+                 
+                  </li>
+                  <li className="flex justify-between  p-[7px] hover:bg-[#EFEFEF] font-medium text-[#0072BA]">
+                    <p className="  ">Computer Deals</p>
+                 
+                  </li>
+                  <li className="flex justify-between  p-[7px] hover:bg-[#EFEFEF] font-medium text-[#0072BA]">
+                    <p className="  ">News & Research</p>
+                 
+                  </li>
+                  <li className="flex justify-between  p-[7px] hover:bg-[#EFEFEF] font-medium text-[#0072BA]">
+                    <p className="  ">New Arrivals</p>
+                 
+                  </li>
+                  <li className="flex justify-between  p-[7px] hover:bg-[#EFEFEF] font-medium text-[#0072BA]">
+                    <p className="  ">Shop By Brand</p>
+                
+
+                  </li>
+                  <li className="flex justify-between p-[7px] hover:bg-[#EFEFEF] font-medium text-[#0072BA]">
+                    <p className="  ">Cable Finder</p>
+                 
+                  </li>
+                  <li className="flex justify-between  p-[7px] hover:bg-[#EFEFEF] font-medium text-[#0072BA]">
+                    <p className="  ">Case Finder</p>
+                 
+                  </li>
+                 
+                  
+                  </div>
+                </ul>
+                
+                      </div>
+             
+                      {/*ElECTRIC GUITAR SECTION*/}
+                      <ul className={ad?"flex-col border-l-[.1px] h-[529px]  w-56 items-center justify-center "
+                :"hidden"}>
+<li className="flex items-center justify-center  h-[529px] p-[22px] ">
+<img className="" src={bf} alt="Black Friday"></img>
+</li>
+
+</ul>
+<ul>
+<div   className={one?"-my-[1px]  w-0 h-0 flex cursor-pointer top-0  h-full  ease-in-out duration-0"
+                : "ease-in-out duration-0 fixed left-[-100%]"} >
+                      <div onMouseLeave={handleOne2}  className="flex-col  border-b-[.0px] border-r-[.0px] h-[529px] border-C7C5C1 border-[.1px] ">
+
+                      <div onMouseLeave={handleAd} className="flex ">
+                      <div className="flex w-56 ">
+                  
+                      <ul  className="flex-col w-[344px]">
+                      <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Pro Tools Software</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">PreSonus Studio One</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Steinberg Cubase</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="   ">Image Line FL Studio</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">Reason Studios Reason</p>
+                  </li>
+                  
+                      <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] font-medium hover:text-[#0072BA] ">
+                    <p className=" ">View all DAW Software</p>
+                  </li>
+                 
+                 
+                </ul>
+                <div onMouseEnter={handleOne2} className=" h-full w-10">
+                  </div>
+                            </div>
+                            
+                      </div>
+                      </div>
+                      </div>
+                      </ul>
+
+                      <ul>
+                        
+<div   className={two?"-my-[1px]  w-0 h-0 flex cursor-pointer top-0  h-full  ease-in-out duration-0"
+                : "ease-in-out duration-0 fixed left-[-100%]"} >
+                      <div onMouseLeave={handleTwo2}  className="flex-col  border-b-[.0px] border-r-[.0px] h-[529px]   border-C7C5C1 border-[.1px] ">
+
+                      <div className="flex    ">
+                      <div className="flex w-56 ">
+                  
+                      <ul  className="flex-col w-[344px]">
+                      <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Virtual Guitar & Bass Software</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">Virtual Drum & Percussion Software</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Virtual Synth, Keyboard, & Organ Software</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="   ">Virtual Orchestra Software</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">Virtual Instrument Bundles</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">Sound Module Software</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">Sampling Software</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">Looping Software</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] font-medium hover:text-[#0072BA] ">
+                    <p className=" ">View all Virtual Instruments</p>
+                  </li>
+                 
+                </ul>
+                <div onMouseEnter={handleTwo2} className=" h-full w-10">
+                  </div>
+                            </div>
+                            
+                      </div>
+                      </div>
+                      </div>
+                      </ul>
+
+                      <ul>
+<div   className={thr?"-my-[1px]  w-0 h-0 flex cursor-pointer top-0  h-full  ease-in-out duration-0"
+                : "ease-in-out duration-0 fixed left-[-100%]"} >
+                      <div onMouseLeave={handleThr2}  className="flex-col  border-b-[.0px] border-r-[.0px] h-[529px]    border-C7C5C1 border-[.1px] ">
+
+                      <div onMouseLeave={handleAd} className="flex ">
+                      <div className="flex w-56 ">
+                  
+                      <ul  className="flex-col w-[344px]">
+                      <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Plug-ins Bundles</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">Dynamics Plug-ins</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Equalizer Plug-ins</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Reverb & Delay Plug-ins</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Pitch & Harmony Plug-ins</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Effect Plug-ins</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Noise Reduction Plug-ins</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Utility Plug-ins</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] font-medium  hover:text-[#0072BA]">
+                    <p className="   ">View All Virtual Processors</p>
+                  </li>
+                 
+                 
+                </ul>
+                <div onMouseEnter={handleThr2} className=" h-full w-10">
+                  </div>
+                            </div>
+                            
+                      </div>
+                      </div>
+                      </div>
+                      </ul>
+
+                      <ul>
+<div   className={four?"-my-[1px]  w-0 h-0 flex cursor-pointer top-0  h-full  ease-in-out duration-0"
+                : "ease-in-out duration-0 fixed left-[-100%]"} >
+                      <div onMouseLeave={handleFour2}  className="flex-col  border-b-[.0px] border-r-[.0px] h-[529px]   border-C7C5C1 border-[.1px] ">
+
+                      <div onMouseLeave={handleAd} className="flex ">
+                      <div className="flex w-56 ">
+                  
+                      <ul  className="flex-col w-[344px]">
+                      <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Notation Software</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">Mastering Software</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">DJ Software</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="   ">Video Editing Software</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">Instructional Software</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">Utility & Other Software</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">Computers</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Audio Engineering Instructional Books</p>
+                  </li>
+                 
+                </ul>
+                <div onMouseEnter={handleFour2} className=" h-full w-10">
+                  </div>
+                            </div>
+                            
+                      </div>
+                      </div>
+                      </div>
+                      </ul>
+                      
+                      </div>
+                      </div>
+              
+
+                    
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div onMouseLeave={handleBss2} 
+              className={bss?"w-0  flex -my-[2px] cursor-pointer top-0  h-[583px] ease-in-out duration-0"
+                : "ease-in-out duration-0 fixed left-[-100%]"} >
+                      <div onMouseEnter={handleAd} className="flex-col   border-C7C5C1 border-[.1px] ">
+                     <div className="flex items-center justify-between hover:bg-[#EFEFEF]  border-b-[.7px] border-b-C7C5C1">
+                      <h1 onMouseEnter={handleHdr}  className="p-2 w-[348px] text-2xl  text-[#362D2D] hover:text-[#0072BA] ">Bass</h1>
+                      <p className="w-[100px]">View all</p>
+                    </div>
+                      <div className="flex border-b-[.0px] border-b-C7C5C1 h-full   ">
+                      <div className=" w-56  ">
+                
+                      <ul className="">
+            
+
+                  <li  onMouseEnter={handleOne}   className="flex justify-between  p-[7px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p  className="">Bass Guitars</p>
+                    <MdChevronRight size={20}></MdChevronRight>
+
+                  </li>
+                  <li onMouseEnter={handleTwo}  className="flex justify-between  p-[7px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">Bass Guitar Amps</p>
+                    <MdChevronRight size={20}></MdChevronRight>
+                  </li>
+                  <li onMouseEnter={handleThr} className="flex justify-between  p-[7px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">Bass Guitar Pedals & Effects</p>
+                    <MdChevronRight size={20}></MdChevronRight>
+
+                  </li>
+                  <li onMouseEnter={handleFour} className="flex justify-between  p-[7px]  border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA]">
+                    <p className="  ">More</p>
+                    <MdChevronRight size={20}></MdChevronRight>
+
+                  </li>
+                  <div onMouseEnter={handleAd}>
+                  <li className="flex justify-between  p-[7px] hover:bg-[#EFEFEF] font-medium   text-[#0072BA] ">
+                    <p className=" ">Sourwater Exclusives</p>
+                
+
+                  </li>
+                  <li className="flex justify-between  p-[7px]  hover:bg-[#EFEFEF] font-medium text-[#0072BA]">
+                    <p className=" ">Bass Bundles</p>
+                  
+
+                  </li>
+                  <li className="flex justify-between  p-[7px] hover:bg-[#EFEFEF] font-medium text-[#0072BA]">
+                    <p className="  ">Bass Deals</p>
+                 
+                  </li>
+                 
+                  <li className="flex justify-between  p-[7px] hover:bg-[#EFEFEF] font-medium text-[#0072BA]">
+                    <p className="  ">News & Research</p>
+                 
+                  </li>
+                  <li className="flex justify-between  p-[7px] hover:bg-[#EFEFEF] font-medium text-[#0072BA]">
+                    <p className="  ">New Arrivals</p>
+                 
+                  </li>
+                  <li className="flex justify-between  p-[7px] hover:bg-[#EFEFEF] font-medium text-[#0072BA]">
+                    <p className="  ">Shop By Brand</p>
+                
+
+                  </li>
+                  <li className="flex justify-between p-[7px] hover:bg-[#EFEFEF] font-medium text-[#0072BA]">
+                    <p className="  ">Cable Finder</p>
+                 
+                  </li>
+                  <li className="flex justify-between  p-[7px] hover:bg-[#EFEFEF] font-medium text-[#0072BA]">
+                    <p className="  ">Case Finder</p>
+                 
+                  </li>
+                  <li className="flex justify-between  p-[7px] hover:bg-[#EFEFEF] font-medium text-[#0072BA]">
+                    <p className="  ">Guitar Workshop</p>
+                 
+                  </li>
+                 
+                  
+                  </div>
+                </ul>
+                
+                      </div>
+             
+                      {/*ElECTRIC GUITAR SECTION*/}
+                      <ul className={ad?"flex-col border-l-[.1px] h-[529px]  w-56 items-center justify-center "
+                :"hidden"}>
+<li className="flex items-center justify-center  h-[529px] p-[22px] ">
+<img className="" src={bf} alt="Black Friday"></img>
+</li>
+
+</ul>
+<ul>
+<div   className={one?"-my-[1px]  w-0 h-0 flex cursor-pointer top-0  h-full  ease-in-out duration-0"
+                : "ease-in-out duration-0 fixed left-[-100%]"} >
+                      <div onMouseLeave={handleOne2}  className="flex-col  border-b-[.0px] border-r-[.0px] h-[529px] border-C7C5C1 border-[.1px] ">
+
+                      <div onMouseLeave={handleAd} className="flex ">
+                      <div className="flex w-56 ">
+                  
+                      <ul  className="flex-col w-[344px]">
+                      <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Keyboards</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">Desktop</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Rackmount</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="   ">Handheld</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">Keytar</p>
+                  </li> 
+                  
+                      <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] font-medium hover:text-[#0072BA] ">
+                    <p className=" ">View all Synthesizers</p>
+                  </li>
+                 
+                 
+                </ul>
+                <div onMouseEnter={handleOne2} className=" h-full w-10">
+                  </div>
+                            </div>
+                            
+                      </div>
+                      </div>
+                      </div>
+                      </ul>
+
+                      <ul>
+                        
+<div   className={two?"-my-[1px]  w-0 h-0 flex cursor-pointer top-0  h-full  ease-in-out duration-0"
+                : "ease-in-out duration-0 fixed left-[-100%]"} >
+                      <div onMouseLeave={handleTwo2}  className="flex-col  border-b-[.0px] border-r-[.0px] h-[529px]   border-C7C5C1 border-[.1px] ">
+
+                      <div className="flex    ">
+                      <div className="flex w-56 ">
+                  
+                      <ul  className="flex-col w-[344px]">
+                      <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Eurorack Modules</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">Eurorack Cases</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Eurorack Path Cables</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="   ">Eurorack Accessories</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="   ">Modular Synthesizers</p>
+                  </li>
+                
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] font-medium hover:text-[#0072BA] ">
+                    <p className=" ">View all Eurorack & Modular Synthesizers</p>
+                  </li>
+                 
+                </ul>
+                <div onMouseEnter={handleTwo2} className=" h-full w-10">
+                  </div>
+                            </div>
+                            
+                      </div>
+                      </div>
+                      </div>
+                      </ul>
+
+                      <ul>
+<div   className={thr?"-my-[1px]  w-0 h-0 flex cursor-pointer top-0  h-full  ease-in-out duration-0"
+                : "ease-in-out duration-0 fixed left-[-100%]"} >
+                      <div onMouseLeave={handleThr2}  className="flex-col  border-b-[.0px] border-r-[.0px] h-[529px]    border-C7C5C1 border-[.1px] ">
+
+                      <div onMouseLeave={handleAd} className="flex ">
+                      <div className="flex w-56 ">
+                  
+                      <ul  className="flex-col w-[344px]">
+                      <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Digital Pianos</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">Acoustic Grand Pianos</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Acoustic Upright Pianos</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Clavinovas</p>
+                  </li>
+
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] font-medium hover:text-[#0072BA]">
+                    <p className="   ">View All Pianos</p>
+                  </li>
+                 
+                 
+                </ul>
+                <div onMouseEnter={handleThr2} className=" h-full w-10">
+                  </div>
+                            </div>
+                            
+                      </div>
+                      </div>
+                      </div>
+                      </ul>
+
+                      <ul>
+<div   className={four?"-my-[1px]  w-0 h-0 flex cursor-pointer top-0  h-full  ease-in-out duration-0"
+                : "ease-in-out duration-0 fixed left-[-100%]"} >
+                      <div onMouseLeave={handleFour2}  className="flex-col  border-b-[.0px] border-r-[.0px] h-[529px]   border-C7C5C1 border-[.1px] ">
+
+                      <div onMouseLeave={handleAd} className="flex ">
+                      <div className="flex w-56 ">
+                  
+                      <ul  className="flex-col w-[344px]">
+                      <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Electric Organs</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">Portable & Arranger Keyboards</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Keyboard Workstations</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="   ">Beat Production</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="   ">Midi Controller</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="   ">Accordions</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="   ">Theremins</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="   ">Keyboard Amplifiers</p>
+                  </li>
+                </ul>
+                <div onMouseEnter={handleFour2} className=" h-full w-10">
+                  </div>
+                            </div>
+                            
+                      </div>
+                      </div>
+                      </div>
+                      </ul>
+                      
+                      </div>
+                      </div>
+              
+
+                    
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div onMouseLeave={handleKey2} 
+              className={key?"w-0  flex -my-[2px] cursor-pointer top-0  h-[583px] ease-in-out duration-0"
+                : "ease-in-out duration-0 fixed left-[-100%]"} >
+                      <div onMouseEnter={handleAd} className="flex-col   border-C7C5C1 border-[.1px] ">
+                     <div className="flex items-center justify-between hover:bg-[#EFEFEF]  border-b-[.7px] border-b-C7C5C1">
+                      <h1 onMouseEnter={handleHdr}  className="p-2 w-[348px] text-2xl  text-[#362D2D] hover:text-[#0072BA] ">Keyboards & Synthesizers</h1>
+                      <p className="w-[100px]">View all</p>
+                    </div>
+                      <div className="flex border-b-[.0px] border-b-C7C5C1 h-full   ">
+                      <div className=" w-56  ">
+                
+                      <ul className="">
+            
+
+                  <li  onMouseEnter={handleOne}   className="flex justify-between  p-[7px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p  className="">Synthesizers</p>
+                    <MdChevronRight size={20}></MdChevronRight>
+
+                  </li>
+                  <li onMouseEnter={handleTwo}  className="flex justify-between  p-[7px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">Eurorack & Modular Synthesizers</p>
+                    <MdChevronRight size={20}></MdChevronRight>
+                  </li>
+                  <li onMouseEnter={handleThr} className="flex justify-between  p-[7px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">Pianos</p>
+                    <MdChevronRight size={20}></MdChevronRight>
+
+                  </li>
+                  <li onMouseEnter={handleFour} className="flex justify-between  p-[7px]  border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA]">
+                    <p className="  ">More</p>
+                    <MdChevronRight size={20}></MdChevronRight>
+
+                  </li>
+                  <div onMouseEnter={handleAd}>
+                
+                  <li className="flex justify-between  p-[7px]  hover:bg-[#EFEFEF] font-medium text-[#0072BA]">
+                    <p className=" ">Keyboard Bundles</p>
+                  
+
+                  </li>
+                  <li className="flex justify-between  p-[7px] hover:bg-[#EFEFEF] font-medium text-[#0072BA]">
+                    <p className="  ">Keyboard Deals</p>
+                 
+                  </li>
+                 
+                  <li className="flex justify-between  p-[7px] hover:bg-[#EFEFEF] font-medium text-[#0072BA]">
+                    <p className="  ">News & Research</p>
+                 
+                  </li>
+                  <li className="flex justify-between  p-[7px] hover:bg-[#EFEFEF] font-medium text-[#0072BA]">
+                    <p className="  ">New Arrivals</p>
+                 
+                  </li>
+                  <li className="flex justify-between  p-[7px] hover:bg-[#EFEFEF] font-medium text-[#0072BA]">
+                    <p className="  ">Shop By Brand</p>
+                
+
+                  </li>
+                  <li className="flex justify-between p-[7px] hover:bg-[#EFEFEF] font-medium text-[#0072BA]">
+                    <p className="  ">Cable Finder</p>
+                 
+                  </li>
+                  <li className="flex justify-between  p-[7px] hover:bg-[#EFEFEF] font-medium text-[#0072BA]">
+                    <p className="  ">Case Finder</p>
+                 
+                  </li>
+                 
+                 
+                  
+                  </div>
+                </ul>
+                
+                      </div>
+             
+                      {/*ElECTRIC GUITAR SECTION*/}
+                      <ul className={ad?"flex-col border-l-[.1px] h-[529px]  w-56 items-center justify-center "
+                :"hidden"}>
+<li className="flex items-center justify-center  h-[529px] p-[22px] ">
+<img className="" src={bf} alt="Black Friday"></img>
+</li>
+
+</ul>
+<ul>
+<div   className={one?"-my-[1px]  w-0 h-0 flex cursor-pointer top-0  h-full  ease-in-out duration-0"
+                : "ease-in-out duration-0 fixed left-[-100%]"} >
+                      <div onMouseLeave={handleOne2}  className="flex-col  border-b-[.0px] border-r-[.0px] h-[529px] border-C7C5C1 border-[.1px] ">
+
+                      <div onMouseLeave={handleAd} className="flex ">
+                      <div className="flex w-56 ">
+                  
+                      <ul  className="flex-col w-[344px]">
+                      <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">4-string Bass Guitars</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">5-string Bass Guitars</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">6+ string Bass guitar</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="   ">Fretless Bass Guitars</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">Acoustic Bass Guitars</p>
+                  </li> <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">Left-handed Bass Guitars</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">Bass Guitars Packages</p>
+                  </li>
+                  
+                      <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] font-medium hover:text-[#0072BA] ">
+                    <p className=" ">View all Bass Guitars</p>
+                  </li>
+                 
+                 
+                </ul>
+                <div onMouseEnter={handleOne2} className=" h-full w-10">
+                  </div>
+                            </div>
+                            
+                      </div>
+                      </div>
+                      </div>
+                      </ul>
+
+                      <ul>
+                        
+<div   className={two?"-my-[1px]  w-0 h-0 flex cursor-pointer top-0  h-full  ease-in-out duration-0"
+                : "ease-in-out duration-0 fixed left-[-100%]"} >
+                      <div onMouseLeave={handleTwo2}  className="flex-col  border-b-[.0px] border-r-[.0px] h-[529px]   border-C7C5C1 border-[.1px] ">
+
+                      <div className="flex    ">
+                      <div className="flex w-56 ">
+                  
+                      <ul  className="flex-col w-[344px]">
+                      <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Bass Guitar Combo Amps</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">Bass Guitar Amp Heads</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Bass Guitar Amp-Cabinets</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="   ">Bass Guitar Amp Accessories</p>
+                  </li>
+                
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] font-medium hover:text-[#0072BA] ">
+                    <p className=" ">View all Bass Guitar Amps</p>
+                  </li>
+                 
+                </ul>
+                <div onMouseEnter={handleTwo2} className=" h-full w-10">
+                  </div>
+                            </div>
+                            
+                      </div>
+                      </div>
+                      </div>
+                      </ul>
+
+                      <ul>
+<div   className={thr?"-my-[1px]  w-0 h-0 flex cursor-pointer top-0  h-full  ease-in-out duration-0"
+                : "ease-in-out duration-0 fixed left-[-100%]"} >
+                      <div onMouseLeave={handleThr2}  className="flex-col  border-b-[.0px] border-r-[.0px] h-[529px]    border-C7C5C1 border-[.1px] ">
+
+                      <div onMouseLeave={handleAd} className="flex ">
+                      <div className="flex w-56 ">
+                  
+                      <ul  className="flex-col w-[344px]">
+                      <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Preamp</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">Overdrive</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Distortion</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Compressor</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">DI</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Multi-FX</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Fuzz</p>
+                  </li>
+                
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] font-medium hover:text-[#0072BA]">
+                    <p className="   ">View All Bass Guitar Pedals & Effects</p>
+                  </li>
+                 
+                 
+                </ul>
+                <div onMouseEnter={handleThr2} className=" h-full w-10">
+                  </div>
+                            </div>
+                            
+                      </div>
+                      </div>
+                      </div>
+                      </ul>
+
+                      <ul>
+<div   className={four?"-my-[1px]  w-0 h-0 flex cursor-pointer top-0  h-full  ease-in-out duration-0"
+                : "ease-in-out duration-0 fixed left-[-100%]"} >
+                      <div onMouseLeave={handleFour2}  className="flex-col  border-b-[.0px] border-r-[.0px] h-[529px]   border-C7C5C1 border-[.1px] ">
+
+                      <div onMouseLeave={handleAd} className="flex ">
+                      <div className="flex w-56 ">
+                  
+                      <ul  className="flex-col w-[344px]">
+                      <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Bass Guitar Strings</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">Guitar / Instruments Cables</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Guitar Wireless Systems</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="   ">Bass Bundles</p>
+                  </li>
+                
+                </ul>
+                <div onMouseEnter={handleFour2} className=" h-full w-10">
+                  </div>
+                            </div>
+                            
+                      </div>
+                      </div>
+                      </div>
+                      </ul>
+                      
+                      </div>
+                      </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+
+                <div onMouseLeave={handleDrm2} 
+              className={drm?"w-0  flex -my-[2px] cursor-pointer top-0  h-[583px] ease-in-out duration-0"
+                : "ease-in-out duration-0 fixed left-[-100%]"} >
+                      <div onMouseEnter={handleAd} className="flex-col   border-C7C5C1 border-[.1px] ">
+                     <div className="flex items-center justify-between hover:bg-[#EFEFEF]  border-b-[.7px] border-b-C7C5C1">
+                      <h1 onMouseEnter={handleHdr}  className="p-2 w-[348px] text-2xl  text-[#362D2D] hover:text-[#0072BA] ">Drums & Percussion</h1>
+                      <p className="w-[100px]">View all</p>
+                    </div>
+                      <div className="flex border-b-[.0px] border-b-C7C5C1 h-full   ">
+                      <div className=" w-56  ">
+                
+                      <ul className="">
+            
+
+                  <li  onMouseEnter={handleOne}   className="flex justify-between  p-[7px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p  className="">Acoustic Drums</p>
+                    <MdChevronRight size={20}></MdChevronRight>
+
+                  </li>
+                  <li onMouseEnter={handleTwo}  className="flex justify-between  p-[7px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">Electronic Drums</p>
+                    <MdChevronRight size={20}></MdChevronRight>
+                  </li>
+                  <li onMouseEnter={handleThr} className="flex justify-between  p-[7px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">Cymbals, Hardware & More</p>
+                    <MdChevronRight size={20}></MdChevronRight>
+
+                  </li>
+                  <li onMouseEnter={handleFour} className="flex justify-between  p-[7px]  border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA]">
+                    <p className="  ">Concert & Matching Percussion</p>
+                    <MdChevronRight size={20}></MdChevronRight>
+
+                  </li>
+                  <div onMouseEnter={handleAd}>
+                  <li className="flex justify-between  p-[7px]  hover:bg-[#EFEFEF] font-medium text-[#0072BA]">
+                    <p className=" ">Sourwater Exclusives</p>
+                  </li>
+
+                  <li className="flex justify-between  p-[7px]  hover:bg-[#EFEFEF] font-medium text-[#0072BA]">
+                    <p className=" ">Drum Bundles</p>
+                  
+
+                  </li>
+                  <li className="flex justify-between  p-[7px] hover:bg-[#EFEFEF] font-medium text-[#0072BA]">
+                    <p className="  ">Drum Deals</p>
+                 
+                  </li>
+                 
+                  <li className="flex justify-between  p-[7px] hover:bg-[#EFEFEF] font-medium text-[#0072BA]">
+                    <p className="  ">News & Research</p>
+                 
+                  </li>
+                  <li className="flex justify-between  p-[7px] hover:bg-[#EFEFEF] font-medium text-[#0072BA]">
+                    <p className="  ">New Arrivals</p>
+                 
+                  </li>
+                  <li className="flex justify-between  p-[7px] hover:bg-[#EFEFEF] font-medium text-[#0072BA]">
+                    <p className="  ">Shop By Brand</p>
+                
+
+                  </li>
+                  <li className="flex justify-between p-[7px] hover:bg-[#EFEFEF] font-medium text-[#0072BA]">
+                    <p className="  ">Cable Finder</p>
+                 
+                  </li>
+                  <li className="flex justify-between  p-[7px] hover:bg-[#EFEFEF] font-medium text-[#0072BA]">
+                    <p className="  ">Case Finder</p>
+                  </li>
+                 
+                 
+                  
+                  </div>
+                </ul>
+                
+                      </div>
+             
+                      {/*ElECTRIC GUITAR SECTION*/}
+                      <ul className={ad?"flex-col border-l-[.1px] h-[529px]  w-56 items-center justify-center "
+                :"hidden"}>
+<li className="flex items-center justify-center  h-[529px] p-[22px] ">
+<img className="" src={bf} alt="Black Friday"></img>
+</li>
+
+</ul>
+<ul>
+<div   className={one?"-my-[1px]  w-0 h-0 flex cursor-pointer top-0  h-full  ease-in-out duration-0"
+                : "ease-in-out duration-0 fixed left-[-100%]"} >
+                      <div onMouseLeave={handleOne2}  className="flex-col  border-b-[.0px] border-r-[.0px] h-[529px] border-C7C5C1 border-[.1px] ">
+
+                      <div onMouseLeave={handleAd} className="flex ">
+                      <div className="flex w-56 ">
+                  
+                      <ul  className="flex-col w-[344px]">
+                      <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Acoustic Drums Sets</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">Snare Drums</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Bass Drums</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="   ">Floor Drums</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">Mounted Toms</p>
+                  </li> <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">Specialty Drums</p>
+                  </li>
+                      <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] font-medium hover:text-[#0072BA] ">
+                    <p className=" ">View all Acoustic Drums</p>
+                  </li>
+                 
+                 
+                </ul>
+                <div onMouseEnter={handleOne2} className=" h-full w-10">
+                  </div>
+                            </div>
+                            
+                      </div>
+                      </div>
+                      </div>
+                      </ul>
+
+                      <ul>
+                        
+<div   className={two?"-my-[1px]  w-0 h-0 flex cursor-pointer top-0  h-full  ease-in-out duration-0"
+                : "ease-in-out duration-0 fixed left-[-100%]"} >
+                      <div onMouseLeave={handleTwo2}  className="flex-col  border-b-[.0px] border-r-[.0px] h-[529px]   border-C7C5C1 border-[.1px] ">
+
+                      <div className="flex    ">
+                      <div className="flex w-56 ">
+                  
+                      <ul  className="flex-col w-[344px]">
+                      <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Electronic Drum Sets</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">Electronic Drum Modules</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Electronic Drum Controllers &  MUltipads</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="   ">Drum Triggers & Pads</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="   ">Drum Machines & Samplers</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="   ">Electronic Cybmal Pads</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="   ">Drum Amplifiers</p>
+                  </li>
+                
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] font-medium hover:text-[#0072BA] ">
+                    <p className=" ">View all Electronic Drums</p>
+                  </li>
+                 
+                </ul>
+                <div onMouseEnter={handleTwo2} className=" h-full w-10">
+                  </div>
+                            </div>
+                            
+                      </div>
+                      </div>
+                      </div>
+                      </ul>
+
+                      <ul>
+<div   className={thr?"-my-[1px]  w-0 h-0 flex cursor-pointer top-0  h-full  ease-in-out duration-0"
+                : "ease-in-out duration-0 fixed left-[-100%]"} >
+                      <div onMouseLeave={handleThr2}  className="flex-col  border-b-[.0px] border-r-[.0px] h-[529px]    border-C7C5C1 border-[.1px] ">
+
+                      <div onMouseLeave={handleAd} className="flex ">
+                      <div className="flex w-56 ">
+                  
+                      <ul  className="flex-col w-[344px]">
+                      <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Drum Hardware</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">Cymbals</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Hand Drums</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">World Percussion</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Meditation & Music Therapy Instruments</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Drums & Percussion Accessories</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Drum Microphone Bundles</p>
+                  </li>
+            
+                 
+                 
+                </ul>
+                <div onMouseEnter={handleThr2} className=" h-full w-10">
+                  </div>
+                            </div>
+                            
+                      </div>
+                      </div>
+                      </div>
+                      </ul>
+
+                      <ul>
+<div   className={four?"-my-[1px]  w-0 h-0 flex cursor-pointer top-0  h-full  ease-in-out duration-0"
+                : "ease-in-out duration-0 fixed left-[-100%]"} >
+                      <div onMouseLeave={handleFour2}  className="flex-col  border-b-[.0px] border-r-[.0px] h-[529px]   border-C7C5C1 border-[.1px] ">
+
+                      <div onMouseLeave={handleAd} className="flex ">
+                      <div className="flex w-56 ">
+                  
+                      <ul  className="flex-col w-[344px]">
+                      <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="">Concert Percussion</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">Marching Percussion</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="   ">Marching Accesories</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className="   ">Drums & Percussion Method Books</p>
+                  </li>
+                
+                </ul>
+                <div onMouseEnter={handleFour2} className=" h-full w-10">
+                  </div>
+                            </div>
+                            
+                      </div>
+                      </div>
+                      </div>
+                      </ul>
+                      
+                      </div>
+                      </div>
+              
+
+                    
+                </div>
+
+
               </div>
         </div>
         
@@ -439,6 +2592,10 @@ setMre(false);
         <div className='flex w-full justify-center'><a className='h-full p-2 '>What's New</a> 
         
         </div>
+
+
+
+
         <div className='flex w-full justify-center'><a className='h-full p-2 '>Deals</a></div>
         <div className='flex w-full justify-center'><a className='h-full p-2 '>Used Gear</a></div>
         <div className='flex w-full justify-center'><a className='h-full p-2 '>Rentals</a></div>
