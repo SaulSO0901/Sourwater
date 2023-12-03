@@ -13,7 +13,6 @@ import {
     AiFillCaretLeft,
   } from "react-icons/ai";
   import { MdChevronRight } from "react-icons/md";
-import Studio from "../components/header-sections/Studio"
 
 const Header = () => {
     const [cat, setCat] = useState(false);
@@ -42,7 +41,6 @@ const Header = () => {
     const [two, setTwo] = useState(false);
     const [thr, setThr] = useState(false);
     const [four, setFour] = useState(false);
-    const [all, setAll] = useState(false);
 
 
 
@@ -88,14 +86,7 @@ const Header = () => {
       setFour(true);
 
     };
-    const hanldeall= () => {
-      setOne(false);   
-      setTwo(false); 
-      setThr(false);
-      setFour(false);
-
-    };
-
+   
     const handleFour2= () => {
       setFour(false);
 
@@ -123,6 +114,7 @@ const Header = () => {
    
     const handleCat = () => {
     setCat(!cat);
+    setAd(true);
     setGtr(false);
     setStd(false);
     setMic(false);
@@ -131,11 +123,20 @@ const Header = () => {
     setBss(false);
     setKey(false);
     setDrm(false);
-    setDj(false);
-    setCa(false);
+    setDj(false);  
+    setOrc(false);
     setAcc(false);
+    setCa(false)
     setCc(false);
     setPf(false);
+    setOne(false);   
+    setTwo(false); 
+    setThr(false);
+    setFour(false);
+
+  
+
+
   };
 
   const handleCat2 = () => {
@@ -143,10 +144,27 @@ const Header = () => {
   };
 
   const handleGtr = () => {
-
-    setMic(false);
-    setStd(false);
     setGtr(true);
+    setStd(false);
+    setMic(false);
+    setLiv(false);
+    setSft(false);
+    setBss(false);
+    setKey(false);
+    setDrm(false);
+    setDj(false);  
+    setOrc(false);
+    setAcc(false);
+    setCa(false);
+    setCc(false);
+    setPf(false);
+    setGex(false);
+    setOne(false);   
+    setTwo(false); 
+    setThr(false);
+    setFour(false);
+    setAd(true);
+
   };
   
   const handleGtr2 = () => {
@@ -155,8 +173,26 @@ const Header = () => {
   };
   const handleStd = () => {
     setGtr(false);
-    setMic(false);
     setStd(true);
+    setMic(false);
+    setLiv(false);
+    setSft(false);
+    setBss(false);
+    setKey(false);
+    setDrm(false);
+    setDj(false);  
+    setOrc(false);
+    setAcc(false);
+    setCa(false);
+    setCc(false);
+    setPf(false);
+    setGex(false);
+    setOne(false);   
+    setTwo(false); 
+    setThr(false);
+    setFour(false);
+    setAd(true);
+
   };
   
   const handleStd2 = () => {
@@ -166,8 +202,25 @@ const Header = () => {
   const handleMic = () => {
     setGtr(false);
     setStd(false);
-    setLiv(false);
     setMic(true);
+    setLiv(false);
+    setSft(false);
+    setBss(false);
+    setKey(false);
+    setDrm(false);
+    setDj(false);  
+    setOrc(false);
+    setAcc(false);
+    setCa(false);
+    setCc(false);
+    setPf(false);
+    setGex(false);
+    setOne(false);   
+    setTwo(false); 
+    setThr(false);
+    setFour(false);
+    setAd(true);
+
    
   };
   
@@ -178,8 +231,24 @@ const Header = () => {
     setGtr(false);
     setStd(false);
     setMic(false);
-    setSft(false);
     setLiv(true);
+    setSft(false);
+    setBss(false);
+    setKey(false);
+    setDrm(false);
+    setDj(false);  
+    setOrc(false);
+    setAcc(false);
+    setCa(false);
+    setCc(false);
+    setPf(false);
+    setGex(false)
+    setOne(false);   
+    setTwo(false); 
+    setThr(false);
+    setFour(false);
+    setAd(true);
+
   };
   
   const handleLiv2 = () => {
@@ -190,8 +259,23 @@ const Header = () => {
     setStd(false);
     setMic(false);
     setLiv(false);
-    setBss(false);
     setSft(true);
+    setBss(false);
+    setKey(false);
+    setDrm(false);
+    setDj(false);  
+    setOrc(false);
+    setAcc(false);
+    setCa(false);
+    setCc(false);
+    setPf(false);
+    setGex(false);
+    setOne(false);   
+    setTwo(false); 
+    setThr(false);
+    setFour(false);
+    setAd(true);
+
   };
   
   const handleSft2 = () => {
@@ -204,9 +288,23 @@ const Header = () => {
     setMic(false);
     setLiv(false);
     setSft(false);
-    setKey(false)
-    setDj(false);
     setBss(true);
+    setKey(false);
+    setDrm(false);
+    setDj(false);  
+    setOrc(false);
+    setAcc(false);
+    setCa(false);
+    setCc(false);
+    setPf(false);
+    setGex(false);
+    setOne(false);   
+    setTwo(false); 
+    setThr(false);
+    setFour(false);
+    setAd(true);
+
+
   };
   
   const handleBss2 = () => {
@@ -220,8 +318,21 @@ const Header = () => {
     setLiv(false);
     setSft(false);
     setBss(false);
-    setDrm(false);
     setKey(true);
+    setDrm(false);
+    setDj(false);  
+    setOrc(false);
+    setAcc(false);
+    setCa(false);
+    setCc(false);
+    setPf(false);
+    setGex(false);
+    setOne(false);   
+    setTwo(false); 
+    setThr(false);
+    setFour(false);
+    setAd(true);
+
   };
   
   const handleKey2 = () => {
@@ -235,8 +346,20 @@ const Header = () => {
     setSft(false);
     setBss(false);
     setKey(false);
-    setDj(false)
     setDrm(true);
+    setDj(false);  
+    setOrc(false);
+    setAcc(false);
+    setCa(false);
+    setCc(false);
+    setPf(false);
+    setGex(false);
+    setOne(false);   
+    setTwo(false); 
+    setThr(false);
+    setFour(false);
+    setAd(true);
+
   };
   
   const handleDrm2 = () => {
@@ -251,9 +374,19 @@ const Header = () => {
     setBss(false);
     setKey(false);
     setDrm(false);
+    setDj(true);  
     setOrc(false);
+    setAcc(false);
+    setCa(false);
+    setCc(false);
+    setPf(false);
+    setGex(false);
+    setOne(false);   
+    setTwo(false); 
+    setThr(false);
+    setFour(false);
+    setAd(true);
 
-    setDj(true);
   };
   
   const handleDj2 = () => {
@@ -269,8 +402,18 @@ const Header = () => {
     setKey(false);
     setDrm(false);
     setDj(false);  
-    setCa(false);
     setOrc(true);
+    setAcc(false);
+    setCa(false);
+    setCc(false);
+    setPf(false);
+    setGex(false);
+    setOne(false);   
+    setTwo(false); 
+    setThr(false);
+    setFour(false);
+    setAd(true);
+
   };
   
   const handleOrc2 = () => {
@@ -288,8 +431,16 @@ const Header = () => {
     setDj(false);  
     setOrc(false);
     setAcc(false);
-    setCa(true)
-;  
+    setCa(true);
+    setCc(false);
+    setPf(false);
+    setGex(false);
+    setOne(false);   
+    setTwo(false); 
+    setThr(false);
+    setFour(false);
+    setAd(true);
+
   };
   
   const handleCa2 = () => {
@@ -308,8 +459,17 @@ const Header = () => {
     setDrm(false);
     setDj(false);  
     setOrc(false);
-    setCa(false);
     setAcc(true);
+    setCa(false);
+    setCc(false);
+    setPf(false);
+    setGex(false);
+    setOne(false);   
+    setTwo(false); 
+    setThr(false);
+    setFour(false);
+    setAd(true);
+
   };
   
   const handleAcc2 = () => {
@@ -318,20 +478,28 @@ const Header = () => {
 
 
  const handleCC = () => {
-    setGtr(false);
-    setStd(false);
-    setMic(false);
-    setLiv(false);
-    setSft(false);
-    setBss(false);
-    setKey(false);
-    setDrm(false);
-    setDj(false);  
-    setOrc(false);
-    setAcc(false);
-    setCa(false)
-    setCc(true);
-;  
+  setGtr(false);
+  setStd(false);
+  setMic(false);
+  setLiv(false);
+  setSft(false);
+  setBss(false);
+  setKey(false);
+  setDrm(false);
+  setDj(false);  
+  setOrc(false);
+  setAcc(false);
+  setCa(false);
+  setCc(true);
+  setPf(false);
+  setGex(false);
+  setOne(false);   
+  setTwo(false); 
+  setThr(false);
+  setFour(false);
+  setAd(true);
+
+
   };
   
   const handleCC2 = () => {
@@ -349,30 +517,83 @@ const Header = () => {
     setDj(false);  
     setOrc(false);
     setAcc(false);
-    setCa(false)
+    setCa(false);
     setCc(false);
     setPf(true);
-;  
+    setGex(false);
+    setOne(false);   
+    setTwo(false); 
+    setThr(false);
+    setFour(false);
+    setAd(true);
+
+
   };
   
   const handlePF2 = () => {
     setPf(false);
   };
+
+  const handleGEX = () => {
+    setGtr(false);
+    setStd(false);
+    setMic(false);
+    setLiv(false);
+    setSft(false);
+    setBss(false);
+    setKey(false);
+    setDrm(false);
+    setDj(false);  
+    setOrc(false);
+    setAcc(false);
+    setCa(false);
+    setCc(false);
+    setPf(false);
+    setGex(true);
+    setOne(false);   
+    setTwo(false); 
+    setThr(false);
+    setFour(false);
+    setAd(true);
+
+  };
+  {/*Deals Hooks*/}
+  const [deal, setDeal] = useState(false);
+
+  const handleDeal= () => {
+    setDeal(!deal);
+  };
+  
+  const handleDeal2= () => {
+    setDeal(false);
+  };
+  {/*Used Gear Hooks*/}
+  const [ug, setUg] = useState(false);
+
+  const handleUG= () => {
+    setUg(!ug);
+  };
+  
+  const handleUG2= () => {
+    setUg(false);
+  };
+
   return (
     <div className='flex h-10 my-2 border-b-[.7px] border-b-C7C5C px-10 justify-between   '>
-        <div  onMouseEnter={handleCat}  onMouseLeave={handleCat2} className='flex w-full justify-center  '><a className='h-full p-2 '>Shop By Category</a>
+        <div  onMouseEnter={handleCat}  onMouseLeave={handleCat2} className='flex w-full justify-center  hover:bg-[#EFEFEF]  text-[#362D2D] hover:text-[#0072BA]  cursor-pointer  '><a className='h-full p-2  text-[#362D2D] hover:text-[#0072BA] '>Shop By Category</a>
        <div className="flex" >
         
         <div
             className={
               cat
-                ? "w-0 h-0 flex cursor-pointer top-0  h-full   ease-in-out duration-0"
+                ? "w-0 h-0 flex cursor-pointer top-0  h-full   ease-in-out duration-0 " 
                 : "ease-in-out duration-0 fixed left-[-100%]"
             } >
-         <div className="flex absolute block my-10 -mx-40  border-b-[.0px]  border-C7C5C1 border-[.1px] ">
-              <div className="flex w-72    ">
+         <div className="flex absolute block my-10 -mx-40  border-b-[.1px]  border-C7C5C1 border-[.1px] ">
+              <div className="flex w-72 h-[579px]    ">
  <div className="flex-col w-full ">
-                <ul className="">
+                <ul className="text-[#362D2D]">
+                 
                   <li onMouseEnter={handleGtr}   className="flex items-center justify-between p-[6px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
                     <p className=" text-[#2b1010] ">Guitars</p>
                     {gtr ? (
@@ -391,7 +612,7 @@ const Header = () => {
           )}
                   
                   </li>
-                  <li onMouseEnter={handleMic} className="flex items-center justify-between p-[6px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
+                  <li onMouseEnter={handleMic} className="flex items-center justify-between p-[7px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
                     <p className="text-[#362D2D] ">Microphones</p>
                     {mic ? (
             <AiFillCaretLeft className="" size={15} />
@@ -399,7 +620,7 @@ const Header = () => {
             <AiFillCaretRight className="" size={15} />
           )}
                   </li>
-                  <li onMouseEnter={handleLiv} className="flex items-center justify-between p-[6px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
+                  <li onMouseEnter={handleLiv} className="flex items-center justify-between p-[7px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
                     <p className="text-[#362D2D]  ">Live Sound</p>
                     {liv ? (
             <AiFillCaretLeft className="" size={15} />
@@ -407,7 +628,7 @@ const Header = () => {
             <AiFillCaretRight className="" size={15} />
           )}
                   </li>
-                  <li onMouseEnter={handleSft} className="flex items-center justify-between p-[6px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
+                  <li onMouseEnter={handleSft} className="flex items-center justify-between p-[7px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
                     <p className="text-[#362D2D]  ">Software & Plug-ins</p>
                     {sft ? (
             <AiFillCaretLeft className="" size={15} />
@@ -417,7 +638,7 @@ const Header = () => {
                   </li>
 
 
-                  <li onMouseEnter={handleBss} className="flex items-center justify-between p-[6px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
+                  <li onMouseEnter={handleBss} className="flex items-center justify-between p-[7px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
                     <p className=" text-[#362D2D]  ">Bass</p>
                     {bss ? (
             <AiFillCaretLeft className="" size={15} />
@@ -427,7 +648,7 @@ const Header = () => {
                   </li>
 
 
-                  <li onMouseEnter={handleKey} className="flex items-center justify-between p-[6px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
+                  <li onMouseEnter={handleKey} className="flex items-center justify-between p-[7px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
                     <p className="text-[#362D2D] ">keyboards</p>
                     {key ? (
             <AiFillCaretLeft className="" size={15} />
@@ -438,7 +659,7 @@ const Header = () => {
 
 
 
-                  <li onMouseEnter={handleDrm} className="flex items-center justify-between p-[6px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
+                  <li onMouseEnter={handleDrm} className="flex items-center justify-between p-[7px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
                     <p className="text-[#362D2D]  ">Drums</p>
                     {drm   ? (
             <AiFillCaretLeft className="" size={15} />
@@ -447,7 +668,7 @@ const Header = () => {
           )}
                   
                   </li>
-                  <li onMouseEnter={handleDj} className="flex items-center justify-between p-[6px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
+                  <li onMouseEnter={handleDj} className="flex items-center justify-between p-[7px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
                     <p className="text-[#362D2D]  ">DJ / Electronic</p>
                     {dj ? (
             <AiFillCaretLeft className="" size={15} />
@@ -456,7 +677,7 @@ const Header = () => {
           )}
 
                   </li>
-                  <li onMouseEnter={handleOrc} className="flex items-center justify-between p-[6px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
+                  <li onMouseEnter={handleOrc} className="flex items-center justify-between p-[7px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
                     <p className="text-[#362D2D]  ">Band & Orchestra</p>
                     {orc ? (
             <AiFillCaretLeft className="" size={15} />
@@ -464,7 +685,7 @@ const Header = () => {
             <AiFillCaretRight className="" size={15} />
           )}
                   </li>
-                  <li onMouseEnter={handleCa} className="flex items-center justify-between p-[6px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
+                  <li onMouseEnter={handleCa} className="flex items-center justify-between p-[7px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
                     <p className="text-[#362D2D]  ">Commercial Audio</p>
                     {ca ? (
             <AiFillCaretLeft className="" size={15} />
@@ -476,7 +697,7 @@ const Header = () => {
 
 
 
-                  <li onMouseEnter={handleAcc} className="flex items-center justify-between p-[6px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
+                  <li onMouseEnter={handleAcc} className="flex items-center justify-between p-[7px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
                     <p className="text-[#362D2D]  ">Accesories</p>
                     {acc ? (
             <AiFillCaretLeft className="" size={15} />
@@ -484,7 +705,7 @@ const Header = () => {
             <AiFillCaretRight className="" size={15} />
           )}
                   </li>
-                  <li onMouseEnter={handleCC} className="flex items-center justify-between p-[6px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
+                  <li onMouseEnter={handleCC} className="flex items-center justify-between p-[7px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
                     <p className="text-[#362D2D]  ">Content Creators</p>
                     {cc ? (
             <AiFillCaretLeft className="" size={15} />
@@ -492,7 +713,7 @@ const Header = () => {
             <AiFillCaretRight className="" size={15} />
           )}
                   </li>
-                  <li onMouseEnter={handlePF} className="flex items-center justify-between p-[6px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
+                  <li onMouseEnter={handlePF} className="flex items-center justify-between p-[7px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
                     <p className="text-[#362D2D]  ">Explore our <b>product finders</b></p>
                     {pf ? (
             <AiFillCaretLeft className="" size={15} />
@@ -500,7 +721,7 @@ const Header = () => {
             <AiFillCaretRight className="" size={15} />
           )}
                   </li>
-                  <li onMouseEnter={handleLiv} className="flex items-center justify-between p-[6px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
+                  <li onMouseEnter={handleGEX} className="flex items-center justify-between p-[7px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
                     <p className="text-[#362D2D]  ">Gear Exchange</p>
                   </li>
                 </ul>
@@ -600,7 +821,7 @@ const Header = () => {
                       </div>
              
                       {/*ElECTRIC GUITAR SECTION*/}
-                      <ul className={ad?"flex-col border-l-[.1px] h-[529px]  w-56 items-center justify-center "
+                      <ul className={ad?"flex-col border-l-[.1px] h-[532px]  w-56 items-center justify-center "
                 :"hidden"}>
 <li className="flex items-center justify-center  h-[529px] p-[22px] ">
 <img className="" src={bf} alt="Black Friday"></img>
@@ -886,7 +1107,7 @@ const Header = () => {
                       </div>
              
                       {/*Recording SECTION*/}
-                      <ul className={ad?"flex-col border-l-[.1px] h-[529px]  w-56 items-center justify-center "
+                      <ul className={ad?"flex-col border-l-[.1px] h-[532px]   w-56 items-center justify-center "
                 :"hidden"}>
 <li className="flex items-center justify-center  h-[529px] p-[22px] ">
 <img className="" src={bf} alt="Black Friday"></img>
@@ -1140,7 +1361,7 @@ const Header = () => {
                       </div>
              
                       {/*Microphones SECTION*/}
-                      <ul className={ad?"flex-col border-l-[.1px] h-[529px]  w-56 items-center justify-center "
+                      <ul className={ad?"flex-col border-l-[.1px] h-[532px]   w-56 items-center justify-center "
                 :"hidden"}>
 <li className="flex items-center justify-center  h-[529px] p-[22px] ">
 <img className="" src={bf} alt="Black Friday"></img>
@@ -1426,7 +1647,7 @@ const Header = () => {
                       </div>
              
                       {/*Recording SECTION*/}
-                      <ul className={ad?"flex-col border-l-[.1px] h-[529px]  w-56 items-center justify-center "
+                      <ul className={ad?"flex-col border-l-[.1px] h-[532px]   w-56 items-center justify-center "
                 :"hidden"}>
 <li className="flex items-center justify-center  h-[529px] p-[22px] ">
 <img className="" src={bf} alt="Black Friday"></img>
@@ -1721,7 +1942,7 @@ const Header = () => {
                       </div>
              
                       {/*ElECTRIC GUITAR SECTION*/}
-                      <ul className={ad?"flex-col border-l-[.1px] h-[529px]  w-56 items-center justify-center "
+                      <ul className={ad?"flex-col border-l-[.1px] h-[532px]   w-56 items-center justify-center "
                 :"hidden"}>
 <li className="flex items-center justify-center  h-[529px] p-[22px] ">
 <img className="" src={bf} alt="Black Friday"></img>
@@ -2027,7 +2248,7 @@ const Header = () => {
                       </div>
              
                       {/*ElECTRIC GUITAR SECTION*/}
-                      <ul className={ad?"flex-col border-l-[.1px] h-[529px]  w-56 items-center justify-center "
+                      <ul className={ad?"flex-col border-l-[.1px] h-[532px]   w-56 items-center justify-center "
                 :"hidden"}>
 <li className="flex items-center justify-center  h-[529px] p-[22px] ">
 <img className="" src={bf} alt="Black Friday"></img>
@@ -2296,7 +2517,7 @@ const Header = () => {
                       </div>
              
                       {/*ElECTRIC GUITAR SECTION*/}
-                      <ul className={ad?"flex-col border-l-[.1px] h-[529px]  w-56 items-center justify-center "
+                      <ul className={ad?"flex-col border-l-[.1px] h-[532px]   w-56 items-center justify-center "
                 :"hidden"}>
 <li className="flex items-center justify-center  h-[529px] p-[22px] ">
 <img className="" src={bf} alt="Black Friday"></img>
@@ -2565,7 +2786,7 @@ const Header = () => {
                       </div>
              
                       {/*ElECTRIC GUITAR SECTION*/}
-                      <ul className={ad?"flex-col border-l-[.1px] h-[529px]  w-56 items-center justify-center "
+                      <ul className={ad?"flex-col border-l-[.1px] h-[532px]   w-56 items-center justify-center "
                 :"hidden"}>
 <li className="flex items-center justify-center  h-[529px] p-[22px] ">
 <img className="" src={bf} alt="Black Friday"></img>
@@ -2818,7 +3039,7 @@ const Header = () => {
                       </div>
              
                       {/*ElECTRIC GUITAR SECTION*/}
-                      <ul className={ad?"flex-col border-l-[.1px] h-[529px]  w-56 items-center justify-center "
+                      <ul className={ad?"flex-col border-l-[.1px] h-[532px]   w-56 items-center justify-center "
                 :"hidden"}>
 <li className="flex items-center justify-center  h-[529px] p-[22px] ">
 <img className="" src={bf} alt="Black Friday"></img>
@@ -3130,7 +3351,7 @@ const Header = () => {
                 
                       </div>
              
-                      <ul className={ad?"flex-col border-l-[.1px] h-[529px]  w-56 items-center justify-center "
+                      <ul className={ad?"flex-col border-l-[.1px] h-[532px]   w-56 items-center justify-center "
                 :"hidden"}>
 <li className="flex items-center justify-center  h-[529px] p-[22px] ">
 <img className="" src={bf} alt="Black Friday"></img>
@@ -3387,7 +3608,7 @@ const Header = () => {
                 
                       </div>
              
-                      <ul className={ad?"flex-col border-l-[.1px] h-[529px]  w-56 items-center justify-center "
+                      <ul className={ad?"flex-col border-l-[.1px] h-[532px]   w-56 items-center justify-center "
                 :"hidden"}>
 <li className="flex items-center justify-center  h-[529px] p-[22px] ">
 
@@ -3542,7 +3763,7 @@ const Header = () => {
                 
                       </div>
              
-                      <ul className={ad?"flex-col border-l-[.1px] h-[529px]  w-56 items-center justify-center "
+                      <ul className={ad?"flex-col border-l-[.1px] h-[532px]  w-56 items-center justify-center "
                 :"hidden"}>
 <li className="flex items-center justify-center  h-[529px] p-[22px] ">
 <img className="" src={bf} alt="Black Friday"></img>
@@ -3863,59 +4084,12 @@ const Header = () => {
 
                     
                 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-{/*End of cat Section*/}
               </div>
         </div>
         
          </div>
          </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-         <div className=" justify-center items-center py-3">
+         <div className=" justify-center items-center py-3 ">
           {cat ? (
             <AiFillCaretUp className="" size={15} />
           ) : (
@@ -3923,19 +4097,168 @@ const Header = () => {
           )}
          </div>
          </div>
-        <div className='flex w-full justify-center'><a className='h-full p-2 '>What's New</a> 
-        
+
+{/*End of cat Section*/}
+
+
+
+   <div className='flex w-full justify-center hover:bg-[#EFEFEF]   text-[#362D2D] hover:text-[#0072BA] cursor-pointer'><a className='h-full p-2 '>What's New</a> </div>
+       
+{/*Deals Section*/}
+        <div onMouseEnter={handleDeal} onMouseLeave={handleDeal2} className='flex w-full justify-center hover:bg-[#EFEFEF]   text-[#362D2D] hover:text-[#0072BA] cursor-pointer'><a className='h-full p-2 '>Deals</a>
+        <div className="flex-col items-center  ">
+
+        <div
+        className={
+              deal
+                ? "w-0 h-0 flex cursor-pointer top-0 w-[60%] h-full  ease-in-out duration-0"
+                : "ease-in-out duration-0 fixed left-[-100%]"
+            }
+          >
+            <div className=" absolute block my-10 -mx-[127px] w-60 border-C7C5C1 border-[.1px] bg-white items-center justify-center text-[#362D2D]">
+            <div className="flex  h-12 justify-center items-center hover:bg-[#EFEFEF] border-b-[.7px] border-b-C7C5C1">
+            <h1 className=" text-2xl text-[#362D2D]"><b>DEAL</b>ZONE</h1>
+            </div>
+              <div className="flex">
+
+        <div className="flex-col w-full">
+                <ul className="">
+                  <li onMouseEnter={handleOne} className="flex p-2 justify-between  border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
+                    <p className=" text-[#362D2D]  ">Shop By Category</p>
+                
+
+<div   className={one?"-my-[1px]  w-0 h-0 flex cursor-pointer top-0   ease-in-out duration-0"
+                : "ease-in-out duration-0 fixed left-[-100%]"} >
+                      <div onMouseLeave={handleOne2}  className="flex-col mx-[63px] -my-[56px] h-fit border-C7C5C1 border-[.1px]">
+                    
+                      <ul  className="flex-col  w-[237px] ">
+                      <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] border-b-[.7px] border-b-C7C5C1">
+                    <p className="">Guitar Deals</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] border-b-[.7px] border-b-C7C5C1">
+                    <p className=" ">Studio & Recording Deals</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] border-b-[.7px] border-b-C7C5C1">
+                    <p className="">Live Sound Deals</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] border-b-[.7px] border-b-C7C5C1">
+                    <p className="   ">Band & Orchestra Deals</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] border-b-[.7px] border-b-C7C5C1">
+                    <p className=" ">Drums & Percussion Deals</p>
+                  </li> 
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] border-b-[.7px] border-b-C7C5C1">
+                    <p className=" ">Software &Plugins Deals</p>
+                  </li> 
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] border-b-[.7px] border-b-C7C5C1">
+                    <p className=" ">Accessories Deals</p>
+                  </li> 
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] border-b-[.7px] border-b-C7C5C1">
+                    <p className=" ">Bass Deals</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] border-b-[.7px] border-b-C7C5C1">
+                    <p className=" ">Keyboards & Synthesizer Deals</p>
+                  </li>
+                  <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] ">
+                    <p className=" ">DJ Equipment Deals</p>
+                  </li>
+
+                </ul>
+                <div onMouseEnter={handleOne2} className=" h-full w-10">
+                  </div>
+                            </div>
+                            
+                  
+                      </div>
+                    
+                      {one ? (
+            <AiFillCaretRight className="" size={15} />
+          ) : (
+            <AiFillCaretLeft className="" size={15} />
+          )}
+
+                  </li>
+                  <li className="p-2  border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
+                    <p className="text-[#362D2D]  ">Demos</p>
+                  </li>
+                  <li className="p-2  border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
+                    <p className="text-[#362D2D] ">Rebates & Promos</p>
+                  </li>
+                  <li className="p-2  border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
+                    <p className="text-[#362D2D]  ">Price Drops</p>
+                  </li>
+                  <li className="p-2  border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
+                    <p className=" text-[#362D2D]  ">Bundles</p>
+                  </li>
+                  <li className="p-2  border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
+                    <p className="text-[#362D2D]  ">Bonus Back</p>
+                  </li>
+                  <li className="p-2  border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
+                    <p className="text-[#362D2D] ">Used</p>
+                  </li>
+                  <li className="p-2   hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
+                    <p className="text-[#362D2D]  ">B-Stcok</p>
+                  </li>
+                </ul>
+              </div>
+              </div>
+              </div>
+              </div>
+              </div>
+              
+              <div className=" justify-center items-center py-3 ">
+          {deal ? (
+            <AiFillCaretUp className="" size={15} />
+          ) : (
+            <AiFillCaretDown className="" size={15} />
+          )}
+         </div>
+  
         </div>
 
+        {/*Used Gear Section*/}
+        <div onMouseEnter={handleUG} onMouseLeave={handleUG2}  className='flex w-full justify-center hover:bg-[#EFEFEF]   text-[#362D2D] hover:text-[#0072BA] cursor-pointer'><a className='h-full p-2 '>Used Gear</a>
+        <div className="flex-col items-center  ">
+
+<div
+className={
+      ug
+        ? "w-0 h-0 flex cursor-pointer top-0 w-[60%] h-full border-r border-r-gray-900  ease-in-out duration-0"
+        : "ease-in-out duration-0 fixed left-[-100%]"
+    }
+  >
+    <div className=" absolute block my-10 -mx-[144px] w-60 border-C7C5C1 border-[.1px] bg-white ">
+      <div className="flex  py-4 border-b-[.7px] border-b-C7C5C1  ">
 
 
+<div className="flex-col  py-2">
+        <ul className="">
+          <li className="p-2 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
+            <p className=" text-[#362D2D]  ">Toll free:(800)333-8111</p>
+          </li>
+          <li className="p-2 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
+            <p className="text-[#362D2D]  ">Español:(800)333-8119</p>
+          </li>
+          <li className="p-2 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
+            <p className="text-[#362D2D] ">Local:(211)777-3111</p>
+          </li>
+          <li className="p-2 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
+            <p className="text-[#362D2D]  ">Fax:(800)999-8111</p>
+          </li>
+        </ul>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
 
-        <div className='flex w-full justify-center'><a className='h-full p-2 '>Deals</a></div>
-        <div className='flex w-full justify-center'><a className='h-full p-2 '>Used Gear</a></div>
-        <div className='flex w-full justify-center'><a className='h-full p-2 '>Rentals</a></div>
-        <div className='flex w-full justify-center'><a className='h-full p-2 '>Articles & Videos</a></div>
-        <div className='flex w-full justify-center'><a className='h-full p-2 '> Giveaway</a></div>
-        <div className='flex w-full justify-center'><a className='h-full p-2 '>Sourwater Card</a></div>
+
+</div>
+
+        <div className='flex w-full justify-center hover:bg-[#EFEFEF]   text-[#362D2D] hover:text-[#0072BA] cursor-pointer'><a className='h-full p-2 '>Rentals</a></div>
+        <div className='flex w-full justify-center hover:bg-[#EFEFEF]   text-[#362D2D] hover:text-[#0072BA] cursor-pointer'><a className='h-full p-2 '>Articles & Videos</a></div>
+        <div className='flex w-full justify-center hover:bg-[#EFEFEF]   text-[#362D2D] hover:text-[#0072BA] cursor-pointer'><a className='h-full p-2 '> Giveaway</a></div>
+        <div className='flex w-full justify-center hover:bg-[#EFEFEF]   text-[#362D2D] hover:text-[#0072BA] cursor-pointer'><a className='h-full p-2 '>Sourwater Card</a></div>
 
 
 

@@ -103,11 +103,11 @@ const Navbar = () => {
           <div
             className={
               not
-                ? "h-0 w-0 -mx-5 left-0 top-0 w-[60%] h-full  ease-in-out duration-0"
+                ? "h-0 w-0 -mx-5 left-0 top-0 w-[60%] h-full  ease-in-out duration-0 "
                 : "ease-in-out duration-0 fixed left-[-100%]"
             }
           >
-            <div className="flex my-6 border-C7C5C1 border-[.5px] absolute  ">
+            <div className="flex my-6 border-C7C5C1 border-[.5px] absolute bg-white  ">
               <div className="flex-col ">
                 <div
                   className={
@@ -277,7 +277,7 @@ const Navbar = () => {
                 : "ease-in-out duration-0 fixed left-[-100%]"
             }
           >
-            <div className=" absolute block my-5 -mx-2 w-60 border-C7C5C1 border-[.1px] ">
+            <div className=" absolute block my-5 -mx-2 w-60 border-C7C5C1 border-[.1px] bg-white ">
               <div className="flex  py-4 border-b-[.7px] border-b-C7C5C1  ">
                 <div className="flex justify-start items-start mx-2  ">
                   <img
@@ -398,7 +398,7 @@ const Navbar = () => {
           )}
         </div>
       </div>
-
+      {/*Account Section */}
       <div
         onMouseEnter={handleAcc}
         onMouseLeave={handleAcc2}
@@ -414,7 +414,7 @@ const Navbar = () => {
                 : "ease-in-out duration-0 fixed left-[-100%]"
             }
           >
-            <div className="block absolute  my-7  -mx-[138.9px]  w-60 border-C7C5C1 border-[.1px] ">
+            <div className="block absolute  my-7  -mx-[138.9px]  w-60 border-C7C5C1 border-[.1px] bg-white">
               <div className=" border-b border-b-C7C5C1 ">
                 <div className=" p-4  flex justify-center items-center w-full ">
                   <ul className="">
@@ -463,7 +463,7 @@ const Navbar = () => {
           <AiFillCaretDown className="mx-1" size={20} />
         )}
       </div>
-
+{/*Shopping Cart Section*/}  
       <div
         onMouseEnter={handleCrt}
         onMouseLeave={handleCrt2}
@@ -480,7 +480,7 @@ const Navbar = () => {
               : "ease-in-out duration-0 fixed left-[-100%]"
           }
         >
-          <div className="block absolute my-2 -mx-[168px]  w-60 border-C7C5C1 border-[.1px] ">
+          <div className="block absolute my-2 -mx-[168px]  w-60 border-C7C5C1 border-[.1px] bg-white ">
             <div className=" border-b border-b-C7C5C1  ">
               <div className="flex-col  py-2">
                 <ul className="flex  justify-center items-center">
