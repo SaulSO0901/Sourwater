@@ -108,7 +108,6 @@ const Header = () => {
       setThr(false);   
       setFour(false);      
       setAd(true);   
-
     };
     
    
@@ -133,10 +132,6 @@ const Header = () => {
     setTwo(false); 
     setThr(false);
     setFour(false);
-
-  
-
-
   };
 
   const handleCat2 = () => {
@@ -583,7 +578,7 @@ const Header = () => {
         <div  onMouseEnter={handleCat}  onMouseLeave={handleCat2} className='flex w-full justify-center  hover:bg-[#EFEFEF]  text-[#362D2D] hover:text-[#0072BA]  cursor-pointer  '><a className='h-full p-2  text-[#362D2D] hover:text-[#0072BA] '>Shop By Category</a>
        <div className="flex" >
         
-        <div
+        <div onMouseLeave={handleGtr2}
             className={
               cat
                 ? "w-0 h-0 flex cursor-pointer top-0  h-full   ease-in-out duration-0 " 
@@ -741,7 +736,7 @@ const Header = () => {
 
 
 
-              <div onMouseLeave={handleGtr2} 
+              <div onMouseLeave={handleGtr2}  
               className={gtr?"w-0  flex -my-[2px] cursor-pointer top-0  h-[583px] ease-in-out duration-0"
                 : "ease-in-out duration-0 fixed left-[-100%]"} >
                       <div onMouseEnter={handleAd} className="flex-col   border-C7C5C1 border-[.1px] ">
@@ -4116,7 +4111,7 @@ const Header = () => {
             }
           >
             <div className=" absolute block my-10 -mx-[127px] w-60 border-C7C5C1 border-[.1px] bg-white items-center justify-center text-[#362D2D]">
-            <div className="flex  h-12 justify-center items-center hover:bg-[#EFEFEF] border-b-[.7px] border-b-C7C5C1">
+            <div onMouseEnter={handleOne2} className="flex  h-12 justify-center items-center hover:bg-[#EFEFEF] border-b-[.7px] border-b-C7C5C1">
             <h1 className=" text-2xl text-[#362D2D]"><b>DEAL</b>ZONE</h1>
             </div>
               <div className="flex">
@@ -4178,7 +4173,7 @@ const Header = () => {
           )}
 
                   </li>
-                  <li className="p-2  border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
+                  <li  onMouseEnter={handleOne2} className="p-2  border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
                     <p className="text-[#362D2D]  ">Demos</p>
                   </li>
                   <li className="p-2  border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
@@ -4223,27 +4218,104 @@ const Header = () => {
 <div
 className={
       ug
-        ? "w-0 h-0 flex cursor-pointer top-0 w-[60%] h-full border-r border-r-gray-900  ease-in-out duration-0"
+        ? "w-0 h-0 flex cursor-pointer top-0 w-[60%] h-full  ease-in-out duration-0"
         : "ease-in-out duration-0 fixed left-[-100%]"
     }
   >
-    <div className=" absolute block my-10 -mx-[144px] w-60 border-C7C5C1 border-[.1px] bg-white ">
-      <div className="flex  py-4 border-b-[.7px] border-b-C7C5C1  ">
+    <div className=" absolute block my-10 -mx-[136px] w-60 border-C7C5C1 border-[.1px] bg-white items-center justify-center text-[#362D2D]">
+    <div onMouseEnter={handleOne2} className="flex  h-12 justify-center items-center hover:bg-[#EFEFEF] border-b-[.7px] border-b-C7C5C1">
+    <h1 className=" text-2xl text-[#362D2D]"><b>GEAR</b>EXCHANGE</h1>
+    </div>
+      <div className="flex">
 
-
-<div className="flex-col  py-2">
+<div className="flex-col w-full">
         <ul className="">
-          <li className="p-2 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
-            <p className=" text-[#362D2D]  ">Toll free:(800)333-8111</p>
+          <li onMouseEnter={handleOne} className="flex p-2 justify-between  border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
+        
+            <p className=" text-[#362D2D]  ">Shop By Category</p>
+<div   className={one?"-my-[1px]  w-0 h-0 flex cursor-pointer top-0   ease-in-out duration-0"
+        : "ease-in-out duration-0 fixed left-[-100%]"} >
+              <div onMouseLeave={handleOne2}  className="flex-col mx-[63px] -my-[56px] h-fit border-C7C5C1 border-[.1px]">
+            
+              <ul  className="flex-col  w-[237px] ">
+              <li  className="p-2  border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
+            <p className="text-[#362D2D]  ">Used Guitars</p>
           </li>
-          <li className="p-2 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
-            <p className="text-[#362D2D]  ">Español:(800)333-8119</p>
+          <li className="p-2  border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
+            <p className="text-[#362D2D] ">Used Effects & Pedals</p>
           </li>
-          <li className="p-2 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
-            <p className="text-[#362D2D] ">Local:(211)777-3111</p>
+          <li className="p-2  border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
+            <p className="text-[#362D2D]  ">Used Amplifiers</p>
           </li>
-          <li className="p-2 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
-            <p className="text-[#362D2D]  ">Fax:(800)999-8111</p>
+          <li className="p-2  border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
+            <p className=" text-[#362D2D]  ">Used Basses</p>
+          </li>
+          <li className="p-2  border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
+            <p className="text-[#362D2D]  ">Used Keyboards & Synthesizers</p>
+          </li>
+          <li className="p-2  border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
+            <p className="text-[#362D2D] ">Used Microphones & Wireless</p>
+          </li>
+          <li className="p-2   hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
+            <p className="text-[#362D2D]  ">Used Live Sound & Lighting</p>
+          </li>
+          <li className="p-2   hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
+            <p className="text-[#362D2D]  ">Used Studio & Recording</p>
+          </li>
+          <li className="p-2   hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
+            <p className="text-[#362D2D]  ">Used Drum & Percussion</p>
+          </li>
+          <li className="p-2   hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
+            <p className="text-[#362D2D]  ">Used Band & Orchestra</p>
+          </li>
+          <li className="p-2   hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
+            <p className="text-[#362D2D]  ">Used DJ / Electronic</p>
+          </li>
+          <li className="p-2   hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
+            <p className="text-[#362D2D]  ">Used Folk Instruments</p>
+          </li>
+        </ul>
+        <div onMouseEnter={handleOne2} className=" h-full w-10">
+         
+
+         
+          </div>
+                    </div>
+                    
+          
+              </div>
+            
+              {one ? (
+    <AiFillCaretRight className="" size={15} />
+  ) : (
+    <AiFillCaretLeft className="" size={15} />
+  )}
+
+          </li>
+         
+<li onMouseEnter={handleOne2} className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] border-b-[.7px] border-b-C7C5C1">
+            <p className="">What is Gear Exchange?</p>
+          </li>
+          <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] border-b-[.7px] border-b-C7C5C1">
+            <p className=" ">How it Works</p>
+          </li>
+          <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] border-b-[.7px] border-b-C7C5C1">
+            <p className="">Seller Fees</p>
+          </li>
+          <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] border-b-[.7px] border-b-C7C5C1">
+            <p className="   ">Create a Listing</p>
+          </li>
+          <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] border-b-[.7px] border-b-C7C5C1">
+            <p className=" ">My Messages</p>
+          </li> 
+          <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] border-b-[.7px] border-b-C7C5C1">
+            <p className=" ">My Purchases</p>
+          </li> 
+          <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] border-b-[.7px] border-b-C7C5C1">
+            <p className=" ">Help Center</p>
+          </li> 
+          <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] border-b-[.7px] border-b-C7C5C1">
+            <p className=" ">Bass Deals</p>
           </li>
         </ul>
       </div>
@@ -4251,9 +4323,17 @@ className={
       </div>
       </div>
       </div>
-
+      
+      <div className=" justify-center items-center py-3 ">
+  {ug ? (
+    <AiFillCaretUp className="" size={15} />
+  ) : (
+    <AiFillCaretDown className="" size={15} />
+  )}
+ </div>
 
 </div>
+
 
         <div className='flex w-full justify-center hover:bg-[#EFEFEF]   text-[#362D2D] hover:text-[#0072BA] cursor-pointer'><a className='h-full p-2 '>Rentals</a></div>
         <div className='flex w-full justify-center hover:bg-[#EFEFEF]   text-[#362D2D] hover:text-[#0072BA] cursor-pointer'><a className='h-full p-2 '>Articles & Videos</a></div>
