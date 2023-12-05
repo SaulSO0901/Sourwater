@@ -574,8 +574,8 @@ const Header = () => {
   };
 
   return (
-    <div className='flex h-10 my-2 border-b-[.7px] border-b-C7C5C px-10 justify-between   '>
-        <div  onMouseEnter={handleCat}  onMouseLeave={handleCat2} className='flex w-full justify-center  hover:bg-[#EFEFEF]  text-[#362D2D] hover:text-[#0072BA]  cursor-pointer  '><a className='h-full p-2  text-[#362D2D] hover:text-[#0072BA] '>Shop By Category</a>
+    <div className='flex h-10 my-2 border-b-[.7px] border-b-C7C5C px-10 md:px-4 justify-center items-center h-14 xl:h-full  justify-center   '>
+        <div  onMouseEnter={handleCat}  onMouseLeave={handleCat2} className='flex max-w-[223px]  md:min-w-[181px]  lg:min-w-[181px]  w-full h-[40px]  justify-center items-center hover:bg-[#EFEFEF]  text-[#362D2D] hover:text-[#0072BA] cursor-pointer'><a className='text-[#362D2D] hover:text-[#0072BA] '>Shop By Category</a>
        <div className="flex" >
         
         <div onMouseLeave={handleGtr2}
@@ -4084,7 +4084,7 @@ const Header = () => {
         
          </div>
          </div>
-         <div className=" justify-center items-center py-3 ">
+         <div className="">
           {cat ? (
             <AiFillCaretUp className="" size={15} />
           ) : (
@@ -4097,10 +4097,10 @@ const Header = () => {
 
 
 
-   <div className='flex w-full justify-center hover:bg-[#EFEFEF]   text-[#362D2D] hover:text-[#0072BA] cursor-pointer'><a className='h-full p-2 '>What's New</a> </div>
+   <div className='flex max-w-[185px] lg:min-w-[121px]   md:max-w-[122px]  w-full h-[40px]   items-center justify-center hover:bg-[#EFEFEF]   text-[#362D2D] hover:text-[#0072BA] cursor-pointer'><a className=''>What's New</a> </div>
        
 {/*Deals Section*/}
-        <div onMouseEnter={handleDeal} onMouseLeave={handleDeal2} className='flex w-full justify-center hover:bg-[#EFEFEF]   text-[#362D2D] hover:text-[#0072BA] cursor-pointer'><a className='h-full p-2 '>Deals</a>
+        <div onMouseEnter={handleDeal} onMouseLeave={handleDeal2} className='flex max-w-[133px] lg:min-w-[89px]   md:max-w-[88px] w-full h-[40px]  justify-center items-center hover:bg-[#EFEFEF]   text-[#362D2D] hover:text-[#0072BA] cursor-pointer'><a className=''>Deals</a>
         <div className="flex-col items-center  ">
 
         <div
@@ -4201,7 +4201,7 @@ const Header = () => {
               </div>
               </div>
               
-              <div className=" justify-center items-center py-3 ">
+              <div className="">
           {deal ? (
             <AiFillCaretUp className="" size={15} />
           ) : (
@@ -4212,7 +4212,7 @@ const Header = () => {
         </div>
 
         {/*Used Gear Section*/}
-        <div onMouseEnter={handleUG} onMouseLeave={handleUG2}  className='flex w-full justify-center hover:bg-[#EFEFEF]   text-[#362D2D] hover:text-[#0072BA] cursor-pointer'><a className='h-full p-2 '>Used Gear</a>
+        <div onMouseEnter={handleUG} onMouseLeave={handleUG2}  className='flex max-w-[189px] lg:min-w-[126px]   md:min-w-[126px] w-full h-[40px]    justify-center items-center hover:bg-[#EFEFEF]   text-[#362D2D] hover:text-[#0072BA] cursor-pointer'><a className=''>Used Gear</a>
         <div className="flex-col items-center  ">
 
 <div
@@ -4324,7 +4324,7 @@ className={
       </div>
       </div>
       
-      <div className=" justify-center items-center py-3 ">
+      <div className=" ">
   {ug ? (
     <AiFillCaretUp className="" size={15} />
   ) : (
@@ -4335,10 +4335,10 @@ className={
 </div>
 
 
-        <div className='flex w-full justify-center hover:bg-[#EFEFEF]   text-[#362D2D] hover:text-[#0072BA] cursor-pointer'><a className='h-full p-2 '>Rentals</a></div>
-        <div className='flex w-full justify-center hover:bg-[#EFEFEF]   text-[#362D2D] hover:text-[#0072BA] cursor-pointer'><a className='h-full p-2 '>Articles & Videos</a></div>
-        <div className='flex w-full justify-center hover:bg-[#EFEFEF]   text-[#362D2D] hover:text-[#0072BA] cursor-pointer'><a className='h-full p-2 '> Giveaway</a></div>
-        <div className='flex w-full justify-center hover:bg-[#EFEFEF]   text-[#362D2D] hover:text-[#0072BA] cursor-pointer'><a className='h-full p-2 '>Sourwater Card</a></div>
+        <div className='flex  h-[40px] max-w-[132px]  lg:max-w-[131px]  lg:min-w-[88px]  md:min-w-[89px]  justify-center items-center hover:bg-[#EFEFEF]  text-[#362D2D] hover:text-[#0072BA] cursor-pointer'><a className=''>Rentals</a></div>
+        <div className='flex  h-[40px] max-w-[199px] min-w-[156px]   w-full  justify-center items-center hover:bg-[#EFEFEF]  text-[#362D2D] hover:text-[#0072BA] cursor-pointer'><a className=''>Articles & Videos</a></div>
+        <div className='flex  h-[40px] max-w-[149px]   w-full  justify-center items-center hover:bg-[#EFEFEF]  text-[#362D2D] hover:text-[#0072BA] cursor-pointer hidden lg:flex'><a className=' '> Giveaway</a></div>
+        <div className='flex  h-[40px] max-w-[185px]   w-full  justify-center items-center hover:bg-[#EFEFEF]  text-[#362D2D] hover:text-[#0072BA] cursor-pointer hidden lg:flex'><a className=' '>Sourwater Card</a></div>
 
 
 

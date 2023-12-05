@@ -69,7 +69,7 @@ const Navbar = () => {
     setSupp(!supp);
   };
   return (
-    <div className="flex  items-center items-stretch h-[80px] h-max-w-full hidden md:flex  px-10 -my-2 mx-auto  text-[#000] border-b-[.7px] border-b-C7C5C">
+    <div className="flex  items-center  justify-center max-h-[80px] h-max-w-full hidden md:flex  px-10 -my-2 mx-auto   text-[#000] border-b-[.7px] border-b-C7C5C">
       <div className="flex items-center">
         <img
           src={logo}
