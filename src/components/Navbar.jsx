@@ -69,8 +69,8 @@ const Navbar = () => {
     setSupp(!supp);
   };
   return (
-    <div className="flex  items-center  justify-center max-h-[80px] h-max-w-full hidden md:flex  px-10 -my-2 mx-auto   text-[#000] border-b-[.7px] border-b-C7C5C">
-      <div className="flex items-center">
+    <div className="flex  items-center  justify-center h-[80px] w-full hidden md:flex  px-10 -my-2 mx-auto   text-[#000] border-b-[.7px] border-b-C7C5C">
+      <div className="flex items-center h-full">
         <img
           src={logo}
           className="w-full min-w-[160px] md:max-w-[160px] xl:max-w-[190px]  h-11 "
@@ -78,7 +78,7 @@ const Navbar = () => {
         />
       </div>
 
-      <div className="flex w-full max-w-[738px] min-w-[138px] items-center items-stretch h-10 mx-2 my-6 border-C7C5C1 border-[.1px] rounded-sm ring-[#C7C5C1] ring-1 hover:ring-4 hover:ring-gray-800  ">
+      <div className="flex w-full  max-w-[738px] min-w-[138px] items-center items-stretch h-10 mx-2 my-6 border-C7C5C1 border-[.1px] rounded-sm ring-[#C7C5C1] ring-1 hover:ring-4 hover:ring-gray-800  ">
         <button className="h-10 rounded-sm bg-[#EFEFEF] p-4 py-2">
           <AiOutlineSearch size={20}></AiOutlineSearch>
         </button>
@@ -90,7 +90,7 @@ const Navbar = () => {
 
       {/*Notif section*/}
       <div
-        className=" flex  items-center p-5 cursor-pointer hover:bg-[#EFEFEF]  "
+        className=" flex h-full   items-center p-5 cursor-pointer hover:bg-[#EFEFEF]  "
         onMouseEnter={handleNot}
         onMouseLeave={handleNot2}
       >
@@ -247,7 +247,7 @@ const Navbar = () => {
       </div>
       {/*Notif section end*/}
 
-      <div className="flex-col items-center p-4 hover:bg-[#EFEFEF] cursor-pointer hidden  lg:flex">
+      <div className="flex-col h-full items-center p-4 hover:bg-[#EFEFEF] cursor-pointer hidden  lg:flex">
         <ul className="  ">
           <li className="  hover:border-b-[#0072BA] hover:border-b-[.1px] h-10 w-40 ">
             <p className="text-[#0072BA] text-2xl">(800)224-4701</p>
@@ -265,7 +265,7 @@ const Navbar = () => {
       <div
         onMouseEnter={handleCon}
         onMouseLeave={handleCon2}
-        className="flex min-w-[144px] w-36  p-2 py-6  items-center   hover:bg-[#EFEFEF]  cursor-pointer  "
+        className="flex min-w-[144px] w-36 h-full  p-2 py-6  items-center   hover:bg-[#EFEFEF]  cursor-pointer  "
       >
         <div className="flex-col items-center  ">
           <p className="text-[#362D2D] text-medium font-medium">Contact Us </p>{" "}
@@ -402,7 +402,7 @@ const Navbar = () => {
       <div
         onMouseEnter={handleAcc}
         onMouseLeave={handleAcc2}
-        className="flex items-center p-2 hover:bg-[#EFEFEF] cursor-pointer  "
+        className="flex items-center h-full p-2 hover:bg-[#EFEFEF] cursor-pointer  "
       >
         <div className=" items-center">
           {" "}
