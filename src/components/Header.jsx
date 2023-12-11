@@ -581,12 +581,12 @@ const Header = () => {
         <div onMouseLeave={handleGtr2}
             className={
               cat
-                ? "w-0 h-0 flex cursor-pointer top-0  h-full   ease-in-out duration-0 " 
+                ? "w-0 h-0 flex  cursor-pointer top-0  h-full   ease-in-out duration-0 " 
                 : "ease-in-out duration-0 fixed left-[-100%]"
             } >
-         <div className="flex absolute xl:-mx-[168px] lg:-mx-[148px] xl:my-5 lg:my-[27px] md:-mx-[148px] md:my-[27px]  border-b-[.1px] border-C7C5C1 border-[.1px] ">
-              <div className="flex w-72 h-[579px]    ">
- <div className="flex-col w-full ">
+         <div className="flex absolute xl:-mx-[168px] lg:-mx-[148px] xl:my-5 lg:my-[27px] md:-mx-[148px] md:my-[27px] bg-white   border-b-[.1px] border-C7C5C1 border-[.1px] ">
+              <div className="flex w-72 h-[579px]     ">
+ <div className="flex-col w-full  ">
                 <ul className="text-[#362D2D]">
                  
                   <li onMouseEnter={handleGtr}   className="flex items-center justify-between p-[6px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
