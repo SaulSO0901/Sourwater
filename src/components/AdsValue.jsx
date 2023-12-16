@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import value1 from '../assets/value1.PNG'
 import value2 from '../assets/value2.PNG'
 import value3 from '../assets/value3.PNG'
+import value4 from '../assets/value4.JPG'
 import value5 from '../assets/value5.PNG'
 import value6 from '../assets/value6.PNG'
 
@@ -63,109 +64,147 @@ const AdsValue = () => {
     
   };
   return (
-    <div  onMouseEnter={handleAdex} className='flex-col max-w-[1400px] w-full  max-[425px]:my-[530px] max-[375px]:my-[400px] max-[325px]:my-[300px] mx-auto justify-center items-center text-center py-4 '>
+    <div  onMouseEnter={handleAdex} className='flex-col max-w-[1400px] w-full  max-[425px]:my-[530px] max-[375px]:my-[400px] max-[325px]:my-[300px] mx-auto justify-center items-center text-center py-4  '>
      
       <h2 onMouseEnter={handleAdex} className=" text-5xl max-[425px]:text-4xl font-medium my-10 mx-auto max-[375px]:mx-[10px] text-[#362D2D]">Get More at Sourwater</h2>
     
 
-      <div onMouseEnter={handleAdex} className='lg:flex w-full max-w-[1400px] max-h-[502px] min-h-[210px] h-fit justify-center items-center py-2 px-6 md:grid md:grid-cols-3 gap-3 max-[767px]:grid max-[767px]:grid-cols-3 gap-3'>
+      <div onMouseEnter={handleAdex} className='lg:flex w-full max-w-[1400px] max-h-[502px] min-h-[210px] h-fit justify-center items-center py-2 px-6 md:grid md:grid-cols-3 gap-3 max-[767px]:grid max-[767px]:grid-cols-3 gap-3 max-[320px]:px-0'>
         
-<a href="*" onMouseEnter={handleAd1} onMouseLeave={handleAdex} className={ad1?'flex-col max-w-[219.5px] md:max-w-[240.5px]  lg:max-h-[154px]  md:max-h-[182px] min-w-[99px] w-full h-full rounded-md  lg:border-[1px] border-[#0072BA]  md:border-0 mx-1 md:my-4  lg:over:shadow-2xl lg:hover:scale-105 md:hover:scale-100 ease-in-out duration-200 ' 
-: 'flex-col  max-w[219.5px] md:max-w-[240.5px] min-w-[99px]  min-h-[154px]  md:max-h-[182px] w-full h-full rounded-md border-C7C5C1 lg:border-[.1px] md:border-0 mx-1 lg:my-0  md:my-4 ease-in-out duration-200'}>
-<div className=" justify-center items-center text-center snap-center">
-<div  className={ad1?'w-16 h-16 rounded-full   mx-auto  lg:-my-10 md:my-2 bg-white  border-[#0072BA] border-[1px]  ease-in-out duration-200 z-10' 
-:'w-16 h-16 rounded-full mx-auto  lg:-my-10 md:my-2 bg-white border-C7C5C1 border-[.1px] z-10 '}>
-<img className="w-fit h-fit rounded-full p-1" alt="value1" src={value1}></img>
+      <a href="*" onMouseEnter={handleAd1} onMouseLeave={handleAdex} className={ad1?'flex-col   max-w-[219.5px] md:max-w-[240.5px] min-w-[99px]  lg:h-[154px]  md:max-h-[182px] w-full h-full rounded-md  lg:border-[1px] border-[#0072BA]  md:border-0 mx-1 md:my-4  lg:over:shadow-2xl lg:hover:scale-105 md:hover:scale-100 ease-in-out duration-200 ' 
+: 'flex-col    max-w-[219.5px] md:max-w-[240.5px] min-w-[99px] lg:h-[154px]  md:max-h-[182px] w-full h-full rounded-md border-C7C5C1 lg:border-[.1px] md:border-0 mx-1  md:my-4 ease-in-out duration-200'}> 
 
-</div>
 
-<div  className='flex-col justify-center items-center text-center lg:my-11 md:my-6'>
-<div className='flex  w-full items-center justify-center'><p className=' text-[#0072BA] font-medium w-full'>Dedicated Sales<br className="md:hidden lg:inline "></br> Engineer</p></div>
-<div><p className=' text-xs'>Helping you buy music gear with confidence.</p></div>
-<div  className={ad1?'flex w-full h-8  justify-center text-center text-[#0072BA] ease-in-out duration-100': 'hidden ease-in-out duration-200'}><p className="w-full h-full">Learn more</p></div>
-</div>
-</div>
-</a>
-{/*///////////////////////////////////////////////////////////////////////////////////////////////////*/}
-<a href="*" onMouseEnter={handleAd2} onMouseLeave={handleAdex} className={ad2?'flex-col max-w-[219.5px] md:max-w-[240.5px]  lg:max-h-[154px]  md:max-h-[182px] min-w-[99px] w-full h-full rounded-md  lg:border-[1px] border-[#0072BA]  md:border-0 mx-1 md:my-4  lg:over:shadow-2xl lg:hover:scale-110 md:hover:scale-100 ease-in-out duration-200 ' 
-: 'flex-col  max-w[219.5px] md:max-w-[240.5px] min-w-[99px]  min-h-[154px]  md:max-h-[182px] w-full h-full rounded-md border-C7C5C1 lg:border-[.1px] md:border-0 mx-1 lg:my-0  md:my-4 ease-in-out duration-200'}>
-
-<div  className={ad2?'w-16 h-16 rounded-full   mx-auto  lg:-my-10 md:my-2 bg-white  border-[#0072BA] border-[1px]  ease-in-out duration-200 z-10' 
-:'w-16 h-16 rounded-full mx-auto  lg:-my-10 md:my-2 bg-white border-C7C5C1 border-[.1px] z-10 '}>
-<img className="w-fit h-fit rounded-full p-2" alt="value2" src={value2}></img>
-
-</div>
-
-<div  className='flex-col justify-center items-center text-center lg:my-11 md:my-6'>
-<div className='flex  w-full items-center justify-center'><p className=' text-[#0072BA] font-medium w-full'>55-point-guitar <br className="md:hidden lg:inline "></br>Inspection</p></div>
-<div><p className='px-1 text-xs'>Guitar perfection<br></br> right out of the box.</p></div>
-<div  className={ad2?'flex w-full h-8  justify-center text-center text-[#0072BA] ease-in-out duration-100': 'hidden ease-in-out duration-200'}><p className="w-full h-full">Learn more</p></div>
-</div>
-</a>
-{/*///////////////////////////////////////////////////////////////////////////////////////////////////*/}
-<a href="*" onMouseEnter={handleAd3} onMouseLeave={handleAdex} className={ad3?'flex-col max-w-[219.5px] md:max-w-[240.5px]  lg:max-h-[154px]  md:max-h-[182px] min-w-[99px] w-full h-full rounded-md  lg:border-[1px] border-[#0072BA]  md:border-0 mx-1 md:my-4  lg:over:shadow-2xl lg:hover:scale-110 md:hover:scale-100 ease-in-out duration-200 ' 
-: 'flex-col  max-w-[219.5px] md:max-w-[240.5px] min-h-[154px]  md:max-h-[182px] w-full h-full rounded-md border-C7C5C1 lg:border-[.1px] md:border-0 mx-1 lg:my-0  md:my-4 ease-in-out duration-200'}>
-
-<div  className={ad3?'w-16 h-16 rounded-full   lg:-my-10 md:my-2 bg-white  border-[#0072BA]   mx-auto border-[1px]  ease-in-out duration-200 z-10' 
-:'w-16 h-16 rounded-full mx-auto lg:-my-10 md:my-2 bg-white border-C7C5C1 border-[.1px] z-10 '}>
-<img className="w-fit h-fit rounded-full p-1" alt="value3" src={value3}></img>
-
-</div>
-
-<div  className='flex-col justify-center items-center text-center lg:my-11  md:my-6'>
-<div className='flex  w-full  items-center justify-center'><p className=' text-[#0072BA] font-medium h-full w-full'>Fast,Free Shipping<br className="md:hidden lg:inline "></br></p></div>
-<div><p className=' text-xs'>Even on the small stuff.</p></div>
-<div  className={ad3?'flex w-full h-8  justify-center text-center text-[#0072BA] ease-in-out duration-100': 'hidden ease-in-out duration-200'}><p className="w-full h-full">Learn more</p></div>
-</div>
-</a>
-{/*///////////////////////////////////////////////////////////////////////////////////////////////////*/}
-<a href="*" onMouseEnter={handleAd4} onMouseLeave={handleAdex} className={ad4?'flex-col max-w-[219.5px] md:max-w-[240.5px] items-s  lg:max-h-[154px]  md:max-h-[182px] min-w-[99px] w-full h-full rounded-md  lg:border-[1px] border-[#0072BA]  md:border-0 mx-1 md:my-4  lg:over:shadow-2xl lg:hover:scale-110 md:hover:scale-100 ease-in-out duration-200 ' 
-: 'flex-col  max-w[219.5px] md:max-w-[240.5px] min-w-[99px]  min-h-[154px]  md:max-h-[182px] w-full h-full rounded-md border-C7C5C1 lg:border-[.1px] md:border-0 mx-1 lg:my-0  md:my-4 ease-in-out duration-200'}>
-
-<div  className={ad4?'w-16 h-16 rounded-full   mx-auto  lg:-my-10 md:my-2 bg-white  border-[#0072BA] border-[1px]  ease-in-out duration-200 z-10' 
-:'w-16 h-16 rounded-full mx-auto  lg:-my-10 md:my-2 bg-white border-C7C5C1 border-[.1px] z-10 '}>
+<div  className={ad1?'w-16 h-16 rounded-full mx-auto lg:-my-11 md:my-2 bg-white  border-[#0072BA] border-[1px]  ease-in-out duration-200 z-10' 
+:'w-16 h-16 rounded-full mx-auto lg:-my-11 md:my-2 bg-white border-C7C5C1 border-[.1px] z-10 '}>
 <img className="w-fit h-fit rounded-full p-1" alt="value4" src={value1}></img>
 
+
 </div>
 
 <div  className='flex-col justify-center items-center text-center lg:my-11 md:my-6'>
-<div className='flex my-1 w-full items-center justify-center'><p className=' text-[#0072BA] font-medium w-full'>Free Sourwater <br className="md:hidden lg:inline "></br>Support</p></div>
-<div className=""><p className='px-1 text-xs'>Got a question?<br></br> We're here to help.</p></div>
-<div  className={ad4?'flex w-full h-8  justify-center text-center text-[#0072BA] ease-in-out duration-100': 'hidden ease-in-out duration-200'}><p className="w-full h-full">Learn more</p></div>
+<div className='flex w-full items-center  justify-center'><p className=' text-[#0072BA] font-medium w-full'>Dedicated Sales<br className="md:hidden lg:inline "></br> Engineer</p></div>
+<div className="-mb-4"><p className=' text-xs'>Helping you buy music gear with confidence.</p></div>
+
 </div>
+<div  className={ad1?'flex w-full h-fit  justify-center text-center text-[#0072BA] ease-in-out duration-200': 'hidden ease-in-out duration-200'}><p className="w-full h-full">Learn more</p></div>
+
+
 </a>
 {/*///////////////////////////////////////////////////////////////////////////////////////////////////*/}
-<a href="*" onMouseEnter={handleAd5} onMouseLeave={handleAdex} className={ad5?'flex-col max-w-[219.5px] md:max-w-[240.5px]  lg:max-h-[154px]  md:max-h-[182px] min-w-[99px] w-full h-full rounded-md  lg:border-[1px] border-[#0072BA]  md:border-0 mx-1 md:my-4  lg:over:shadow-2xl lg:hover:scale-110 md:hover:scale-100 ease-in-out duration-200 ' 
-: 'flex-col  max-w[219.5px] md:max-w-[240.5px] min-w-[99px]  min-h-[154px]  md:max-h-[182px] w-full h-full rounded-md border-C7C5C1 lg:border-[.1px] md:border-0 mx-1 lg:my-0  md:my-4 ease-in-out duration-200'}>
+<a href="*" onMouseEnter={handleAd2} onMouseLeave={handleAdex} className={ad2?'flex-col   max-w-[219.5px] md:max-w-[240.5px] min-w-[99px]  lg:h-[154px]  md:max-h-[182px] w-full h-full rounded-md  lg:border-[1px] border-[#0072BA]  md:border-0 mx-1 md:my-4  lg:over:shadow-2xl lg:hover:scale-105 md:hover:scale-100 ease-in-out duration-200 ' 
+: 'flex-col   max-w-[219.5px] md:max-w-[240.5px] min-w-[99px] lg:h-[154px]  md:max-h-[182px] w-full h-full rounded-md border-C7C5C1 lg:border-[.1px] md:border-0 mx-1  md:my-4 ease-in-out duration-200'}> 
 
-<div  className={ad5?'w-16 h-16 rounded-full   mx-auto  lg:-my-10 md:my-2 bg-white  border-[#0072BA] border-[1px]  ease-in-out duration-200 z-10' 
-:'w-16 h-16 rounded-full mx-auto  lg:-my-10 md:my-2 bg-white border-C7C5C1 border-[.1px] z-10 '}>
-<img className="w-fit h-fit rounded-full p-1" alt="value5" src={value5}></img>
+
+<div  className={ad2?'w-16 h-16 rounded-full mx-auto lg:-my-11 md:my-2 bg-white  border-[#0072BA] border-[1px]  ease-in-out duration-200 z-10' 
+:'w-16 h-16 rounded-full mx-auto lg:-my-11 -mb-2 md:my-2 bg-white border-C7C5C1 border-[.1px] z-10 '}>
+<img className="w-fit h-fit rounded-full p-3" alt="value2" src={value2}></img>
+
 
 </div>
 
-<div  className='flex-col justify-center items-center text-center lg:my-11 md:my-6'>
-<div className='flex my-1 w-full items-center justify-center'><p className=' text-[#0072BA] font-medium w-full'>FREE 2-year warranty<br className="md:hidden lg:inline "></br></p></div>
-<div><p className='px-1 text-xs'>Buy with confidence.</p></div>
-<div  className={ad5?'flex w-full h-8  justify-center text-center text-[#0072BA] ease-in-out duration-100': 'hidden ease-in-out duration-200'}><p className="w-full h-full">Learn more</p></div>
+<div  className='flex-col justify-center items-center text-center lg:my-[44px] md:my-5 max-[425px]:my-2'>
+<div className='flex w-full items-center  justify-center'><p className=' text-[#0072BA] font-medium w-full'>55-point-guitar<br className="md:hidden lg:inline "></br></p></div>
+<div className="mb-[52px]"><p className=' text-xs'>Guitar perfection<br></br> right out of the box.</p></div>
+
 </div>
+<div  className={ad2?'flex w-full h-fit  justify-center text-center text-[#0072BA] ease-in-out duration-200': 'hidden ease-in-out duration-200'}><p className="w-full h-full">Learn more</p></div>
+
+
 </a>
+
+
+
 {/*///////////////////////////////////////////////////////////////////////////////////////////////////*/}
-<a href="*" onMouseEnter={handleAd6} onMouseLeave={handleAdex} className={ad6?'flex-col max-w-[219.5px] md:max-w-[240.5px]  lg:max-h-[154px]  md:max-h-[182px] min-w-[99px] w-full h-full rounded-md  lg:border-[1px] border-[#0072BA]  md:border-0 mx-1 md:my-4  lg:over:shadow-2xl lg:hover:scale-110 md:hover:scale-100 ease-in-out duration-200 ' 
-: 'flex-col  max-w[219.5px] md:max-w-[240.5px] min-w-[99px]  min-h-[154px]  md:max-h-[182px] w-full h-full rounded-md border-C7C5C1 lg:border-[.1px] md:border-0 mx-1 lg:my-0  md:my-4 ease-in-out duration-200'}>
+<a href="*" onMouseEnter={handleAd3} onMouseLeave={handleAdex} className={ad3?'flex-col   max-w-[219.5px] md:max-w-[240.5px] min-w-[99px]  lg:h-[154px]  md:max-h-[182px] w-full h-full rounded-md  lg:border-[1px] border-[#0072BA]  md:border-0 mx-1 md:my-4  lg:over:shadow-2xl lg:hover:scale-105 md:hover:scale-100 ease-in-out duration-200 ' 
+: 'flex-col   max-w-[219.5px] md:max-w-[240.5px] min-w-[99px] lg:h-[154px]  md:max-h-[182px] w-full h-full rounded-md border-C7C5C1 lg:border-[.1px] md:border-0 mx-1  md:my-4 ease-in-out duration-200'}> 
 
-<div  className={ad6?'w-16 h-16 rounded-full   mx-auto  lg:-my-10 md:my-2 bg-white  border-[#0072BA] border-[1px]  ease-in-out duration-200 z-10' 
-:'w-16 h-16 rounded-full mx-auto  lg:-my-10 md:my-2 bg-white border-C7C5C1 border-[.1px] z-10 '}>
-<img className="w-fit h-fit p-2  my-2" alt="value6" src={value6}></img>
+
+<div  className={ad3?'w-16 h-16 rounded-full mx-auto lg:-my-11 md:my-2 bg-white  border-[#0072BA] border-[1px]  ease-in-out duration-200 z-10' 
+:'w-16 h-16 rounded-full mx-auto lg:-my-11 md:my-2 bg-white border-C7C5C1 border-[.1px] z-10 '}>
+<img className="w-fit h-fit rounded-full my-1 p-1" alt="value4" src={value3}></img>
+
 
 </div>
 
 <div  className='flex-col justify-center items-center text-center lg:my-11 md:my-6'>
-<div className='flex my-1 w-full items-center justify-center'><p className=' text-[#0072BA] font-medium w-full'>Easy Payments<br className="md:hidden lg:inline "></br></p></div>
-<div><p className='px-1 text-xs'>Up to 48 months.</p></div>
-<div  className={ad6?'flex w-full h-8  justify-center text-center text-[#0072BA] ease-in-out duration-100': 'hidden ease-in-out duration-200'}><p className="w-full h-full">Learn more</p></div>
+<div className='flex w-full items-center  justify-center'><p className=' text-[#0072BA] font-medium w-full'>Fast,Free Shipping<br className="md:hidden lg:inline "></br></p></div>
+<div className="mb-[67px]"><p className=' text-xs'>Even on the small stuff</p></div>
+
 </div>
+<div  className={ad3?'flex w-full h-fit  justify-center text-center text-[#0072BA] ease-in-out duration-200': 'hidden ease-in-out duration-200'}><p className="w-full h-full">Learn more</p></div>
+
+
 </a>
+
+{/*///////////////////////////////////////////////////////////////////////////////////////////////////*/}
+<a href="*" onMouseEnter={handleAd4} onMouseLeave={handleAdex} className={ad4?'flex-col   max-w-[219.5px] md:max-w-[240.5px] min-w-[99px]  lg:h-[154px]  md:max-h-[182px] w-full h-full rounded-md  lg:border-[1px] border-[#0072BA]  md:border-0 mx-1 md:my-4  lg:over:shadow-2xl lg:hover:scale-105 md:hover:scale-100 ease-in-out duration-200 ' 
+: 'flex-col    max-w-[219.5px] md:max-w-[240.5px] min-w-[99px] lg:h-[154px]  md:max-h-[182px] w-full h-full rounded-md border-C7C5C1 lg:border-[.1px] md:border-0 mx-1  md:my-4 ease-in-out duration-200'}> 
+
+
+<div  className={ad4?'w-16 h-16 rounded-full mx-auto lg:-my-11 md:my-2 bg-white  border-[#0072BA] border-[1px]  ease-in-out duration-200 z-10' 
+:'w-16 h-16 rounded-full mx-auto lg:-my-11 md:my-2 bg-white border-C7C5C1 border-[.1px] z-10 '}>
+<img className="w-fit h-fit rounded-full p-1" alt="value4" src={value4}></img>
+
+
+</div>
+
+<div  className='flex-col justify-center items-center text-center lg:my-11 md:my-6'>
+<div className='flex w-full items-center  justify-center'><p className=' text-[#0072BA] font-medium w-full'>Free Sourwater <br className="md:hidden lg:inline "></br>Support</p></div>
+<div className="-mb-4"><p className=' text-xs'>Got a question?<br></br> We're here to help.</p></div>
+
+</div>
+<div  className={ad4?'flex w-full h-fit  justify-center text-center text-[#0072BA] ease-in-out duration-200': 'hidden ease-in-out duration-200'}><p className="w-full h-full">Learn more</p></div>
+
+
+</a>
+
+{/*///////////////////////////////////////////////////////////////////////////////////////////////////*/}
+<a href="*" onMouseEnter={handleAd5} onMouseLeave={handleAdex} className={ad5?'flex-col max-w-[219.5px] md:max-w-[240.5px] min-w-[99px]  lg:h-[154px]  md:max-h-[182px] w-full h-full rounded-md  lg:border-[1px] border-[#0072BA]  md:border-0 mx-1 md:my-4  lg:over:shadow-2xl lg:hover:scale-105 md:hover:scale-100 ease-in-out duration-200 ' 
+: 'flex-col max-w-[219.5px] md:max-w-[240.5px] min-w-[99px] lg:h-[154px]  md:max-h-[182px] w-full h-full rounded-md border-C7C5C1 lg:border-[.1px] md:border-0 mx-1  md:my-4 ease-in-out duration-200'}> 
+
+
+<div  className={ad5?'w-16 h-16 rounded-full mx-auto lg:-my-11 md:my-2 bg-white  border-[#0072BA] border-[1px]  ease-in-out duration-200 z-10' 
+:'w-16 h-16 rounded-full mx-auto lg:-my-11 md:my-2 bg-white border-C7C5C1 border-[.1px] z-10 '}>
+<img className="w-fit h-fit rounded-full p-1" alt="value4" src={value5}></img>
+
+
+</div>
+
+<div  className='flex-col justify-center items-center text-center lg:my-11 md:my-6'>
+<div className='flex w-full items-center  justify-center'><p className=' text-[#0072BA] font-medium w-full'>FREE 2-year warranty<br className="md:hidden lg:inline "></br></p></div>
+<div className="mb-[67px]"><p className=' text-xs'>Buy with confidence.</p></div>
+
+</div>
+<div  className={ad5?'flex w-full h-fit  justify-center text-center text-[#0072BA] ease-in-out duration-200': 'hidden ease-in-out duration-200'}><p className="w-full h-full">Learn more</p></div>
+
+
+</a>
+
+
+
+{/*///////////////////////////////////////////////////////////////////////////////////////////////////*/}
+<a href="*" onMouseEnter={handleAd6} onMouseLeave={handleAdex} className={ad6?'flex-col   max-w-[219.5px] md:max-w-[240.5px] min-w-[99px]  lg:h-[154px]  md:max-h-[182px] w-full h-full rounded-md  lg:border-[1px] border-[#0072BA]  md:border-0 mx-1 md:my-4  lg:over:shadow-2xl lg:hover:scale-105 md:hover:scale-100 ease-in-out duration-200 ' 
+: 'flex-col  max-w-[219.5px] md:max-w-[240.5px] min-w-[99px] lg:h-[154px]  md:max-h-[182px] w-full h-full rounded-md border-C7C5C1 lg:border-[.1px] md:border-0 mx-1  md:my-4 ease-in-out duration-200'}> 
+
+
+<div  className={ad6?'w-16 h-16 rounded-full mx-auto lg:-my-11 md:my-2 bg-white  border-[#0072BA] border-[1px]  ease-in-out duration-200 z-10' 
+:'w-16 h-16 rounded-full mx-auto lg:-my-11 md:my-2 bg-white border-C7C5C1 border-[.1px] z-10 '}>
+<img className="w-fit h-fit my-2 p-2" alt="value6" src={value6}></img>
+
+
+</div>
+
+<div  className='flex-col justify-center items-center text-center lg:my-11 md:my-6'>
+<div className='flex w-full items-center  justify-center'><p className=' text-[#0072BA] font-medium w-full'>Easy Payments<br className="md:hidden lg:inline "></br></p></div>
+<div className="mb-[67px]"><p className=' text-xs'>Up to 48 months.</p></div>
+
+</div>
+<div  className={ad6?'flex w-full h-fit  justify-center text-center text-[#0072BA] ease-in-out duration-200': 'hidden ease-in-out duration-200'}><p className="w-full h-full">Learn more</p></div>
+
+
+</a>
+
 {/*///////////////////////////////////////////////////////////////////////////////////////////////////*/}
 
       </div>
