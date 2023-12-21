@@ -64,7 +64,7 @@ const AdsValue = () => {
     
   };
   return (
-    <div  onMouseEnter={handleAdex} className='flex-col max-w-[1400px] w-full  max-[425px]:my-[530px] max-[375px]:my-[400px] max-[325px]:my-[300px] mx-auto justify-center items-center text-center py-4  '>
+    <div  onMouseEnter={handleAdex} className='flex-col max-w-[1400px] w-full  max-[425px]:mt-[530px] max-[375px]:mt-[400px] max-[325px]:mt-[300px] mx-auto justify-center items-center text-center py-4  '>
      
       <h2 onMouseEnter={handleAdex} className=" text-5xl max-[425px]:text-4xl font-medium my-10 mx-auto max-[375px]:mx-[10px] text-[#362D2D]">Get More at Sourwater</h2>
     

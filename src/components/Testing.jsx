@@ -60,7 +60,7 @@ const handleAdex = () => {
   return (
     <div onMouseEnter={handleAdex} className='lg:flex w-full max-w-[1400px] max-h-[902px] min-h-[210px] h-fit justify-center items-center  px-6 md:grid md:grid-cols-3 gap-3 max-[767px]:grid max-[767px]:grid-cols-3 gap-3'>
 
-      
+
   <a href="*" onMouseEnter={handleAd1} onMouseLeave={handleAdex} className={ad1?'flex-col px-4   max-w-[219.5px] md:max-w-[240.5px] min-w-[99px]  lg:h-[154px]  md:max-h-[182px] w-full h-full rounded-md  lg:border-[1px] border-[#0072BA]  md:border-0 mx-1 md:my-4  lg:over:shadow-2xl lg:hover:scale-105 md:hover:scale-100 ease-in-out duration-200 ' 
 : 'flex-col px-4   max-w-[219.5px] md:max-w-[240.5px] min-w-[99px] lg:h-[154px]  md:max-h-[182px] w-full h-full rounded-md border-C7C5C1 lg:border-[.1px] md:border-0 mx-1  md:my-4 ease-in-out duration-200'}> 
 

@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Ads from './components/Ads';
 import AdsValue from './components/AdsValue';
 import Testing from './components/Testing';
+import PopularCat from './components/PopularCat';
 function App() {
   return (
     <div className="App">
@@ -13,6 +14,7 @@ function App() {
     <Header/>
    <Ads/>
    <AdsValue/>
+   <PopularCat/>
     </div>
   );
 }
