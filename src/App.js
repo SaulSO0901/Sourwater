@@ -6,6 +6,7 @@ import Ads from './components/Ads';
 import AdsValue from './components/AdsValue';
 import Testing from './components/Testing';
 import PopularCat from './components/PopularCat';
+import ProductSuggest from './components/ProductSuggest';
 function App() {
   return (
     <div className="App">
@@ -15,6 +16,7 @@ function App() {
    <Ads/>
    <AdsValue/>
    <PopularCat/>
+   <ProductSuggest/>
     </div>
   );
 }

@@ -15,7 +15,7 @@ import pop12 from '../assets/pop-12.PNG'
 
 const PopularCat = () => {
   return (
-    <div className='flex-col max-w-[1400px] w-full h-[400px] my-4 mx-auto '>
+    <div className='flex-col max-w-[1400px] w-full h-fit my-4 mx-auto select-none '>
        
         <div className='flex mx-auto h-fit justify-center items-center  text-center'>
         <h2 className=' text-5xl text-[#362D2D] font-medium'>Popular Categories</h2>
@@ -176,7 +176,7 @@ const PopularCat = () => {
 
         </div>
 {/*Mobile section*/}
-<div className='hidden max-[375px]:grid mx-auto my-10 px-2 '>
+<div className='hidden max-[375px]:gridy mx-auto my-10 px-2 '>
 <a href='*' className='flex h-[52px] items-center border-C7C5C1 border-[.1px] '>
         <img className='flex p-2 ml-2 w-8  h-10 items-center justify-center ' src={pop1} alt='pop1'></img>
         <p className='text-sm font-semibold ml-4'>Guitars </p>
