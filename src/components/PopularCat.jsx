@@ -23,84 +23,84 @@ const PopularCat = () => {
 
         <div className='grid grid-cols-6 gap-3 my-10  px-6 mx-auto justify-center items-start h-full w-full max-[425px]:h-[0px] hidden  lg:grid  '>
             
-            <a href='*' className='flex-col p-10 lg:p-2 lg:py-8 items-center justify-center text-center  max-w-[224px] max-h-[224px] h-full w-full'>
+            <a href='*' className='flex-col xl:p-10 lg:p-2 lg:py-8 items-center justify-center text-center  max-w-[224px] max-h-[224px] h-full w-full'>
            <div  className='flex  w-36 h-36 items-center justify-center  border-C7C5C1 border-[.1px] ring-b-1 hover:ring-4 ring-inset  hover:ring-[#0072BA] ease-in-out duration-200 rounded-full'>
             <img className=' p-8 rounded-full' src={pop1} alt="pop1" />
            </div>
            <p className=' mt-4 text-sm font-medium'>Guitars</p>
            </a>
 
-           <a href='*' className='flex-col p-10 lg:p-2 lg:py-8 items-center justify-center text-center  max-w-[224px] max-h-[224px] h-full w-full'>
+           <a href='*' className='flex-col xl:p-10 lg:p-2 lg:py-8 items-center justify-center text-center  max-w-[224px] max-h-[224px] h-full w-full'>
            <div  className='flex  w-36 h-36 items-center justify-center border-C7C5C1 border-[.1px] ring-b-1 hover:ring-4 ring-inset  hover:ring-[#0072BA] ease-in-out duration-200 rounded-full'>
             <img className=' p-2 rounded-full' src={pop2} alt="pop2" />
            </div>
            <p className=' mt-4 text-sm font-medium'>Studio & Recording</p>
            </a>
 
-           <a href='*' className='flex-col p-10 lg:p-2 lg:py-8 items-center justify-center text-center   max-w-[224px] max-h-[224px] h-full w-full'>
+           <a href='*' className='flex-col xl:p-10 lg:p-2 lg:py-8 items-center justify-center text-center   max-w-[224px] max-h-[224px] h-full w-full'>
            <div  className='flex  w-36 h-36 items-center justify-center border-C7C5C1 border-[.1px] ring-b-1 hover:ring-4 ring-inset  hover:ring-[#0072BA] ease-in-out duration-200 rounded-full'>
             <img className=' p-4 rounded-full' src={pop3} alt="pop3" />
            </div>
            <p className=' mt-4 text-sm font-medium'>Drums & Percussion</p>
            </a>
            
-           <a href='*' className='flex-col p-10 lg:p-2 lg:py-8 items-center justify-center text-center  max-w-[224px] max-h-[224px] h-full w-full'>
+           <a href='*' className='flex-col xl:p-10 lg:p-2 lg:py-8 items-center justify-center text-center  max-w-[224px] max-h-[224px] h-full w-full'>
            <div  className='flex  w-36 h-36 items-center justify-center border-C7C5C1 border-[.1px] ring-b-1 hover:ring-4 ring-inset  hover:ring-[#0072BA] ease-in-out duration-200 rounded-full'>
             <img className=' p-9 ' src={pop4} alt="pop4" />
            </div>
            <p className=' mt-4 text-sm font-medium'>Bass</p>
            </a>
 
-           <a href='*' className='flex-col p-10 lg:p-2 lg:py-8 items-center justify-center text-center  max-w-[224px] max-h-[224px] h-full w-full'>
+           <a href='*' className='flex-col xl:p-10 lg:p-2 lg:py-8 items-center justify-center text-center  max-w-[224px] max-h-[224px] h-full w-full'>
            <div  className='flex  w-36 h-36 items-center justify-center border-C7C5C1 border-[.1px] ring-b-1 hover:ring-4 ring-inset  hover:ring-[#0072BA] ease-in-out duration-200 rounded-full'>
             <img className=' p-4 ' src={pop5} alt="pop5" />
            </div>
            <p className=' mt-4 text-sm font-medium'>Keyboards & Synth</p>
            </a>
            
-           <a href='*' className='flex-col p-10 lg:p-2 lg:py-8 items-center justify-center text-center  max-w-[224px] max-h-[224px] h-full w-full'>
+           <a href='*' className='flex-col xl:p-10 lg:p-2 lg:py-8 items-center justify-center text-center  max-w-[224px] max-h-[224px] h-full w-full'>
            <div  className='flex  w-36 h-36 items-center justify-center border-C7C5C1 border-[.1px] ring-b-1 hover:ring-4 ring-inset  hover:ring-[#0072BA] ease-in-out duration-200 rounded-full'>
             <img className=' p-8 ' src={pop6} alt="pop6" />
            </div>
            <p className=' mt-4 text-sm font-medium'>Live Sound & Lights</p>
            </a>
 
-           <a href='*' className='flex-col p-10 lg:p-2 lg:py-8 items-center justify-center text-center   max-w-[224px] max-h-[224px] h-full w-full'>
+           <a href='*' className='flex-col xl:p-10 lg:p-2 lg:py-8 items-center justify-center text-center   max-w-[224px] max-h-[224px] h-full w-full'>
            <div  className='flex  w-36 h-36 items-center justify-center border-C7C5C1 border-[.1px] ring-b-1 hover:ring-4 ring-inset  hover:ring-[#0072BA] ease-in-out duration-200 rounded-full'>
             <img className=' p-6 ' src={pop7} alt="pop7" />
            </div>
            <p className=' mt-4 text-sm font-medium'>Software & Plug-ins</p>
            </a>
            
-           <a href='*' className='flex-col p-10 lg:p-2 lg:py-8 items-center justify-center text-center   max-w-[224px] max-h-[224px] h-full w-full'>
+           <a href='*' className='flex-col xl:p-10 lg:p-2 lg:py-8 items-center justify-center text-center   max-w-[224px] max-h-[224px] h-full w-full'>
            <div  className='flex  w-36 h-36 items-center justify-center border-C7C5C1 border-[.1px] ring-b-1 hover:ring-4 ring-inset  hover:ring-[#0072BA] ease-in-out duration-200 rounded-full'>
             <img className=' p-6' src={pop8} alt="pop8" />
            </div>
            <p className=' mt-4 text-sm font-medium'>DJ Equipments</p>
            </a>
  
-           <a href='*' className='flex-col p-10 lg:p-2 lg:py-8 items-center justify-center text-center   max-w-[224px] max-h-[224px] h-full w-full'>
+           <a href='*' className='flex-col xl:p-10 lg:p-2 lg:py-8 items-center justify-center text-center   max-w-[224px] max-h-[224px] h-full w-full'>
            <div  className='flex  w-36 h-36 items-center justify-center border-C7C5C1 border-[.1px] ring-b-1 hover:ring-4 ring-inset  hover:ring-[#0072BA] ease-in-out duration-200 rounded-full'>
             <img className=' p-14 rounded-full' src={pop9} alt="pop9" />
            </div>
            <p className=' mt-4 text-sm font-medium'>Microphones</p>
            </a>
            
-           <a href='*' className='flex-col p-10 lg:p-2 lg:py-8 items-center justify-center text-center   max-w-[224px] max-h-[224px] h-full w-full'>
+           <a href='*' className='flex-col xl:p-10 lg:p-2 lg:py-8 items-center justify-center text-center   max-w-[224px] max-h-[224px] h-full w-full'>
            <div  className='flex  w-36 h-36 items-center justify-center border-C7C5C1 border-[.1px] ring-b-1 hover:ring-4 ring-inset  hover:ring-[#0072BA] ease-in-out duration-200 rounded-full'>
             <img className=' p-12 rounded-full' src={pop10} alt="pop10" />
            </div>
            <p className=' mt-4 text-sm font-medium'>Band & Orchestra</p>
            </a>
 
-           <a href='*' className='flex-col p-10 lg:p-2 lg:py-8 items-center justify-center text-center   max-w-[224px] max-h-[224px] h-full w-full'>
+           <a href='*' className='flex-col xl:p-10 lg:p-2 lg:py-8 items-center justify-center text-center   max-w-[224px] max-h-[224px] h-full w-full'>
            <div  className='flex  w-36 h-36 items-center justify-center border-C7C5C1 border-[.1px] ring-b-1 hover:ring-4 ring-inset  hover:ring-[#0072BA] ease-in-out duration-200 rounded-full'>
             <img className=' p-4 ' src={pop11} alt="pop11" />
            </div>
            <p className=' mt-4 text-sm font-medium'>Accesories</p>
            </a>
            
-           <a href='*' className='flex-col p-10 lg:p-2 lg:py-8 items-center justify-center text-center  max-w-[224px] max-h-[224px] h-full w-full'>
+           <a href='*' className='flex-col xl:p-10 lg:p-2 lg:py-8 items-center justify-center text-center  max-w-[224px] max-h-[224px] h-full w-full'>
            <div  className='flex  w-36 h-36 items-center justify-center border-C7C5C1 border-[.1px] ring-b-1 hover:ring-4 ring-inset  hover:ring-[#0072BA] ease-in-out duration-200 rounded-full'>
             <img className=' p-8 ' src={pop12} alt="pop12" />
            </div>
@@ -176,7 +176,7 @@ const PopularCat = () => {
 
         </div>
 {/*Mobile section*/}
-<div className='hidden max-[375px]:gridy mx-auto my-10 px-2 '>
+<div className='hidden max-[375px]:grid mx-auto my-10 px-2 '>
 <a href='*' className='flex h-[52px] items-center border-C7C5C1 border-[.1px] '>
         <img className='flex p-2 ml-2 w-8  h-10 items-center justify-center ' src={pop1} alt='pop1'></img>
         <p className='text-sm font-semibold ml-4'>Guitars </p>

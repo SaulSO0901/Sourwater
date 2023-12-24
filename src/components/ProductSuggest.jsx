@@ -1,6 +1,6 @@
 import React from 'react'
 import { BsInstagram, BsArrowLeftShort, BsArrowRightShort } from 'react-icons/bs';
-import { images } from '../constants';
+import { images,products } from '../constants';
 
 const ProductSuggest = () => {
 
@@ -14,30 +14,37 @@ const ProductSuggest = () => {
     } else {
       current.scrollLeft += 1200;
     }
-  };
+  }; 
   return (
-    <div className='flex max-w-[1400px] mt-20 mx-auto '>
-         <div onClick={() => scroll('left')} className="flex w-[80px] h-[228px] absolute justify-between items-center cursor-pointer rounded-md bg-white mix-blend-luminosity  opacity-95  backdrop-blur-sm  z-10">
+    <div className='flex-col max-w-[1400px] w-full mt-20 mx-auto text-center '>
+      <h2 className=' font-medium text-5xl'>Trending Gear</h2>
+      <div className='flex mt-12'>
+         <div onClick={() => scroll('left')} className="flex w-[80px] h-[228px] max-[425px]:hidden md:absolute  items-center cursor-pointer rounded-md bg-white mix-blend-luminosity  opacity-95  backdrop-blur-sm  z-10">
           <BsArrowLeftShort size={50} className="w-full " />
         </div>
-        <div className="">
-       
-        <div className="flex max-w-[1400px] h-[252px] items-start overflow-x-scroll scroll-smooth select-none -z-10" ref={scrollRef}>
-          {[images.pop1, images.pop9, images.pop3, images.pop4,images.pop3,images.pop4,
-           images.pop4,images.pop3,images.pop4,images.pop1, images.pop9, images.pop3,
-           images.pop1, images.pop9, images.pop3,images.pop1, images.pop9, images.pop3,].map((image, index) => (
-            <a href='*' className="flex h-32 w-[186px] first:ml-[80px]  justify-center mx-1 relative" key={`gallery_image-${index + 1}`}>
-              <img className='flex h-[120px] mx-28 curp' src={image} alt="gallery_image" />
+
+        <div className="max-w-[1400px] w-full">
+    
+        <div className="flex  h-[252px] items-start overflow-x-scroll scroll-smooth select-none  -z-10" ref={scrollRef}>
+          {[images.trend1,images.trend2, images.trend3,images.trend4,
+          images.trend5,images.trend6,images.trend7,images.trend8
+  ,images.trend9,images.trend10,images.trend11,images.trend12].map((image, index) => (
+            <a href='*' className="flex-col h-[176px] w-[186px]  md:first:ml-[80px] text-center items-center justify-center ml-28 relative" key={`gallery_image-${index + 1}`}>
+              <img className='h-full w-[176px] p-4 ' src={image} alt="gallery_image" />
+             <div className='-ml-1 w-[176px] '>
+             <p className='w-full '>Les paul</p>
+             </div>
+
             </a>
           ))}
         </div>
        
       </div>
 
-      <div onClick={() => scroll('right')} className="flex w-[80px] h-[228px] ml-[1320px] absolute justify-between items-center cursor-pointer rounded-md bg-white mix-blend-luminosity  opacity-95  backdrop-blur-sm z-10 ">
-          <BsArrowRightShort size={50} className="w-full z-20    "  />
+      <div onClick={() => scroll('right')} className="flex w-[80px] h-[228px] xl:ml-[1320px] lg:ml-[944px] md:ml-[688px] max-[425px]:hidden mx-auto md:absolute items-center cursor-pointer rounded-md bg-white mix-blend-luminosity  opacity-95  backdrop-blur-sm z-10 ">
+          <BsArrowRightShort size={50} className="w-full z-20     "  />
         </div>
-        
+        </div>
         </div>
   )
 }
