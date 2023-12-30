@@ -25,17 +25,13 @@ const ProductSuggest = () => {
 
         <div className="max-w-[1400px] w-full">
     
-        <div className="flex  h-[252px] items-start overflow-x-scroll scroll-smooth select-none  -z-10" ref={scrollRef}>
+        <div className="flex relative   h-[252px] items-start overflow-x-scroll scroll-smooth select-none  -z-20" ref={scrollRef}>
           {[images.trend1,images.trend2, images.trend3,images.trend4,
           images.trend5,images.trend6,images.trend7,images.trend8
   ,images.trend9,images.trend10,images.trend11,images.trend12].map((image, index) => (
-            <a href='*' className="flex-col h-[176px] w-[186px]  md:first:ml-[80px] text-center items-center justify-center ml-28 relative" key={`gallery_image-${index + 1}`}>
-              <img className='h-full w-[176px] p-4 ' src={image} alt="gallery_image" />
-             <div className='-ml-1 w-[176px] '>
-             <p className='w-full '>Les paul</p>
-             </div>
-
-            </a>
+    <a href='*' className="flex h-32 w-[186px] md:first:ml-[80px]  justify-center mx-1 relative" key={`gallery_image-${index + 1}`}>
+    <img className='flex h-[120px] mx-28 max-[425px]:ml-12 curp' src={image} alt="gallery_image" />
+  </a>
           ))}
         </div>
        

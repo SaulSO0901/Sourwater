@@ -21,33 +21,37 @@ const Calando = () => {
     setCrt(!crt);
   };
 
-  const handleNav = () => {
+  const handleNav2 = () => {
+    setNav(false);
+  };
+ const handleNav = () => {
     setNav(!nav);
   };
   return (
-    <div className="flex-col md:hidden ">
-      <div className="flex justify-between items-center h-[80px]  max-w-full mx-auto  -my-2 md:hidden mx-auto  text-black px-2">
+    <div className="flex-col md:hidden  w-full  ">
+      <div className={nav?'flex  fixed justify-between items-center h-[60px] w-full mx-auto   md:hidden  bg-white   text-black  '
+      :"flex  fixed justify-between items-center h-[60px] w-full mx-auto -my-16  md:hidden  bg-white   text-black z-50"}>
         <div className="flex items-center  ">
-          <img src={logo} className="w-full w-[158px] h-16 -z-10 " alt="" />
+          <img src={logo} className="w-[158px] h-[60px]  " alt="" />
         </div>
 
-        <div className="flex items-center h-[80px] ">
+        <div className="flex items-center h-[60px] ">
           <div
             onClick={handleCrt}
-            className="flex-col   items-center hover:bg-[#EFEFEF] cursor-pointer p-2  "
+            className="flex-col  h-full items-center hover:bg-[#EFEFEF] cursor-pointer p-2  "
           >
-            <div className="items-center my-4 ">
-              <AiOutlineShoppingCart className="h-8 min-w-[37px] "></AiOutlineShoppingCart>
+            <div className="items-center mt-2 ">
+              <AiOutlineShoppingCart size={30} className=" min-w-[37px] "></AiOutlineShoppingCart>
             </div>
           </div>
 
-          <div onClick={handleNav} className="block md:hidden px-4 py-6 hover:bg-[#EFEFEF]">
+          <div onClick={handleNav} className="block h-full md:hidden px-4 py-6 hover:bg-[#EFEFEF]">
             {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
           </div>
           <div
             className={
               nav
-                ? "fixed w-[90%] z-50   left-20 top-16  bg-white h-full border-r border-r-[#C7C5C] ease-in-out duration-500"
+                ? "fixed w-[90%] z-50   left-20 top-[60px]  bg-white h-full border-r border-r-[#C7C5C] ease-in-out duration-500"
                 : "ease-in-out duration- fixed left-[100%]"
             }
           >
@@ -77,18 +81,18 @@ const Calando = () => {
           </div>
         </div>
       </div>
-      <div
+      <div  onTouchStart={handleNav2}
         className={
           nav
-            ? "w-full h-[100vh] bg-black bg-opacity-60 px-2 md:hidden "
-            : "bg-transparent px-2 "
+            ? "w-full h-[100vh] bg-black bg-opacity-60 px-2 md:hidden"
+            : "bg-transparent px-2  "
         }
       >
         <div
           className={
             nav
               ? "flex  w-full   relative md:hidden mx-auto max-w-[757px] min-w-[300px]   items-stretch    ring-[#C7C5C1] ring-1 hover:ring-4 hover:ring-gray-800   h-10   rounded-sm -z-10  "
-              : "flex  w-full   relative md:hidden mx-auto max-w-[757px] min-w-[300px]   items-stretch    ring-[#C7C5C1] ring-1 hover:ring-4 hover:ring-gray-800   h-10   rounded-sm "
+              : "flex  w-full   relative md:hidden mx-auto max-w-[757px] min-w-[300px]   items-stretch    ring-[#C7C5C1] ring-1 hover:ring-4 hover:ring-gray-800   h-10  mt-16  rounded-sm z-10 "
           }
         >
           <button className="h-10 rounded-sm bg-[#EFEFEF] p-2 py-2">

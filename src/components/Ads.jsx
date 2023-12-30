@@ -8,6 +8,8 @@ import ad4 from  '../assets/ad4.JPG'
 const Ads = () => {
   return (
     <div className='flex-col max-w-[1400px] w-full mx-auto my-5'>
+
+      
 <div className='flex max-[425px]:flex-col   max-h-[345px] w-full h-full px-4 '>
 
  <div className='flex  max-w-[930px] lg:min-w-[650px]  w-full px-1 my-2 '>
