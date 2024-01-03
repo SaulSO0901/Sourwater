@@ -576,7 +576,7 @@ const Header = () => {
   return (
     <div className='flex h-10 my-2 border-b-[.7px] border-b-C7C5C px-10 items-center justify-center md:px-4 h-14 xl:h-full  hidden md:flex      '>
         <div  onMouseEnter={handleCat}  onMouseLeave={handleCat2} className='flex max-w-[223px]  min-w-[181px]   w-full h-[40px]  justify-center items-center hover:bg-[#EFEFEF]  text-[#362D2D] hover:text-[#0072BA] cursor-pointer'><a className='font-medium '>Shop By Category</a>
-       <div className="flex" >
+       <div className="flex " >
         
         <div onMouseLeave={handleGtr2}
             className={
@@ -584,7 +584,7 @@ const Header = () => {
                 ? "w-0 h-0 flex  cursor-pointer top-0  h-full   ease-in-out duration-0 " 
                 : "ease-in-out duration-0 fixed left-[-100%]"
             } >
-         <div className="flex absolute xl:-mx-[168px] lg:-mx-[148px] xl:my-5 lg:my-[27px] md:-mx-[148px] md:my-[27px] bg-white   border-b-[.1px] border-C7C5C1 border-[.1px] ">
+         <div className="flex  absolute 2xl:-mx-[168px] lg:-mx-[148px] xl:my-5 lg:my-[27px] md:-mx-[148px] md:my-[27px] bg-white   border-b-[.1px] border-C7C5C1 border-[.1px] ">
               <div className="flex w-72 h-[579px]     ">
  <div className="flex-col w-full  ">
                 <ul className="text-[#362D2D]">
@@ -4215,7 +4215,7 @@ className={
         : "ease-in-out duration-0 fixed left-[-100%]"
     }
   >
-    <div className=" absolute block my-5 xl:-mx-[128px] lg:-mx-[93px] xl:my-5 lg:my-[27px]  md:-mx-[92px] md:my-[27px] w-60 border-C7C5C1 border-[.1px] bg-white items-center justify-center text-[#362D2D]">
+    <div className=" absolute block my-5 xl:-mx-[120px] lg:-mx-[93px] xl:my-5 lg:my-[27px]  md:-mx-[92px] md:my-[27px] w-60 border-C7C5C1 border-[.1px] bg-white items-center justify-center text-[#362D2D]">
     <div onMouseEnter={handleOne2} className="flex  h-12 justify-center items-center hover:bg-[#EFEFEF] border-b-[.7px] border-b-C7C5C1">
     <h1 className=" text-2xl text-[#362D2D]"><b>GEAR</b>EXCHANGE</h1>
     </div>

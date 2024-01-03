@@ -9,19 +9,24 @@ import PopularCat from './components/PopularCat';
 import ProductSuggest from './components/ProductSuggest';
 import Tiles from './components/Tiles';
 import TopNew from './components/TopNew';
+import DSales from './components/DSales';
+import Carrer from './components/Carrer';
 function App() {
   return (
     <div className="App ">
       <Navbar/>
       <MBNavbar/>
+      <Header/>
+
       <div className='px-4'>
-    <Header/>
    <Ads/>
    <AdsValue/>
    <PopularCat/>
    <ProductSuggest/>
    <Tiles/>
    <TopNew/>
+   <DSales/>
+   <Carrer/>
    </div>
     </div>
   );

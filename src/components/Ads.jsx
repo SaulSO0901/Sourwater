@@ -25,13 +25,13 @@ const Ads = () => {
   
 
 
-<div className='flex max-w-[469px] w-full px-1 md:hidden my-2 '>
+<div className='flex max-w-[469px] w-full  md:hidden my-2 '>
 <img className='  ' alt='ad4' src={ad4}></img>
 </div>
 
 
 </div>
-<div className='flex w-full max-h-[145px] my-4 px-5 hidden md:flex'>
+<div className='flex  w-full max-h-[145px] my-4 px-5 hidden md:flex'>
 <img src={ad3} alt='ad3' ></img>
 </div>
       

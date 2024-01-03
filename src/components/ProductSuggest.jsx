@@ -25,7 +25,7 @@ const ProductSuggest = () => {
 
         <div className="max-w-[1400px] w-full">
     
-        <div className="flex relative   h-[252px] items-start overflow-x-scroll scroll-smooth select-none  -z-20" ref={scrollRef}>
+        <div className="flex relative   h-[252px] items-start overflow-x-scroll scroll-smooth select-none  " ref={scrollRef}>
           {[images.trend1,images.trend2, images.trend3,images.trend4,
           images.trend5,images.trend6,images.trend7,images.trend8
   ,images.trend9,images.trend10,images.trend11,images.trend12].map((image, index) => (
