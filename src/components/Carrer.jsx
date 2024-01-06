@@ -18,7 +18,7 @@ const Carrer = () => {
 
 </div>
 <div className='max-w-[1027px] h-full w-full'>
-    <img alt='carrer' className='max-w-[1027px] max-h-[411px] w-full h-full ' src={carrer}></img>
+    <img alt='carrer' className='max-w-[1027px] max-h-[411px] pb-[1px] w-full h-full ' src={carrer}></img>
 </div>
     </div>
 
