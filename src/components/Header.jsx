@@ -13,8 +13,9 @@ import {
     AiFillCaretLeft,
   } from "react-icons/ai";
   import { MdChevronRight } from "react-icons/md";
+  import { Link } from "react-router-dom";
 
-const Header = () => {
+  const Header = () => {
     const [cat, setCat] = useState(false);
     
     const [ad, setAd] = useState(true);
@@ -575,29 +576,34 @@ const Header = () => {
 
   return (
     <div className='flex h-10 my-2 border-b-[.7px] border-b-C7C5C px-10 items-center justify-center md:px-4 h-14 xl:h-full  hidden md:flex      '>
-        <div  onMouseEnter={handleCat}  onMouseLeave={handleCat2} className='flex max-w-[223px]  min-w-[181px]   w-full h-[40px]  justify-center items-center hover:bg-[#EFEFEF]  text-[#362D2D] hover:text-[#0072BA] cursor-pointer'><a className='font-medium '>Shop By Category</a>
+
+        <div  onMouseEnter={handleCat}  onMouseLeave={handleCat2} className='flex max-w-[223px]  min-w-[181px]   w-full h-[40px]  justify-center items-center hover:bg-[#EFEFEF]  text-[#362D2D] hover:text-[#0072BA] cursor-pointer'>
+          <a className='font-medium '>Shop By Category</a>
        <div className="flex " >
         
         <div onMouseLeave={handleGtr2}
             className={
               cat
-                ? "w-0 h-0 flex  cursor-pointer top-0  h-full   ease-in-out duration-0 " 
+                ? "w-0 h-0 flex  cursor-pointer top-0 left-0 h-full   ease-in-out duration-0 " 
                 : "ease-in-out duration-0 fixed left-[-100%]"
             } >
+            
          <div className="flex  absolute 2xl:-mx-[168px] lg:-mx-[148px] xl:my-5 lg:my-[27px] md:-mx-[148px] md:my-[27px] bg-white   border-b-[.1px] border-C7C5C1 border-[.1px] ">
               <div className="flex w-72 h-[579px]     ">
  <div className="flex-col w-full  ">
                 <ul className="text-[#362D2D]">
-                 
+                <Link to='/store '>
                   <li onMouseEnter={handleGtr}   className="flex items-center justify-between p-[6px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
+                    
                     <p className=" text-[#2b1010] ">Guitars</p>
+                  
                     {gtr ? (
             <AiFillCaretLeft className="" size={15} />
           ) : (
             <AiFillCaretRight className="" size={15} />
           )}
                   </li>
-
+             
                   <li onMouseEnter={handleStd}  className="flex items-center justify-between p-[6px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
                     <p className="text-[#362D2D]  ">Studio & Recording</p>
                     {std ? (
@@ -719,9 +725,10 @@ const Header = () => {
                   <li onMouseEnter={handleGEX} className="flex items-center justify-between p-[7px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
                     <p className="text-[#362D2D]  ">Gear Exchange</p>
                   </li>
+                  </Link>
                 </ul>
-             
-
+               
+               
               </div>
                      
 
@@ -735,7 +742,7 @@ const Header = () => {
 
 
 
-
+            <Link to='/store'>
               <div onMouseLeave={handleGtr2}  
               className={gtr?"w-0  flex -my-[2px] cursor-pointer top-0  h-[583px] ease-in-out duration-0"
                 : "ease-in-out duration-0 fixed left-[-100%]"} >
@@ -4072,6 +4079,7 @@ const Header = () => {
 
                     
                 </div>
+                </Link>
               </div>
         </div>
         
@@ -4089,9 +4097,9 @@ const Header = () => {
 {/*End of categories Section*/}
 
 
-
+<Link to='/store'>
    <div className='flex max-w-[192px]   min-w-[122px]   w-full h-[40px]   items-center justify-center hover:bg-[#EFEFEF]   text-[#362D2D] hover:text-[#0072BA] cursor-pointer'><a className='font-medium'>What's New</a> </div>
-       
+       </Link>
 {/*Deals Section*/}
         <div onMouseEnter={handleDeal} onMouseLeave={handleDeal2} className='flex max-w-[161px] min-w-[88px]   w-full h-[40px]  justify-center items-center hover:bg-[#EFEFEF]   text-[#362D2D] hover:text-[#0072BA] cursor-pointer'><a className='font-medium'>Deals</a>
         <div className="flex-col items-center  ">
@@ -4099,11 +4107,12 @@ const Header = () => {
         <div
         className={
               deal
-                ? "w-0 h-0 flex cursor-pointer top-0 w-[60%] h-full  ease-in-out duration-0"
+                ? "w-0 h-0 flex cursor-pointer top-0 left-0 w-[60%] h-full  ease-in-out duration-0"
                 : "ease-in-out duration-0 fixed left-[-100%]"
             }
           >
-            <div className=" absolute block  xl:-mx-[93px] lg:-mx-[63px] xl:my-5 lg:my-[27px] md:-mx-[56px] md:my-[27px] w-60 border-C7C5C1 border-[.1px] bg-white items-center justify-center text-[#362D2D]">
+            <Link to='/store'>
+            <div className=" absolute block  xl:-mx-[92px] lg:-mx-[63px] xl:my-5 lg:my-[27px] md:-mx-[56px] md:my-[27px] w-60 border-C7C5C1 border-[.1px] bg-white items-center justify-center text-[#362D2D]">
             <div onMouseEnter={handleOne2} className="flex  h-12 justify-center items-center hover:bg-[#EFEFEF] border-b-[.7px] border-b-C7C5C1">
             <h1 className=" text-2xl text-[#362D2D]"><b>DEAL</b>ZONE</h1>
             </div>
@@ -4154,6 +4163,7 @@ const Header = () => {
                 </ul>
                 <div onMouseEnter={handleOne2} className=" h-full w-10">
                   </div>
+                
                             </div>
                             
                   
@@ -4191,6 +4201,7 @@ const Header = () => {
               </div>
               </div>
               </div>
+              </Link>
               </div>
               </div>
               
@@ -4211,11 +4222,11 @@ const Header = () => {
 <div
 className={
       ug
-        ? "w-0 h-0 flex cursor-pointer top-0 w-[60%] h-full  ease-in-out duration-0"
+        ? "w-0 h-0 flex cursor-pointer top-0 left-0  ease-in-out duration-0"
         : "ease-in-out duration-0 fixed left-[-100%]"
     }
   >
-    <div className=" absolute block my-5 xl:-mx-[120px] lg:-mx-[93px] xl:my-5 lg:my-[27px]  md:-mx-[92px] md:my-[27px] w-60 border-C7C5C1 border-[.1px] bg-white items-center justify-center text-[#362D2D]">
+    <div className=" absolute block my-5 xl:-mx-[121px] lg:-mx-[93px] xl:my-5 lg:my-[27px]  md:-mx-[92px] md:my-[27px] w-60 border-C7C5C1 border-[.1px] bg-white items-center justify-center text-[#362D2D]">
     <div onMouseEnter={handleOne2} className="flex  h-12 justify-center items-center hover:bg-[#EFEFEF] border-b-[.7px] border-b-C7C5C1">
     <h1 className=" text-2xl text-[#362D2D]"><b>GEAR</b>EXCHANGE</h1>
     </div>

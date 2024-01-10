@@ -16,7 +16,7 @@ const ProductSuggest = () => {
     }
   }; 
   return (
-    <div className='flex-col max-w-[1400px] w-full mt-20 mx-auto text-center '>
+    <div className='flex-col max-w-[1400px] w-full md:mt-20 max-[425px]:border-t-[#C7C5C1]  mx-auto text-center '>
       <h2 className=' font-medium text-5xl'>Trending Gear</h2>
       <div className='flex  mt-12'>
          <div onClick={() => scroll('left')} className="flex w-[80px] h-[228px] max-[425px]:hidden md:absolute  items-center cursor-pointer rounded-md bg-white mix-blend-luminosity  opacity-95  backdrop-blur-sm  z-10">
@@ -25,7 +25,7 @@ const ProductSuggest = () => {
 
         <div className="flex w-full">
     
-        <div className="flex relative    h-[252px] items-start overflow-x-scroll scroll-smooth select-none  " ref={scrollRef}>
+        <div className="flex relative  md:h-[252px] max-[425px]:h-[196px]   items-start overflow-x-scroll scroll-smooth select-none  " ref={scrollRef}>
           {[images.trend1,images.trend2, images.trend3,images.trend4,
           images.trend5,images.trend6,images.trend7,images.trend8
   ,images.trend9,images.trend10,images.trend11,images.trend12].map((image, index) => (

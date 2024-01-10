@@ -6,6 +6,7 @@ import strat from "../assets/Strat.JPG";
 import key from "../assets/Key.JPG";
 import sup from "../assets/customer-service-support.svg";
 
+
 import {
   AiOutlineSearch,
   AiFillCaretDown,
@@ -19,6 +20,7 @@ import { IoNotifications } from "react-icons/io5";
 import { MdOutlineFavoriteBorder } from "react-icons/md";
 import { BsPhoneFill } from "react-icons/bs";
 import { BiSupport } from "react-icons/bi";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [acc, setAcc] = useState(false);
@@ -70,12 +72,14 @@ const Navbar = () => {
   };
   return (
     <div className="flex  items-center  justify-center h-[80px] w-full hidden md:flex  px-10 -my-2 mx-auto   text-[#000] border-b-[.7px] border-b-C7C5C select-none">
-      <div className="flex items-center h-full">
+      <div  className="flex items-center h-full">
+      <Link to='/home'>
         <img
           src={logo}
           className="w-full min-w-[160px] md:max-w-[160px] xl:max-w-[190px]  h-11 "
-          alt=""
+          alt="Logo"
         />
+          </Link>
       </div>
 
       <div className="flex w-full  max-w-[738px] min-w-[138px] items-center items-stretch h-10 mx-2 my-6 border-C7C5C1 border-[.1px] rounded-sm ring-[#C7C5C1] ring-1 hover:ring-4 hover:ring-gray-800  ">
@@ -109,18 +113,20 @@ const Navbar = () => {
           >
             <div className="flex my-6 border-C7C5C1 border-[.5px] absolute bg-white  ">
               <div className="flex-col ">
+
+                <Link to='/store'>
                 <div
                   className={
                     "flex  ring-[#C7C5C1]  ring-b-1 hover:ring-4 ring-inset  hover:ring-[#0072BA] ease-in-out duration-200 cursor-pointer "
                   }
                 >
-                  <div className="flex items-center my-2 p-4 ">
+                  <a href="/store" className="flex items-center my-2 p-4 ">
                     <img
                       alt="guitar"
                       className="border-C7C5C1 border-[.8px] h-20 w-20 p-1"
                       src={guitar}
                     ></img>
-                  </div>
+                  </a>
                   <div className="flex-col px-2 py-2  ">
                     <button className=" bg-[#428631] rounded-xl items-center p-1">
                       <p className=" mx-1 text-xs text-[#FFFFFF]">Price drop</p>
@@ -144,6 +150,7 @@ const Navbar = () => {
                     </div>
                   </div>
                 </div>
+                </Link>
 
                 <div
                   className={

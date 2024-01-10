@@ -7,7 +7,7 @@ const Footer = () => {
     <div className='flex-col  mx-auto w-full  lg:h-[530px] md:h-[824px] h-[1276px] mt-24 bg-[#f2f1f0] '>
         <div className='md:flex max-w-[1400px] mx-auto w-full h-fit p-6 mt-6 max-[760px]:flex-col'>
 
-<div className='flex-col justify-start  lg:max-w-[322px] md:max-w-[224px] w-full md:border-r-[.7px]  md:border-C7C5C '>
+<div className='flex-col justify-start  lg:max-w-[380px] md:max-w-[224px] w-full md:border-r-[.7px]  md:border-C7C5C '>
 
 <div className='lg:flex  w-full   md:grid md:grid-cols-1   '>
 <div className='flex justify-center w-full md:max-w-[176px] max-[760px]:w-full lg:h-[192px] '>
@@ -18,22 +18,22 @@ const Footer = () => {
 
 
 
-<div className='flex-col md:max-w-[176px] lg:ml-4 w-full h-full justify-between md:items-center md:text-center  '>
-    <ul className='flex-col w-full justify-center text-center'>
+<div className='flex-col md:max-w-[176px] lg:ml-4 w-full h-full justify-between md:items-center md:text-center   '>
+    <ul className='flex-col w-full justify-center text-center lg:justify-start lg:text-start  '>
         
 <li className='flex w-full'><p className='w-full text-xl font-medium'>NEED HELP?</p></li>
-<li  className='w-full'><p className=''>Call Your Sales Engineers</p></li>
-<li  className='w-full'><a href='*' className=' text-sm'>What is a Sales Engineers?</a></li>
-<li  className='w-full'><a href='*' className=''>(800) 224-4701</a></li>
-<li  className='w-full'><a href='*' className=' underline-offset-1'>Email us</a></li>
-<li className='h-[38px] mt-2  bg-white'><p className='h-full px-2 font-medium'>Cartd ID: 211XS09</p></li>
+<li  className='w-full'><p className=''>Call Your Sales Engineer.</p></li>
+<li  className='w-full'><a href='*' className='text-sm underline'>What is a Sales Engineers?</a></li>
+<li  className='w-full'><a href='*' className=' text-lg font-medium'>(800) 224-4701</a></li>
+<li  className='w-full'><a href='*' className=' underline'>Email Us</a></li>
+<li className='h-[38px] mt-2 items-center  bg-white'><p className='h-full px-2 py-1 font-medium'>Cartd ID: 211XS09</p></li>
 </ul>
 </div>
 
 
 </div>
 
-<div className='flex  w-full mt-4   h-fit  justify-center lg:max-w-[299px]  md:max-w-[176px]  max-[767px]:py-4 max-[767px]:border-t-[.7px] max-[767px]:border-b-[.7px] max-[767px]:border-C7C5C '>
+<div className='flex  w-full mt-4   h-fit  justify-center lg:max-w-[379px]  md:max-w-[176px]  max-[767px]:py-4 max-[767px]:border-t-[.7px] max-[767px]:border-b-[.7px] max-[767px]:border-C7C5C '>
 <a href='*' className='mx-2'><AiOutlineFacebook size={40} className='lg:mx-2' ></AiOutlineFacebook></a>
 <a href='*' className='mx-2'> <AiOutlineYoutube  size={40} className='lg:mx-2'></AiOutlineYoutube></a> 
 <a href='*' className='mx-2'> <AiOutlineInstagram size={40} className='lg:mx-2'></AiOutlineInstagram></a> 
