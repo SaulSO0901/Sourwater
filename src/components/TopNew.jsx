@@ -7,7 +7,7 @@ import top4 from '../assets/top/top (4).png'
 import top5 from '../assets/top/top (5).png'
 import top6 from '../assets/top/top (6).png'
 import { FaArrowRight } from "react-icons/fa6";
-
+import { Link } from 'react-router-dom'
 
 
 const TopNew = () => {
@@ -59,22 +59,22 @@ const TopNew = () => {
 </p></div>
     </a>
 
-    <a href='*' className='lg:flex max-w-[245px]  w-full items-center justify-center md:hidden max-[425px]:hidden max-[767px]:hidden '>
+    <Link to='/store' className='lg:flex max-w-[245px]  w-full items-center justify-center md:hidden max-[425px]:hidden max-[767px]:hidden '>
         <div className='flex-col  max-w-[135px] w-full h-[135px] items-center text-center justify-center rounded-full border-[.1px] border-gray-400  hover:ring-4 ring-inset  hover:ring-[#0072BA] ease-in-out duration-200 '>
         <p className='text-[#0072BA] font-bold mt-10'>SEE ALL</p>
         <div className='flex w-full justify-center'>
         <FaArrowRight color='C7C5C1' size={30} className=''></FaArrowRight>
         </div>
         </div>
-        </a>
+        </Link>
 
        
-<a href='*' className='md:flex-col md:col-start-2 sm:flex-col sm:col-start-2  max-[638px]:col-start-1 max-[638px]:col-end-3   mx-auto w-[160px] lg:hidden '>
+<Link to='/store' className='md:flex-col md:col-start-2 sm:flex-col sm:col-start-2  max-[638px]:col-start-1 max-[638px]:col-end-3   mx-auto w-[160px] lg:hidden '>
         <p className='text-[#0072BA] font-bold'>SEE ALL</p>
         <div className='flex w-full justify-center'>
         <FaArrowRight color='C7C5C1' size={30} className=''></FaArrowRight>
         </div>
-        </a>
+        </Link>
 </div>
 
     </div>

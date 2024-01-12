@@ -6,6 +6,7 @@ import value4 from '../assets/value4.JPG'
 import value5 from '../assets/value5.PNG'
 import value6 from '../assets/value6.PNG'
 
+import { Link } from "react-router-dom";
 
 const AdsValue = () => {
 
@@ -71,7 +72,7 @@ const AdsValue = () => {
 
       <div onMouseEnter={handleAdex} className='lg:flex w-full max-w-[1400px] max-h-[502px] min-h-[210px] h-fit justify-center items-center py-2 px-6 md:grid md:grid-cols-3 gap-3 max-[767px]:grid max-[767px]:grid-cols-3 gap-3 max-[320px]:px-0'>
         
-      <a href="*" onMouseEnter={handleAd1} onMouseLeave={handleAdex} className={ad1?'flex-col   max-w-[219.5px] md:max-w-[240.5px] min-w-[99px]  lg:h-[154px]  md:max-h-[182px] w-full h-full rounded-md  lg:border-[1px] border-[#0072BA]  md:border-0 mx-1 md:my-4  lg:over:shadow-2xl lg:hover:scale-105 md:hover:scale-100 ease-in-out duration-200 ' 
+      <Link to='/store'  onMouseEnter={handleAd1} onMouseLeave={handleAdex} className={ad1?'flex-col   max-w-[219.5px] md:max-w-[240.5px] min-w-[99px]  lg:h-[154px]  md:max-h-[182px] w-full h-full rounded-md  lg:border-[1px] border-[#0072BA]  md:border-0 mx-1 md:my-4  lg:over:shadow-2xl lg:hover:scale-105 md:hover:scale-100 ease-in-out duration-200 ' 
 : 'flex-col    max-w-[219.5px] md:max-w-[240.5px] min-w-[99px] lg:h-[154px]  md:max-h-[182px] w-full h-full rounded-md border-C7C5C1 lg:border-[.1px] md:border-0 mx-1  md:my-4 ease-in-out duration-200'}> 
 
 
@@ -90,9 +91,9 @@ const AdsValue = () => {
 <div  className={ad1?'flex w-full h-fit  justify-center text-center text-[#0072BA] ease-in-out duration-200': 'hidden ease-in-out duration-200'}><p className="w-full h-full">Learn more</p></div>
 
 
-</a>
+</Link>
 {/*///////////////////////////////////////////////////////////////////////////////////////////////////*/}
-<a href="*" onMouseEnter={handleAd2} onMouseLeave={handleAdex} className={ad2?'flex-col   max-w-[219.5px] md:max-w-[240.5px] min-w-[99px]  lg:h-[154px]  md:max-h-[182px] w-full h-full rounded-md  lg:border-[1px] border-[#0072BA]  md:border-0 mx-1 md:my-4  lg:over:shadow-2xl lg:hover:scale-105 md:hover:scale-100 ease-in-out duration-200 ' 
+<Link to='/store' onMouseEnter={handleAd2} onMouseLeave={handleAdex} className={ad2?'flex-col   max-w-[219.5px] md:max-w-[240.5px] min-w-[99px]  lg:h-[154px]  md:max-h-[182px] w-full h-full rounded-md  lg:border-[1px] border-[#0072BA]  md:border-0 mx-1 md:my-4  lg:over:shadow-2xl lg:hover:scale-105 md:hover:scale-100 ease-in-out duration-200 ' 
 : 'flex-col   max-w-[219.5px] md:max-w-[240.5px] min-w-[99px] lg:h-[154px]  md:max-h-[182px] w-full h-full rounded-md border-C7C5C1 lg:border-[.1px] md:border-0 mx-1  md:my-4 ease-in-out duration-200'}> 
 
 
@@ -111,12 +112,12 @@ const AdsValue = () => {
 <div  className={ad2?'flex w-full h-fit  justify-center text-center text-[#0072BA] ease-in-out duration-200': 'hidden ease-in-out duration-200'}><p className="w-full h-full">Learn more</p></div>
 
 
-</a>
+</Link>
 
 
 
 {/*///////////////////////////////////////////////////////////////////////////////////////////////////*/}
-<a href="*" onMouseEnter={handleAd3} onMouseLeave={handleAdex} className={ad3?'flex-col   max-w-[219.5px] md:max-w-[240.5px] min-w-[99px]  lg:h-[154px]  md:max-h-[182px] w-full h-full rounded-md  lg:border-[1px] border-[#0072BA]  md:border-0 mx-1 md:my-4  lg:over:shadow-2xl lg:hover:scale-105 md:hover:scale-100 ease-in-out duration-200 ' 
+<Link to='/store' onMouseEnter={handleAd3} onMouseLeave={handleAdex} className={ad3?'flex-col   max-w-[219.5px] md:max-w-[240.5px] min-w-[99px]  lg:h-[154px]  md:max-h-[182px] w-full h-full rounded-md  lg:border-[1px] border-[#0072BA]  md:border-0 mx-1 md:my-4  lg:over:shadow-2xl lg:hover:scale-105 md:hover:scale-100 ease-in-out duration-200 ' 
 : 'flex-col   max-w-[219.5px] md:max-w-[240.5px] min-w-[99px] lg:h-[154px]  md:max-h-[182px] w-full h-full rounded-md border-C7C5C1 lg:border-[.1px] md:border-0 mx-1  md:my-4 ease-in-out duration-200'}> 
 
 
@@ -135,10 +136,10 @@ const AdsValue = () => {
 <div  className={ad3?'flex w-full h-fit  justify-center text-center text-[#0072BA] ease-in-out duration-200': 'hidden ease-in-out duration-200'}><p className="w-full h-full">Learn more</p></div>
 
 
-</a>
+</Link>
 
 {/*///////////////////////////////////////////////////////////////////////////////////////////////////*/}
-<a href="*" onMouseEnter={handleAd4} onMouseLeave={handleAdex} className={ad4?'flex-col   max-w-[219.5px] md:max-w-[240.5px] min-w-[99px]  lg:h-[154px]  md:max-h-[182px] w-full h-full rounded-md  lg:border-[1px] border-[#0072BA]  md:border-0 mx-1 md:my-4  lg:over:shadow-2xl lg:hover:scale-105 md:hover:scale-100 ease-in-out duration-200 ' 
+<Link to='/store' onMouseEnter={handleAd4} onMouseLeave={handleAdex} className={ad4?'flex-col   max-w-[219.5px] md:max-w-[240.5px] min-w-[99px]  lg:h-[154px]  md:max-h-[182px] w-full h-full rounded-md  lg:border-[1px] border-[#0072BA]  md:border-0 mx-1 md:my-4  lg:over:shadow-2xl lg:hover:scale-105 md:hover:scale-100 ease-in-out duration-200 ' 
 : 'flex-col    max-w-[219.5px] md:max-w-[240.5px] min-w-[99px] lg:h-[154px]  md:max-h-[182px] w-full h-full rounded-md border-C7C5C1 lg:border-[.1px] md:border-0 mx-1  md:my-4 ease-in-out duration-200'}> 
 
 
@@ -157,10 +158,10 @@ const AdsValue = () => {
 <div  className={ad4?'flex w-full h-fit  justify-center text-center text-[#0072BA] ease-in-out duration-200': 'hidden ease-in-out duration-200'}><p className="w-full h-full">Learn more</p></div>
 
 
-</a>
+</Link>
 
 {/*///////////////////////////////////////////////////////////////////////////////////////////////////*/}
-<a href="*" onMouseEnter={handleAd5} onMouseLeave={handleAdex} className={ad5?'flex-col max-w-[219.5px] md:max-w-[240.5px] min-w-[99px]  lg:h-[154px]  md:max-h-[182px] w-full h-full rounded-md  lg:border-[1px] border-[#0072BA]  md:border-0 mx-1 md:my-4  lg:over:shadow-2xl lg:hover:scale-105 md:hover:scale-100 ease-in-out duration-200 ' 
+<Link to='/store' onMouseEnter={handleAd5} onMouseLeave={handleAdex} className={ad5?'flex-col max-w-[219.5px] md:max-w-[240.5px] min-w-[99px]  lg:h-[154px]  md:max-h-[182px] w-full h-full rounded-md  lg:border-[1px] border-[#0072BA]  md:border-0 mx-1 md:my-4  lg:over:shadow-2xl lg:hover:scale-105 md:hover:scale-100 ease-in-out duration-200 ' 
 : 'flex-col max-w-[219.5px] md:max-w-[240.5px] min-w-[99px] lg:h-[154px]  md:max-h-[182px] w-full h-full rounded-md border-C7C5C1 lg:border-[.1px] md:border-0 mx-1  md:my-4 ease-in-out duration-200'}> 
 
 
@@ -179,12 +180,12 @@ const AdsValue = () => {
 <div  className={ad5?'flex w-full h-fit  justify-center text-center text-[#0072BA] ease-in-out duration-200': 'hidden ease-in-out duration-200'}><p className="w-full h-full">Learn more</p></div>
 
 
-</a>
+</Link>
 
 
 
 {/*///////////////////////////////////////////////////////////////////////////////////////////////////*/}
-<a href="*" onMouseEnter={handleAd6} onMouseLeave={handleAdex} className={ad6?'flex-col   max-w-[219.5px] md:max-w-[240.5px] min-w-[99px]  lg:h-[154px]  md:max-h-[182px] w-full h-full rounded-md  lg:border-[1px] border-[#0072BA]  md:border-0 mx-1 md:my-4  lg:over:shadow-2xl lg:hover:scale-105 md:hover:scale-100 ease-in-out duration-200 ' 
+<Link to='/store' onMouseEnter={handleAd6} onMouseLeave={handleAdex} className={ad6?'flex-col   max-w-[219.5px] md:max-w-[240.5px] min-w-[99px]  lg:h-[154px]  md:max-h-[182px] w-full h-full rounded-md  lg:border-[1px] border-[#0072BA]  md:border-0 mx-1 md:my-4  lg:over:shadow-2xl lg:hover:scale-105 md:hover:scale-100 ease-in-out duration-200 ' 
 : 'flex-col  max-w-[219.5px] md:max-w-[240.5px] min-w-[99px] lg:h-[154px]  md:max-h-[182px] w-full h-full rounded-md border-C7C5C1 lg:border-[.1px] md:border-0 mx-1  md:my-4 ease-in-out duration-200'}> 
 
 
@@ -203,7 +204,7 @@ const AdsValue = () => {
 <div  className={ad6?'flex w-full h-fit  justify-center text-center text-[#0072BA] ease-in-out duration-200': 'hidden ease-in-out duration-200'}><p className="w-full h-full">Learn more</p></div>
 
 
-</a>
+</Link>
 
 {/*///////////////////////////////////////////////////////////////////////////////////////////////////*/}
 

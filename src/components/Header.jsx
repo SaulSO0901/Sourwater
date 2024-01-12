@@ -575,10 +575,10 @@ import {
   };
 
   return (
-    <div className='flex h-10 my-2 border-b-[.7px] border-b-C7C5C px-10 items-center justify-center md:px-4 h-14 xl:h-full  hidden md:flex      '>
+    <div className='flex h-10 my-2 border-b-[.7px] border-b-C7C5C  items-center justify-center md:px-4 h-14 xl:h-full  hidden md:flex      '>
 
-        <div  onMouseEnter={handleCat}  onMouseLeave={handleCat2} className='flex max-w-[223px]  min-w-[181px]   w-full h-[40px]  justify-center items-center hover:bg-[#EFEFEF]  text-[#362D2D] hover:text-[#0072BA] cursor-pointer'>
-          <a className='font-medium '>Shop By Category</a>
+        <Link to='/store' onMouseEnter={handleCat}  onMouseLeave={handleCat2} className='flex max-w-[223px]  min-w-[181px]   w-full h-[40px]  justify-center items-center hover:bg-[#EFEFEF]  text-[#362D2D] hover:text-[#0072BA] cursor-pointer'>
+        <div className='font-medium '><p>Shop By Category</p></div>
        <div className="flex " >
         
         <div onMouseLeave={handleGtr2}
@@ -588,11 +588,10 @@ import {
                 : "ease-in-out duration-0 fixed left-[-100%]"
             } >
             
-         <div className="flex  absolute 2xl:-mx-[168px] lg:-mx-[148px] xl:my-5 lg:my-[27px] md:-mx-[148px] md:my-[27px] bg-white   border-b-[.1px] border-C7C5C1 border-[.1px] ">
+         <div className="flex  absolute 2xl:-mx-[168px] xl:-mx-[157px] lg:-mx-[148px] xl:my-5 lg:my-[27px] md:-mx-[148px] md:my-[27px] bg-white   border-b-[.1px] border-C7C5C1 border-[.1px] ">
               <div className="flex w-72 h-[579px]     ">
  <div className="flex-col w-full  ">
                 <ul className="text-[#362D2D]">
-                <Link to='/store '>
                   <li onMouseEnter={handleGtr}   className="flex items-center justify-between p-[6px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
                     
                     <p className=" text-[#2b1010] ">Guitars</p>
@@ -725,7 +724,6 @@ import {
                   <li onMouseEnter={handleGEX} className="flex items-center justify-between p-[7px] border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
                     <p className="text-[#362D2D]  ">Gear Exchange</p>
                   </li>
-                  </Link>
                 </ul>
                
                
@@ -742,7 +740,6 @@ import {
 
 
 
-            <Link to='/store'>
               <div onMouseLeave={handleGtr2}  
               className={gtr?"w-0  flex -my-[2px] cursor-pointer top-0  h-[583px] ease-in-out duration-0"
                 : "ease-in-out duration-0 fixed left-[-100%]"} >
@@ -4079,7 +4076,6 @@ import {
 
                     
                 </div>
-                </Link>
               </div>
         </div>
         
@@ -4092,16 +4088,17 @@ import {
             <AiFillCaretDown className="" size={15} />
           )}
          </div>
-         </div>
+         </Link>
 
 {/*End of categories Section*/}
 
 
-<Link to='/store'>
-   <div className='flex max-w-[192px]   min-w-[122px]   w-full h-[40px]   items-center justify-center hover:bg-[#EFEFEF]   text-[#362D2D] hover:text-[#0072BA] cursor-pointer'><a className='font-medium'>What's New</a> </div>
-       </Link>
+
+   <div className='flex max-w-[192px]   min-w-[122px]   w-full h-[40px]   items-center justify-center hover:bg-[#EFEFEF]   text-[#362D2D] hover:text-[#0072BA] cursor-pointer'><Link className="flex w-full h-full items-center justify-center text-center" to='/store'><p className='w-full h-full py-2 font-medium font-medium'>What's New</p></Link> </div>
+     
 {/*Deals Section*/}
-        <div onMouseEnter={handleDeal} onMouseLeave={handleDeal2} className='flex max-w-[161px] min-w-[88px]   w-full h-[40px]  justify-center items-center hover:bg-[#EFEFEF]   text-[#362D2D] hover:text-[#0072BA] cursor-pointer'><a className='font-medium'>Deals</a>
+
+        <Link to='/store' onMouseEnter={handleDeal} onMouseLeave={handleDeal2} className='flex max-w-[161px] min-w-[88px]   w-full h-[40px]  justify-center items-center hover:bg-[#EFEFEF]   text-[#362D2D] hover:text-[#0072BA] cursor-pointer'><p className='font-medium'>Deals</p>
         <div className="flex-col items-center  ">
 
         <div
@@ -4111,7 +4108,6 @@ import {
                 : "ease-in-out duration-0 fixed left-[-100%]"
             }
           >
-            <Link to='/store'>
             <div className=" absolute block  xl:-mx-[92px] lg:-mx-[63px] xl:my-5 lg:my-[27px] md:-mx-[56px] md:my-[27px] w-60 border-C7C5C1 border-[.1px] bg-white items-center justify-center text-[#362D2D]">
             <div onMouseEnter={handleOne2} className="flex  h-12 justify-center items-center hover:bg-[#EFEFEF] border-b-[.7px] border-b-C7C5C1">
             <h1 className=" text-2xl text-[#362D2D]"><b>DEAL</b>ZONE</h1>
@@ -4201,7 +4197,6 @@ import {
               </div>
               </div>
               </div>
-              </Link>
               </div>
               </div>
               
@@ -4212,21 +4207,20 @@ import {
             <AiFillCaretDown className="" size={15} />
           )}
          </div>
-  
-        </div>
-
+        </Link>
+      
         {/*Used Gear Section*/}
-        <div onMouseEnter={handleUG} onMouseLeave={handleUG2}  className='flex max-w-[197px] min-w-[126px]    w-full h-[40px]    justify-center items-center hover:bg-[#EFEFEF]   text-[#362D2D] hover:text-[#0072BA] cursor-pointer'><a className='font-medium'>Used Gear</a>
+        <Link to='/store' onMouseEnter={handleUG} onMouseLeave={handleUG2}  className='flex max-w-[197px] min-w-[126px]    w-full h-[40px]    justify-center items-center hover:bg-[#EFEFEF]   text-[#362D2D] hover:text-[#0072BA] cursor-pointer'><p className='font-medium'>Used Gear</p>
         <div className="flex-col items-center  ">
 
 <div
 className={
       ug
-        ? "w-0 h-0 flex cursor-pointer top-0 left-0  ease-in-out duration-0"
+        ? "w-0 h-0 flex mx-auto cursor-pointer top-0 left-0  ease-in-out duration-0"
         : "ease-in-out duration-0 fixed left-[-100%]"
     }
   >
-    <div className=" absolute block my-5 xl:-mx-[121px] lg:-mx-[93px] xl:my-5 lg:my-[27px]  md:-mx-[92px] md:my-[27px] w-60 border-C7C5C1 border-[.1px] bg-white items-center justify-center text-[#362D2D]">
+    <div className=" absolute block xl:-mx-[127px] lg:-mx-[93px] xl:my-5 lg:my-[27px]  md:-mx-[92px] md:my-[27px] w-60 border-C7C5C1 border-[.1px] bg-white items-center justify-center text-[#362D2D]">
     <div onMouseEnter={handleOne2} className="flex  h-12 justify-center items-center hover:bg-[#EFEFEF] border-b-[.7px] border-b-C7C5C1">
     <h1 className=" text-2xl text-[#362D2D]"><b>GEAR</b>EXCHANGE</h1>
     </div>
@@ -4336,13 +4330,13 @@ className={
   )}
  </div>
 
-</div>
+</Link>
 
 
-        <div className='flex  h-[40px] max-w-[160px]  min-w-[88px]  w-full justify-center items-center hover:bg-[#EFEFEF]  text-[#362D2D] hover:text-[#0072BA] cursor-pointer'><a className='font-medium'>Rentals</a></div>
-        <div className='flex  h-[40px] max-w-[227px] min-w-[156px]   w-full  justify-center items-center hover:bg-[#EFEFEF]  text-[#362D2D] hover:text-[#0072BA] cursor-pointer'><a className='font-medium'>Articles & Videos</a></div>
-        <div className='flex  h-[40px] max-w-[177px]   w-full  justify-center items-center hover:bg-[#EFEFEF]  text-[#362D2D] hover:text-[#0072BA] cursor-pointer hidden lg:flex'><a className='font-medium'> Giveaway</a></div>
-        <div className='flex  h-[40px] max-w-[230px]   w-full  justify-center items-center hover:bg-[#EFEFEF]  text-[#362D2D] hover:text-[#0072BA] cursor-pointer hidden lg:flex'><a className='font-medium '>Sourwater Card</a></div>
+        <div className='flex  h-[40px] max-w-[160px]  min-w-[88px]  w-full justify-center items-center text hover:bg-[#EFEFEF]  text-[#362D2D] hover:text-[#0072BA] cursor-pointer'><Link className="flex w-full h-full items-center justify-center text-center" to='/store'><p className='w-full h-full py-2 font-medium'>Rentals</p></Link></div>
+        <div className='flex  h-[40px] max-w-[227px] min-w-[156px]   w-full  justify-center items-center hover:bg-[#EFEFEF]  text-[#362D2D] hover:text-[#0072BA] cursor-pointer'><Link className="flex w-full h-full items-center justify-center text-center" to='/store'><p className='w-full h-full py-2 font-medium'>Articles & Videos</p></Link></div>
+        <div className='flex  h-[40px] max-w-[177px]   w-full  justify-center items-center hover:bg-[#EFEFEF]  text-[#362D2D] hover:text-[#0072BA] cursor-pointer hidden lg:flex'><Link className="flex w-full h-full items-center justify-center text-center" to='/store'><p className='w-full h-full py-2 font-medium'> Giveaway</p></Link></div>
+        <div className='flex  h-[40px] max-w-[230px]   w-full  justify-center items-center hover:bg-[#EFEFEF]  text-[#362D2D] hover:text-[#0072BA] cursor-pointer hidden lg:flex'><Link className="flex w-full h-full items-center justify-center text-center" to='/store'><p className='w-full h-full py-2 font-medium '>Sourwater Card</p></Link></div>
 
 
 
