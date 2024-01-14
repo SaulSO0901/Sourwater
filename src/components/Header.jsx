@@ -4090,6 +4090,34 @@ import {
          </div>
          </Link>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {/*End of categories Section*/}
 
 
@@ -4104,7 +4132,7 @@ import {
         <div
         className={
               deal
-                ? "w-0 h-0 flex cursor-pointer top-0 left-0 w-[60%] h-full  ease-in-out duration-0"
+                ? "w-0 h-0 relative flex cursor-pointer top-0 left-0 z-20  ease-in-out duration-0"
                 : "ease-in-out duration-0 fixed left-[-100%]"
             }
           >
@@ -4216,7 +4244,7 @@ import {
 <div
 className={
       ug
-        ? "w-0 h-0 flex mx-auto cursor-pointer top-0 left-0  ease-in-out duration-0"
+        ? "flex relative w-0 h-0 mx-auto cursor-pointer top-0 left-0  ease-in-out duration-0"
         : "ease-in-out duration-0 fixed left-[-100%]"
     }
   >

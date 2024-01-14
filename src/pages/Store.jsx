@@ -14,6 +14,7 @@ const Store = () => {
       <Header/>
       <div className='px-4'>
         <Catalog/>
+        
       </div>
         <Footer/>
     </div>

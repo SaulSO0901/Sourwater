@@ -1,6 +1,6 @@
 import React from 'react'
 import { BsInstagram, BsArrowLeftShort, BsArrowRightShort } from 'react-icons/bs';
-import { images,products } from '../constants';
+import { images} from '../constants';
 
 const ProductSuggest = () => {
 
