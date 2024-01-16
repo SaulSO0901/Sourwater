@@ -8,14 +8,15 @@ import Footer from '../components/Footer'
 
 const Store = () => {
   return (
-    <div>
+    <div className=''>
         <Navbar/>
         <MBNavbar/>
-      <Header/>
-      <div className='px-4'>
+        <Header/>
+
+      <div className='md:px-4'>
         <Catalog/>
-        
       </div>
+      
         <Footer/>
     </div>
   )

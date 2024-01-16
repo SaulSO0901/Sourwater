@@ -1,8 +1,9 @@
 import React, { useState,Fragment } from "react";
 import { Link } from 'react-router-dom'
-import { AiFillCaretRight,AiFillCaretDown,} from "react-icons/ai";
+import { AiFillCaretRight,AiFillCaretDown,  AiOutlineMenu,} from "react-icons/ai";
 import { Menu, Transition } from '@headlessui/react'
 import Products from "./Products";
+
 import RecentlyV from './RecentlyV'
 const Catalog = () => {
 
@@ -138,14 +139,21 @@ const Catalog = () => {
     setPsx(false);
   };
   return (
-    <div className='flex-col max-w-[1488px] w-full mt-8 mx-auto '>
-      <p className='text-sm font-light text-[#362D2D]'>Guitars/Electric Guitars</p>
-<h2 className='mt-4 py-4 text-4xl font-medium text-[#362D2D] border-b-[.7px] border-b-C7C5C1'>Electric Guitars</h2>
+    <div className='flex-col max-w-[1488px]   w-full mt-8  mx-auto '>
 
-<div className='flex w-full'>
+      <p className='w-full min-[1px]:hidden md:flex text-sm font-light text-[#362D2D]'>Guitars/Electric Guitars</p>
+      
+<h2 className='min-[1px]:hidden md:flex  mt-4 py-4 text-4xl font-medium text-[#362D2D] border-b-[.7px] border-b-C7C5C1'>Electric Guitars</h2>
+<div className="flex h-fit  min-[1px]:flex md:hidden mx-auto text-[#8A8A8A] font-medium ">
+<h2 className='w-full  text-2xl font-medium text-[#362D2D] border-b-[.7px] border-b-C7C5C1'>Electric Guitars</h2>
+<p className="w-full">1-42 of 2111 Products</p>
+</div>
+
+<div className='flex  w-full '>
 
 
-<div className='flex-col max-w-[250px] w-full h-[1742px] mt-4 border-[.1px] border-C7C5C1 border-l-[.0px]  border-b-[.0px] '>
+<div className='md:flex min-[1px]:hidden min-[770px]:max-w-[250px] md:max-w-[200px] w-full h-[1742px] mt-4 border-[.1px] border-C7C5C1 border-l-[.0px]  border-b-[.0px] '>
+<div className="flex-col">
 <div className="flex-col  border-b-[.1px] border-b-C7C5C1">
 <h2 className='py-4 text-2xl font-medium  text-[#0072BA] border-b-[.1px] border-b-C7C5C1'>Refine Your Search</h2>
 <p to='/store' className='py-4 text-2xl  text-[#362D2D] border-b-[.1px] border-b-C7C5C1'>Availability </p>
@@ -175,18 +183,18 @@ const Catalog = () => {
 <Link to='/store' onMouseEnter={handlePsx} onMouseLeave={handlePsx2} className='flex mt-4'><input className='p-2 mr-2' type='checkbox' checked={prsx ? true : false}></input><p className='text-sm text-[#362D2D] '>$300 and over (8)</p></Link>
 <div className="flex mt-4 items-center">$<input className="w-14 mx-1 border-[.1px] border-C7C5C1"></input>To$<input  className=" w-14 mx-1 border-[.1px] border-C7C5C1"></input><Link to='/store'><AiFillCaretRight></AiFillCaretRight></Link></div>
 </div>
-  
+</div>
 </div>
 </div>
 {/*///////////////////////////////////////////////////////*/}
-<div className="flex-col w-full ml-12 mt-4  py-4 ">
-<div className="flex items-center justify-between ">
+<div className="flex-col  w-full xl:ml-12 md:ml-4 mt-4  py-4 ">
+<div className="flex w-full items-center justify-between ">
 
-<Menu as="div" className="relative inline-block text-left">
-      <div>
-        <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-[#8A8A8A] shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
+<Menu as="div" className="relative inline-block text-left min-[1px]:w-full md:w-fit">
+      <div >
+        <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-[#8A8A8A] max-[425px]:text-[#0072BA] shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
           Most Popular
-          <AiFillCaretDown className="-mr-1 h-5 w-5 text-[#8A8A8A]" aria-hidden="true" />
+          <AiFillCaretDown className="-mr-1 h-5 w-5 text-[#8A8A8A] max-[425px]:text-[#0072BA]" aria-hidden="true" />
         </Menu.Button>
       </div>
 
@@ -199,14 +207,14 @@ const Catalog = () => {
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
       >
-        <Menu.Items className="absolute left-0 z-10  w-56 origin-top-right rounded-sm bg-white shadow-lg ring-1 ring-[#C7C5C1] ring-opacity-5 focus:outline-none">
+        <Menu.Items className="absolute left-0 z-10  w-56 origin-top-right  rounded-sm bg-white shadow-lg ring-1 ring-[#C7C5C1] ring-opacity-5 focus:outline-none">
           <div className="py-1 ">
             <Menu.Item>
               {({ active }) => (
                 <a
                   href="#"
                   className={classNames(
-                    active ? 'bg-gray-100 text-[#8A8A8A]' : 'text-[#8A8A8A]',
+                    active ? 'bg-gray-100 text-[#8A8A8A] ' : 'text-[#8A8A8A] max-[425px]:text-[#0072BA]',
                     'block px-4 py-2 text-sm'
                   )}
                 >
@@ -219,7 +227,7 @@ const Catalog = () => {
                 <a
                   href="#"
                   className={classNames(
-                    active ? 'bg-gray-100 text-[#8A8A8A]' : 'text-[#8A8A8A]',
+                    active ? 'bg-gray-100 text-[#8A8A8A]' : 'text-[#8A8A8A] max-[425px]:text-[#0072BA]',
                     'block px-4 py-2 text-sm'
                   )}
                 >
@@ -232,7 +240,7 @@ const Catalog = () => {
                 <a
                   href="#"
                   className={classNames(
-                    active ? 'bg-gray-100 text-[#8A8A8A]' : 'text-[#8A8A8A]',
+                    active ? 'bg-gray-100 text-[#8A8A8A]' : 'text-[#8A8A8A] max-[425px]:text-[#0072BA]',
                     'block px-4 py-2 text-sm'
                   )}
                 >
@@ -246,7 +254,7 @@ const Catalog = () => {
                   <button
                   
                     className={classNames(
-                      active ? 'bg-gray-100 text-[#8A8A8A]' : 'text-[#8A8A8A]',
+                      active ? 'bg-gray-100 text-[#8A8A8A]' : 'text-[#8A8A8A] max-[425px]:text-[#0072BA]',
                       'block w-full px-4 py-2 text-left text-sm'
                     )}
                   >
@@ -260,7 +268,7 @@ const Catalog = () => {
                 <a
                   href="#"
                   className={classNames(
-                    active ? 'bg-gray-100 text-[#8A8A8A]' : 'text-[#8A8A8A]',
+                    active ? 'bg-gray-100 text-[#8A8A8A]' : 'text-[#8A8A8A] max-[425px]:text-[#0072BA]',
                     'block px-4 py-2 text-sm'
                   )}
                 >
@@ -274,7 +282,7 @@ const Catalog = () => {
                 <a
                   href="#"
                   className={classNames(
-                    active ? 'bg-gray-100 text-[#8A8A8A]' : 'text-[#8A8A8A]',
+                    active ? 'bg-gray-100 text-[#8A8A8A]' : 'text-[#8A8A8A] max-[425px]:text-[#0072BA]',
                     'block px-4 py-2 text-sm'
                   )}
                 >
@@ -288,7 +296,7 @@ const Catalog = () => {
                 <a
                   href="#"
                   className={classNames(
-                    active ? 'bg-gray-100 text-[#8A8A8A]' : 'text-[#8A8A8A]',
+                    active ? 'bg-gray-100 text-[#8A8A8A]' : 'text-[#8A8A8A] max-[425px]:text-[#0072BA]',
                     'block px-4 py-2 text-sm'
                   )}
                 >
@@ -303,11 +311,11 @@ const Catalog = () => {
     </Menu>
 
     
-<div className="flex h-fit mx-auto text-[#8A8A8A] font-medium ">
+<div className="flex min-[1px]:hidden md:flex  h-fit  mx-auto text-[#8A8A8A] font-medium ">
 <p>1-42 of 2111 Products</p>
 </div>
 
-<div className="flex h-8 mr-4 items-center justify-center text-[#8A8A8A] font-medium">
+<div className="md:flex min-[1px]:hidden  h-8 mr-4 items-center justify-center text-[#8A8A8A] font-medium">
 <p className="">Page</p>
 <div className="  px-4 mx-2 border-[.1px] border-C7C5C1 shadow-sm">1</div>
 <p className="mr-1">of 81</p>
@@ -316,29 +324,34 @@ const Catalog = () => {
 </Link>
 </div>
 
+<div className="md:hidden min-[1px]:flex w-full text-[#0072BA]">
+<AiOutlineMenu className="ml-2" size={20}></AiOutlineMenu>
+<p className="ml-2 w-full">Filter</p>
+</div>
 
 </div>
 <Products></Products>
 
-<div className="flex w-full mt-4 justify-center">
-<button className="p-2 px-3 mx-1 bg-[#ed592c] text-white font-bold ">1</button>
-<button className="p-2 px-3 mx-1 bg-white hover:bg-[#ed592c] hover:text-white font-bold">2</button>
-<button className="p-2 px-3 mx-1 bg-white hover:bg-[#ed592c] hover:text-white font-bold">3</button>
-<button className="p-2 px-3 mx-1 bg-white hover:bg-[#ed592c] hover:text-white font-bold">4</button>
-<button className="p-2 px-3 mx-1 bg-white hover:bg-[#ed592c] hover:text-white font-bold">5</button>
-<button className="p-2 px-3 mx-1 bg-white hover:bg-[#ed592c] hover:text-white font-bold">6</button>
-<button className="p-2 px-3 mx-1 bg-white hover:bg-[#ed592c] hover:text-white font-bold">7</button>
-<button className="p-2 px-3 mx-1 bg-white hover:bg-[#ed592c] hover:text-white font-bold">8</button>
-<button className="p-2 px-3 mx-1 bg-white hover:bg-[#ed592c] hover:text-white font-bold">...</button>
-<button className="p-2 px-3 mx-1 bg-white hover:bg-[#ed592c] hover:text-white font-bold">88</button>
-<button className="p-2 px-3 mx-1 bg-white hover:bg-[#ed592c] hover:text-white font-bold">89</button>
 
-</div>
 
 </div>
 
     </div>
+    <div className="flex w-full min-w-[280px] mt-4 justify-center">
+<button className="p-2 md:px-3 mx-1 bg-[#ed592c] text-white font-bold ">1</button>
+<button className="p-2 md:px-3 mx-1 bg-white hover:bg-[#ed592c] hover:text-white font-bold">2</button>
+<button className="p-2 md:px-3 mx-1 bg-white hover:bg-[#ed592c] hover:text-white font-bold">3</button>
+<button className="p-2 md:px-3 mx-1 bg-white hover:bg-[#ed592c] hover:text-white font-bold">4</button>
+<button className="p-2 md:px-3 mx-1 bg-white hover:bg-[#ed592c] hover:text-white font-bold">5</button>
+<button className="p-2 v mx-1 bg-white hover:bg-[#ed592c] hover:text-white font-bold">6</button>
+<button className="hidden md:flex p-2 px-3 mx-1 bg-white hover:bg-[#ed592c] hover:text-white font-bold">7</button>
+<button className="hidden md:flex p-2 px-3 mx-1 bg-white hover:bg-[#ed592c] hover:text-white font-bold">8</button>
+<button className="hidden md:flex p-2 px-3 mx-1 bg-white hover:bg-[#ed592c] hover:text-white font-bold">...</button>
+<button className="hidden md:flex x p-2 px-3 mx-1 bg-white hover:bg-[#ed592c] hover:text-white font-bold">88</button>
+<button className="hidden md:flex  p-2 px-3 mx-1 bg-white hover:bg-[#ed592c] hover:text-white font-bold">89</button>
+<button className="flex md:hidden p-2 md:px-3 mx-1 bg-white hover:bg-[#ed592c] hover:text-white font-bold">Next</button>
 
+</div>
     </div>
     
   )

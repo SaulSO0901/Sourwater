@@ -29,7 +29,7 @@ const Calando = () => {
     setNav(!nav);
   };
   return (
-    <div className="flex-col md:hidden  w-full  ">
+    <div className="flex-col md:hidden  w-full   ">
       <div className={nav?'flex  fixed justify-between items-center h-[60px] w-full mx-auto   md:hidden  bg-white   text-black  '
       :"flex  fixed justify-between items-center h-[60px] w-full mx-auto -my-16  md:hidden  bg-white   text-black z-50"}>
         <Link to='/home' className="flex items-center  ">
@@ -87,7 +87,7 @@ const Calando = () => {
       <div  onTouchStart={handleNav2}
         className={
           nav
-            ? "w-full h-[100vh] bg-black bg-opacity-60 px-2 md:hidden"
+            ? "w-full h-[100vh] bg-black bg-opacity-60 px-2  md:hidden"
             : "bg-transparent px-2  "
         }
       >
