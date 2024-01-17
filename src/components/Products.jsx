@@ -1,8 +1,16 @@
-import React from 'react'
+import React, { useState } from "react";
 import { images} from '../constants';
 import { IoIosStar } from "react-icons/io";
 import { Link } from 'react-router-dom';
 const Products = () => {
+  const [nav, setNav] = useState(false);
+  
+  const handleNav2 = () => {
+    setNav(false);
+  };
+ const handleNav = () => {
+    setNav(!nav);
+  };
   return (
    
 <div className="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 min-[1px]:grid-cols-1 max-w-[1190px]   w-full  mt-4 border-[.1px] border-C7C5C1  ">

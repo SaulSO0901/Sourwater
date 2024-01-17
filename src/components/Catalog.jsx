@@ -23,7 +23,8 @@ const Catalog = () => {
   const [prt, setPrt] = useState(false);
   const [prfo, setPrfo] = useState(false);
   const [prfi, setPrfi] = useState(false);
-  const [prsx, setPsx] = useState(false);
+  const [prsx, setPrsx] = useState(false);
+  const [nav, setNav] = useState(false);
 
 
   function classNames(...classes) {
@@ -132,21 +133,28 @@ const Catalog = () => {
     setPrfi(false);
   };
 
-  const handlePsx = () => {
-    setPsx(true);
+  const handlePrsx = () => {
+    setPrsx(true);
   };
-  const handlePsx2 = () => {
-    setPsx(false);
+  const handlePrsx2 = () => {
+    setPrsx(false);
+  };
+
+  const handleNav2 = () => {
+    setNav(false);
+  };
+ const handleNav = () => {
+    setNav(!nav);
   };
   return (
-    <div className='flex-col max-w-[1488px]   w-full mt-8  mx-auto '>
+    <div onAuxClick={handleNav2} className={nav?'flex-col max-w-[1488px]   w-full mt-8  mx-auto ' : 'flex-col max-w-[1488px]   w-full mt-8  mx-auto '}>
 
       <p className='w-full min-[1px]:hidden md:flex text-sm font-light text-[#362D2D]'>Guitars/Electric Guitars</p>
       
 <h2 className='min-[1px]:hidden md:flex  mt-4 py-4 text-4xl font-medium text-[#362D2D] border-b-[.7px] border-b-C7C5C1'>Electric Guitars</h2>
 <div className="flex h-fit  min-[1px]:flex md:hidden mx-auto text-[#8A8A8A] font-medium ">
 <h2 className='w-full  text-2xl font-medium text-[#362D2D] border-b-[.7px] border-b-C7C5C1'>Electric Guitars</h2>
-<p className="w-full">1-42 of 2111 Products</p>
+<p className="w-full border-b-[.7px] border-b-C7C5C1'">1-42 of 2111 Products</p>
 </div>
 
 <div className='flex  w-full '>
@@ -180,7 +188,7 @@ const Catalog = () => {
 <Link to='/store' onMouseEnter={handlePrt} onMouseLeave={handlePrt2} className='flex mt-4'><input className='p-2 mr-2' type='checkbox' checked={prt ? true : false}></input><p className='text-sm text-[#362D2D] '>$500 to 7500 (15)</p></Link>
 <Link to='/store' onMouseEnter={handlePrfo} onMouseLeave={handlePrfo2} className='flex mt-4'><input className='p-2 mr-2' type='checkbox' checked={prfo ? true : false}></input><p className='text-sm text-[#362D2D] '>$1000 to $1500 (15)</p></Link>
 <Link to='/store' onMouseEnter={handlePrfi} onMouseLeave={handlePrfi2} className='flex mt-4'><input className='p-2 mr-2' type='checkbox' checked={prfi ? true : false}></input><p className='text-sm text-[#362D2D] '>$1500 to $2000 (10)</p></Link>
-<Link to='/store' onMouseEnter={handlePsx} onMouseLeave={handlePsx2} className='flex mt-4'><input className='p-2 mr-2' type='checkbox' checked={prsx ? true : false}></input><p className='text-sm text-[#362D2D] '>$300 and over (8)</p></Link>
+<Link to='/store' onMouseEnter={handlePrsx} onMouseLeave={handlePrsx2} className='flex mt-4'><input className='p-2 mr-2' type='checkbox' checked={prsx ? true : false}></input><p className='text-sm text-[#362D2D] '>$300 and over (8)</p></Link>
 <div className="flex mt-4 items-center">$<input className="w-14 mx-1 border-[.1px] border-C7C5C1"></input>To$<input  className=" w-14 mx-1 border-[.1px] border-C7C5C1"></input><Link to='/store'><AiFillCaretRight></AiFillCaretRight></Link></div>
 </div>
 </div>
@@ -323,10 +331,54 @@ const Catalog = () => {
 <AiFillCaretRight size={20}  />
 </Link>
 </div>
-
-<div className="md:hidden min-[1px]:flex w-full text-[#0072BA]">
+{/*navbar*/}
+<div onClick={handleNav} className="md:hidden min-[1px]:flex w-full text-[#0072BA] select-none">
 <AiOutlineMenu className="ml-2" size={20}></AiOutlineMenu>
 <p className="ml-2 w-full">Filter</p>
+<div
+            className={
+              nav
+                ? "fixed overflow-y-scroll w-[100%] z-50 left-[0%] top-[0%]   bg-white h-full border-r border-r-[#C7C5C] ease-in-out duration-500"
+                : "ease-in-out duration- fixed left-[100%]"
+            }
+          >
+            <div className="text-[#362D2D] ">
+              <Link to='/store' className="flex-col">
+              <div  className="flex w-full p-4 border-b border-b-[#C7C5C] justify-end text-[#0072BA] font-medium ">
+              <p>Close</p>
+              </div>
+
+              <div className="p-2  text-start text-[#8A8A8A] font-medium  ">Refine Your Search</div>
+              <div className="p-2 mt-4 text-[#8A8A8A] font-medium">Availability</div>
+             <div className="flex pb-4 border-b border-b-[#C7C5C]">
+             <Link to='/store' onMouseEnter={handleStk} onMouseLeave={handleStk2} className='flex mt-4 mr-1 p-2  h-10 w-full items-center bg-[#EFEFEF] rounded '><input className='p-2 mr-4 justify-between ' type='checkbox' checked={stk ? true : false}></input><p className=' text-[#8A8A8A font-medium w-full '>In Stock </p> <p className="w-full  px-2 text-right text-[#8A8A8A] text-sm">(15)</p></Link>
+             <Link to='/store' onMouseEnter={handlePro} onMouseLeave={handlePro2} className='flex mt-4 ml-1 p-2  h-10 w-full items-center bg-[#EFEFEF] rounded '><input className='p-2 mr-4 justify-between ' type='checkbox' checked={pro ? true : false}></input><p className=' text-[#8A8A8A font-medium w-full '>Pre-order </p> <p className="w-full  px-2 text-right  text-[#8A8A8A] text-sm">(25)</p></Link>
+             </div>
+
+             <div className="p-2 mt-4 text-[#8A8A8A] font-medium ">Brand</div>
+<div className="grid grid-cols-2 gap-2">
+<Link to='/store' onMouseEnter={handleEsp} onMouseLeave={handleEsp2} className='flex mt-4  p-2  h-10 w-full items-center bg-[#EFEFEF] rounded '><input className='p-2 mr-4 justify-between ' type='checkbox' checked={esp ? true : false}></input><p className=' text-[#8A8A8A font-medium w-full '>Esp</p> <p className="w-full  px-2 text-right text-[#8A8A8A] text-sm">(15)</p></Link>
+<Link to='/store' onMouseEnter={handleGbs} onMouseLeave={handleGbs2} className='flex mt-4  p-2  h-10 w-full items-center bg-[#EFEFEF] rounded '><input className='p-2 mr-4 justify-between ' type='checkbox' checked={gbs ? true : false}></input><p className=' text-[#8A8A8A font-medium w-full '>Gibson</p> <p className="w-full  px-2 text-right text-[#8A8A8A] text-sm">(12)</p></Link>
+<Link to='/store' onMouseEnter={handleJks} onMouseLeave={handleJks2} className='flex mt-4  p-2  h-10 w-full items-center bg-[#EFEFEF] rounded '><input className='p-2 mr-4 justify-between ' type='checkbox' checked={jks ? true : false}></input><p className=' text-[#8A8A8A font-medium w-full '>Jackson</p> <p className="w-full  px-2 text-right text-[#8A8A8A] text-sm">(7)</p></Link>
+<Link to='/store' onMouseEnter={handleFnd} onMouseLeave={handleFnd2} className='flex mt-4 p-2  h-10 w-full items-center bg-[#EFEFEF] rounded '><input className='p-2 mr-4 justify-between ' type='checkbox' checked={fnd ? true : false}></input><p className=' text-[#8A8A8A font-medium w-full '>Fender</p> <p className="w-full  px-2 text-right text-[#8A8A8A] text-sm">(6)</p></Link>
+<Link to='/store' onMouseEnter={handleEph} onMouseLeave={handleEph2} className='flex mt-4  p-2  h-10 w-full items-center bg-[#EFEFEF] rounded '><input className='p-2 mr-4 justify-between ' type='checkbox' checked={eph ? true : false}></input><p className=' text-[#8A8A8A font-medium w-full '>Epiphone</p> <p className="w-full  px-2 text-right text-[#8A8A8A] text-sm">(5)</p></Link>
+<Link to='/store' onMouseEnter={handleSqr} onMouseLeave={handleSqr2} className='flex mt-4  p-2  h-10 w-full items-center bg-[#EFEFEF] rounded '><input className='p-2 mr-4 justify-between ' type='checkbox' checked={sqr ? true : false}></input><p className=' text-[#8A8A8A font-medium w-full '>Squire</p> <p className="w-full  px-2 text-right text-[#8A8A8A] text-sm">(5)</p></Link>
+<Link to='/store' onMouseEnter={handleHbn} onMouseLeave={handleHbn2} className='flex mt-4  p-2  h-10 w-full items-center bg-[#EFEFEF] rounded '><input className='p-2 mr-4 justify-between ' type='checkbox' checked={hbn ? true : false}></input><p className=' text-[#8A8A8A font-medium w-full '>Harley Benton</p> <p className="w-full  px-2 text-right text-[#8A8A8A] text-sm">(15)</p></Link>
+</div>
+
+<div className="p-2 mt-4 text-[#8A8A8A] font-medium border-t border-t-[#C7C5C]">Price Range</div>
+<div className="flex-col pb-4 border-b border-b-[#C7C5C]">
+             <Link to='/store' onMouseEnter={handlePrf} onMouseLeave={handlePrf2} className='flex mt-4 mr-1 p-2  h-10 w-full items-center bg-[#EFEFEF] rounded '><input className='p-2 mr-4 justify-between ' type='checkbox' checked={prf ? true : false}></input><p className=' text-[#8A8A8A font-medium w-full '>$100 to $200</p> <p className="w-full  px-2 text-right text-[#8A8A8A] text-sm">(5)</p></Link>
+             <Link to='/store' onMouseEnter={handlePrs} onMouseLeave={handlePrs2} className='flex mt-4 ml-1 p-2  h-10 w-full items-center bg-[#EFEFEF] rounded '><input className='p-2 mr-4 justify-between ' type='checkbox' checked={prs ? true : false}></input><p className=' text-[#8A8A8A font-medium w-full '>$200 to 300</p> <p className="w-full  px-2 text-right  text-[#8A8A8A] text-sm">(5)</p></Link>
+             <Link to='/store' onMouseEnter={handlePrt} onMouseLeave={handlePrt2} className='flex mt-4 ml-1 p-2  h-10 w-full items-center bg-[#EFEFEF] rounded '><input className='p-2 mr-4 justify-between ' type='checkbox' checked={prt ? true : false}></input><p className=' text-[#8A8A8A font-medium w-full '>$500 to $750</p> <p className="w-full  px-2 text-right  text-[#8A8A8A] text-sm">(15)</p></Link>
+             <Link to='/store' onMouseEnter={handlePrfo} onMouseLeave={handlePrfo2} className='flex mt-4 ml-1 p-2  h-10 w-full items-center bg-[#EFEFEF] rounded '><input className='p-2 mr-4 justify-between ' type='checkbox' checked={prfo ? true : false}></input><p className=' text-[#8A8A8A font-medium w-full '>$1000 to $1500</p> <p className="w-full  px-2 text-right  text-[#8A8A8A] text-sm">(15)</p></Link>
+             <Link to='/store' onMouseEnter={handlePrfi} onMouseLeave={handlePrfi2} className='flex mt-4 ml-1 p-2  h-10 w-full items-center bg-[#EFEFEF] rounded '><input className='p-2 mr-4 justify-between ' type='checkbox' checked={prfi ? true : false}></input><p className=' text-[#8A8A8A font-medium w-full '>$1500 to $2000</p> <p className="w-full  px-2 text-right  text-[#8A8A8A] text-sm">(10)</p></Link>
+             <Link to='/store' onMouseEnter={handlePrsx} onMouseLeave={handlePrsx2} className='flex mt-4 ml-1 p-2  h-10 w-full items-center bg-[#EFEFEF] rounded '><input className='p-2 mr-4 justify-between ' type='checkbox' checked={prsx ? true : false}></input><p className=' text-[#8A8A8A font-medium w-full '>$3000 and over</p> <p className="w-full  px-2 text-right  text-[#8A8A8A] text-sm">(8)</p></Link>
+
+             </div>
+              </Link>
+            </div>
+          </div>
 </div>
 
 </div>
