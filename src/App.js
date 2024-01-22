@@ -3,6 +3,7 @@ import { BrowserRouter,Routes,Route } from 'react-router-dom';
 
 import Home from './pages/Home';
 import Store from './pages/Store';
+import Product from './pages/Product';
 function App() {
   return (
     <div className="App">
@@ -13,6 +14,9 @@ function App() {
         
         <Route index element={<Store/>}/>
         <Route path='/store' element={<Store/>}/>
+
+        <Route index element={<Product/>}/>
+        <Route path='/product' element={<Product/>}/>
       </Routes>
       </BrowserRouter>
     </div>

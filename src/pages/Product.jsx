@@ -1,24 +1,29 @@
 import React from 'react'
-import Catalog from '../components/Catalog'
+
+
 import Navbar from '../components/Navbar'
 import Header from '../components/Header'
 import MBNavbar from '../components/MBNavbar'
+import ProductSum from '../components/ProductSum'
+import TopNew from '../components/TopNew';
+import ProductDesc from '../components/ProductDesc'
 import Footer from '../components/Footer'
 
-const Store = () => {
+const Product = () => {
   return (
-    <div className=''>
+    <div>
         <Navbar/>
         <MBNavbar/>
         <Header/>
-
-      <div className='md:px-4'>
-        <Catalog/>
-      </div>
-      
+        
+        <ProductSum/>
+        <TopNew/>
+        <ProductDesc/>
+    
+     
         <Footer/>
     </div>
   )
 }
 
-export default Store
+export default Product

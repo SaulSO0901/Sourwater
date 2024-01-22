@@ -114,19 +114,19 @@ const Navbar = () => {
             <div className="flex my-6 border-C7C5C1 border-[.5px] absolute bg-white  ">
               <div className="flex-col ">
 
-                <Link to='/store'>
+                <Link to='/product'>
                 <div
                   className={
                     "flex  ring-[#C7C5C1]  ring-b-1 hover:ring-4 ring-inset  hover:ring-[#0072BA] ease-in-out duration-200 cursor-pointer "
                   }
                 >
-                  <a href="/store" className="flex items-center my-2 p-4 ">
+                  <div className="flex items-center my-2 p-4 ">
                     <img
                       alt="guitar"
                       className="border-C7C5C1 border-[.8px] h-20 w-20 p-1"
                       src={guitar}
                     ></img>
-                  </a>
+                  </div>
                   <div className="flex-col px-2 py-2  ">
                     <button className=" bg-[#428631] rounded-xl items-center p-1">
                       <p className=" mx-1 text-xs text-[#FFFFFF]">Price drop</p>
