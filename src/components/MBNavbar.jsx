@@ -29,9 +29,9 @@ const Calando = () => {
     setNav(!nav);
   };
   return (
-    <div className="flex-col md:hidden  w-full   ">
-      <div className={nav?'flex  fixed justify-between items-center h-[60px] w-full mx-auto   md:hidden  bg-white   text-black  '
-      :"flex  fixed justify-between items-center h-[60px] w-full mx-auto -my-16  md:hidden  bg-white   text-black z-50"}>
+    <div className="flex-col  md:hidden  w-full   ">
+      <div className={nav?'flex   fixed justify-between items-center h-[60px] w-full mx-auto   md:hidden  bg-white   text-black  '
+      :"flex fixed justify-between items-center h-[60px] w-full mx-auto -my-16  md:hidden  bg-white   text-black z-50"}>
         <Link to='/home' className="flex items-center  ">
           <img src={logo} className="w-[158px] h-[60px]  " alt="" />
         </Link>
