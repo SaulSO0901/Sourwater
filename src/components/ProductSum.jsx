@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from "react";
 import front from '../assets/product/front-zoom.jpg'
 import frontside from '../assets/product/front-side.png' 
 import frontzoom from '../assets/product/front-zoom.jpg'
@@ -17,8 +17,118 @@ import { BiSupport } from "react-icons/bi";
 import { GoShieldCheck } from "react-icons/go";
 import { FaHeart } from "react-icons/fa";
 
-
 const ProductSum = () => {
+
+  function changeimagef()
+  {
+var img= document.getElementById('image')
+img.src = front
+  }
+  
+  function changeimagefz()
+  {
+var img= document.getElementById('image')
+img.src = frontzoom
+  }
+  
+  function changeimagefs()
+  {
+var img= document.getElementById('image')
+img.src = frontside
+  }
+  
+  function changeimageb()
+  {
+var img= document.getElementById('image')
+img.src = back
+  }
+  function changeimagebz()
+  {
+var img= document.getElementById('image')
+img.src = backzoom
+  }
+  function changeimagefr()
+  {
+var img= document.getElementById('image')
+img.src = fret
+  }
+  function changeimageh()
+  {
+var img= document.getElementById('image')
+img.src = head
+  }
+
+
+  const [f, setF] = useState(false);
+  
+  const [fz, setFz] = useState(true);
+  
+  const [h, setH] = useState(false);
+  
+  const [b, setB] = useState(false);
+  
+  const [bz, setBz] = useState(false);
+  
+  const [fr, setFr] = useState(false);
+
+  const handleF = () => {
+    setF(true);
+    setFz(false);
+    setH(false);
+    setB(false);
+    setBz(false);
+    setFr(false);
+  };
+
+  
+  const handleFz = () => {
+    setF(false);
+    setFz(true);
+    setH(false);
+    setB(false);
+    setBz(false);
+    setFr(false);
+  };
+
+  
+  const handleH = () => {
+    setF(false);
+    setFz(false);
+    setH(true);
+    setB(false);
+    setBz(false);
+    setFr(false);
+  };
+
+  
+  const handleB = () => {
+    setF(false);
+    setFz(false);
+    setH(false);
+    setB(true);
+    setBz(false);
+    setFr(false);
+  };
+
+  
+  const handleBz = () => {
+    setF(false);
+    setFz(false);
+    setH(false);
+    setB(false);
+    setBz(true);
+    setFr(false);
+  };
+
+  
+  const handleFr = () => {
+    setF(false);
+    setFz(false);
+    setH(false);
+    setB(false);
+    setBz(false);
+    setFr(true);
+  };
 
   return (
     <div className=' w-full xl:h-full lg:h-[1020px]  mb-10 border-b-[.7px] border-b-C7C5C1'>
@@ -42,74 +152,74 @@ const ProductSum = () => {
       </div>
       </div>
     <div className='hidden md:flex w-fit justify-end items-center'>
-    <img src={brand} className=' w-[137px] h-[61px]  ' alt='brand'></img>
+    <img  src={brand} className=' w-[137px] h-[61px]  ' alt='brand'></img>
     </div>
     </div>
 
     <div className='lg:flex  my-4'>
       <div className='hidden xl:flex max-w-[60px] w-full   select-none'>
 <div className='flex-col'>
-<div className=' my-2'>
- <img src={frontzoom} alt='front' className=' w-[60px] h-[60px] px-2 ' ></img> 
+<div onClick={changeimagefz}  className={fz ?' my-2 ring-[#C7C5C1]  ring-2 cursor-pointer ':'my-2 cursor-pointer  '}>
+ <img onClick={handleFz} src={frontzoom} alt='front' className=' w-[60px] h-[60px] px-2 ' ></img> 
 </div>
 
-<div className='my-2  '>
- <img src={frontside} alt='front' className=' w-[60px] h-[60px] px-2 ' ></img> 
-</div>
-
-
-<div className='my-2  '>
- <img src={head} alt='front' className=' w-[60px] h-[60px] px-2 ' ></img> 
+<div onClick={changeimagefs}   className={f ?' my-2 ring-[#C7C5C1]  ring-2 cursor-pointer  ':'my-2 cursor-pointer  '}>
+ <img  src={frontside} onClick={handleF} alt='front' className=' w-[60px] h-[60px] px-2 ' ></img> 
 </div>
 
 
-<div className='my-2 '>
- <img src={fret} alt='front' className=' w-[60px] h-[60px] px-2 ' ></img> 
+<div onClick={changeimageh} className={h ?' my-2 ring-[#C7C5C1]  ring-2 cursor-pointer  ':'my-2 cursor-pointer '}>
+ <img src={head} onClick={handleH} alt='front' className=' w-[60px] h-[60px] px-2 ' ></img> 
 </div>
 
 
-<div className='my-2'>
- <img src={backzoom} alt='front' className=' w-[60px] h-[60px] px-2 ' ></img> 
+<div onClick={changeimagefr} className={fr ?' my-2 ring-[#C7C5C1]  ring-2 cursor-pointer  ':'my-2 cursor-pointer  '}>
+ <img src={fret} onClick={handleFr} alt='front' className=' w-[60px] h-[60px] px-2 ' ></img> 
 </div>
 
 
-<div className='my-2 '>
- <img src={back} alt='front' className=' w-[60px] h-[60px] px-2' ></img> 
+<div onClick={changeimagebz}  className={bz ?' my-2 ring-[#C7C5C1]  ring-2 cursor-pointer  ':'my-2 cursor-pointer '}>
+ <img src={backzoom} onClick={handleBz} alt='front' className=' w-[60px] h-[60px] px-2 ' ></img> 
+</div>
+
+
+<div onClick={changeimageb}  className={b ?' my-2 ring-[#C7C5C1]  ring-2 cursor-pointer  ':'my-2 cursor-pointer  '}>
+ <img src={back} onClick={handleB} alt='front' className=' w-[60px] h-[60px] px-2' ></img> 
 </div>
       </div>
       </div>
 {/*************************************************************************/}
-      <div className='flex-col max-w-[750px] min-w-[435px] w-full max-h-[750px] h-full select-none '>
-<img src={front} className='w-[651px] h-[750px] lg:px-16'></img>
-
+  <div   className='flex-col max-w-[750px] min-w-[300px] w-full min-[0px]:max-h-[750px] xl:h-[750px] h-full   '>
+<img  id="image" src={front} className='max-w-[651px] max-h-[750px] w-full h-full xl:px-16 mx-auto' alt="front"></img>
+ 
 {/*************************************************************************/}
 <div className='hidden md:flex xl:hidden    w-full justify-center items-center   select-none'>
 
-<div className='mx-3 my-4'>
+<div  onClick={changeimagefz} className='mx-3 my-4'>
  <img src={frontzoom} alt='front' className=' w-[60px] h-[60px] px-2 ' ></img> 
 </div>
 
-<div className='mx-3 my-4  '>
+<div  onClick={changeimagefs} className='mx-3 my-4  '>
  <img src={frontside} alt='front' className=' w-[60px] h-[60px] px-2 ' ></img> 
 </div>
 
 
-<div className='mx-3 my-4 '>
+<div  onClick={changeimageh} className='mx-3 my-4 '>
  <img src={head} alt='front' className=' w-[60px] h-[60px] px-2 ' ></img> 
 </div>
 
 
-<div className='mx-3 my-4 '>
+<div  onClick={changeimagefr} className='mx-3 my-4 '>
  <img src={fret} alt='front' className=' w-[60px] h-[60px] px-2 ' ></img> 
 </div>
 
 
-<div className='mx-3 my-4'>
+<div  onClick={changeimagebz} className='mx-3 my-4'>
  <img src={backzoom} alt='front' className=' w-[60px] h-[60px] px-2 ' ></img> 
 </div>
 
 
-<div className='mx-3 my-4 '>
+<div  onClick={changeimageb} className='mx-3 my-4 '>
  <img src={back} alt='front' className=' w-[60px] h-[60px] px-2' ></img> 
 </div>
       </div>

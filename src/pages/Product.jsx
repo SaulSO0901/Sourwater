@@ -7,6 +7,7 @@ import MBNavbar from '../components/MBNavbar'
 import ProductSum from '../components/ProductSum'
 import TopNew from '../components/TopNew';
 import ProductDesc from '../components/ProductDesc'
+
 import Footer from '../components/Footer'
 
 const Product = () => {

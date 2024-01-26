@@ -14,7 +14,7 @@ import {
 import { IoNotifications } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
-const Calando = () => {
+const MBNavbar = () => {
   const [nav, setNav] = useState(false);
   const [crt, setCrt] = useState(false);
 
@@ -110,4 +110,4 @@ const Calando = () => {
     </div>
   );
 };
-export default Calando;
+export default MBNavbar;

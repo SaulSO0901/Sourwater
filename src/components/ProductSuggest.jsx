@@ -29,8 +29,9 @@ const ProductSuggest = () => {
           {[images.trend1,images.trend2, images.trend3,images.trend4,
           images.trend5,images.trend6,images.trend7,images.trend8
   ,images.trend9,images.trend10,images.trend11,images.trend12].map((image, index) => (
-    <a href='*' className="flex  h-32 w-[186px] md:first:ml-[80px]  justify-center mx-1 relative" key={`gallery_image-${index + 1}`}>
+    <a href='*' className="flex  h-32 w-[186px] md:first:ml-[80px]  justify-center mx-1 relative" key={`gallery_image-${index = 1}`}>
     <img className='flex h-[120px] mx-28 max-[425px]:ml-12 ' src={image} alt="gallery_image" />
+
   </a>
           ))}
         </div>
