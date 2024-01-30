@@ -53,34 +53,34 @@ const Tiles = () => {
     md:grid-cols-2
     max-[425px]:flex-col'>
 
-<a onMouseOver={handleDtl} onMouseLeave={handleDtlex} className='flex items-center justify-center max-h-72 h-full bg-black'>
-  <img src={tile1} className={dtl?' w-full h-full object-cover  ease-in-out duration-100  opacity-50':'w-full h-full object-cover  ease-in-out duration-100'}></img>
-  <button className={dtl?'bg-white absolute  h-10 w-fit rounded-md font-medium px-6 duration-100  ':'hidden'}>GET DETAILS</button>
-  </a>
-  <a onMouseOver={handleDtl2} onMouseLeave={handleDtlex} className='flex items-center justify-center max-h-72 h-full bg-black'>
-  <img src={tile2} className={dtl2?' w-full h-full object-cover  ease-in-out duration-100  opacity-50':'w-full h-full object-cover  ease-in-out duration-100'}></img>
-  <button className={dtl2?'bg-white absolute  h-10 w-fit rounded-md font-medium px-6 duration-100  ':'hidden'}>GET DETAILS</button>
-  </a>
+<div onMouseOver={handleDtl} onMouseLeave={handleDtlex} className='flex max-h-72 h-full items-center justify-center  bg-black'>
+  <img src={tile1} className={dtl?' w-full h-full object-cover  ease-in-out duration-100  opacity-50':'w-full h-full object-cover  ease-in-out duration-100'} alt='tile1'></img>
+  <button className={dtl?'absolute  h-10 w-fit px-6 rounded-md font-medium  bg-white  duration-100  ':'hidden'}>GET DETAILS</button>
+  </div>
+  <div onMouseOver={handleDtl2} onMouseLeave={handleDtlex} className='flex  max-h-72 h-full items-center justify-center bg-black'>
+  <img src={tile2} className={dtl2?' w-full h-full object-cover  ease-in-out duration-100  opacity-50':'w-full h-full object-cover  ease-in-out duration-100'}alt='tile2'></img>
+  <button className={dtl2?'absolute  h-10 w-fit px-6 rounded-md font-medium  bg-white  duration-100  ':'hidden'}>GET DETAILS</button>
+  </div>
   
-<a onMouseOver={handleDtl3} onMouseLeave={handleDtlex} className='flex items-center justify-center max-h-72 h-full bg-black'>
-  <img src={tile3} className={dtl3?' w-full h-full object-cover  ease-in-out duration-100  opacity-50':'w-full h-full object-cover  ease-in-out duration-100'}></img>
-  <button className={dtl3?'bg-white absolute  h-10 w-fit rounded-md font-medium px-6 duration-100  ':'hidden'}>GET DETAILS</button>
-  </a>
+<div onMouseOver={handleDtl3} onMouseLeave={handleDtlex} className='flex max-h-72 h-full items-center justify-center  bg-black'>
+  <img src={tile3} className={dtl3?' w-full h-full object-cover  ease-in-out duration-100  opacity-50':'w-full h-full object-cover  ease-in-out duration-100'}alt='tile3'></img>
+  <button className={dtl3?'absolute  h-10 w-fit px-6 rounded-md font-medium  bg-white  duration-100  ':'hidden'}>GET DETAILS</button>
+  </div>
   
-<a onMouseOver={handleDtl4} onMouseLeave={handleDtlex} className='flex items-center justify-center max-h-72 h-full bg-black'>
-  <img src={tile4} className={dtl4?' w-full h-full object-cover  ease-in-out duration-100  opacity-50':'w-full h-full object-cover  ease-in-out duration-100'}></img>
-  <button className={dtl4?'bg-white absolute  h-10 w-fit rounded-md font-medium px-6 duration-100  ':'hidden'}>GET DETAILS</button>
-  </a>
+<div onMouseOver={handleDtl4} onMouseLeave={handleDtlex} className='flex max-h-72 h-full items-center justify-center  bg-black'>
+  <img src={tile4} className={dtl4?' w-full h-full object-cover  ease-in-out duration-100  opacity-50':'w-full h-full object-cover  ease-in-out duration-100'}alt='tile4'></img>
+  <button className={dtl4?'absolute  h-10 w-fit px-6 rounded-md font-medium  bg-white  duration-100  ':'hidden'}>GET DETAILS</button>
+  </div>
   
-<a onMouseOver={handleDtl5} onMouseLeave={handleDtlex} className='flex items-center justify-center max-h-72 h-full bg-black'>
-  <img src={tile5} className={dtl5?' w-full h-full object-cover  ease-in-out duration-100  opacity-50':'w-full h-full object-cover  ease-in-out duration-100'}></img>
-  <button className={dtl5?'bg-white absolute  h-10 w-fit rounded-md font-medium px-6 duration-100  ':'hidden'}>GET DETAILS</button>
-  </a>
+<div onMouseOver={handleDtl5} onMouseLeave={handleDtlex} className='flex max-h-72 h-full items-center justify-center  bg-black'>
+  <img src={tile5} className={dtl5?' w-full h-full object-cover  ease-in-out duration-100  opacity-50':'w-full h-full object-cover  ease-in-out duration-100'}alt='tile5'></img>
+  <button className={dtl5?'absolute  h-10 w-fit px-6 rounded-md font-medium  bg-white  duration-100  ':'hidden'}>GET DETAILS</button>
+  </div>
   
-<a onMouseOver={handleDtl6} onMouseLeave={handleDtl6} className='flex items-center justify-center max-h-72 h-full bg-black'>
-  <img src={tile6} className={dtl6?' w-full h-full object-cover  ease-in-out duration-100  opacity-50':'w-full h-full object-cover  ease-in-out duration-100'}></img>
-  <button className={dtl6?'bg-white absolute  h-10 w-fit rounded-md font-medium px-6 duration-100  ':'hidden'}>GET DETAILS</button>
-  </a>
+<div onMouseOver={handleDtl6} onMouseLeave={handleDtl6} className='flex h-full  max-h-72 items-center justify-center  bg-black'>
+  <img src={tile6} className={dtl6?' w-full h-full object-cover  ease-in-out duration-100  opacity-50':'w-full h-full object-cover  ease-in-out duration-100'}alt='tile6'></img>
+  <button className={dtl6?'absolute  h-10 w-fit px-6 rounded-md font-medium  bg-white  duration-100 ':'hidden'}>GET DETAILS</button>
+  </div>
     </div>
   )
 }

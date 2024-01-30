@@ -1,3 +1,6 @@
+import {useEffect} from 'react'
+
+
 import Navbar from '../components/Navbar';
 import MBNavbar from '../components/MBNavbar';
 import Header from '../components/Header';
@@ -12,6 +15,11 @@ import Carrer from '../components/Carrer';
 import RecentlyV from '../components/RecentlyV';
 import Footer from '../components/Footer';
 function Home() {
+
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+  },[])
+  
   return (
     <div>
       

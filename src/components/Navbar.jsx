@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import logo from "../assets/logo2.png";
-import cart from "../assets/cart.png";
 import guitar from "../assets/Screenshot 2023-10-01 141836.png";
 import strat from "../assets/Strat.JPG";
 import key from "../assets/Key.JPG";
@@ -13,7 +12,6 @@ import {
   AiFillCaretUp,
   AiOutlineClose,
   AiTwotoneMail,
-  AiOutlineMenu,
   AiOutlineShoppingCart,
 } from "react-icons/ai";
 import { IoNotifications } from "react-icons/io5";
@@ -30,10 +28,13 @@ const Navbar = () => {
   const [cell, setCell] = useState(false);
   const [supp, setSupp] = useState(false);
   const [crt, setCrt] = useState(false);
-  const [nav, setNav] = useState(false);
+
 
   const handleAcc = () => {
     setAcc(!acc);
+    setCrt(false);
+    setCon(false);
+    setNot(false);
   };
   const handleAcc2 = () => {
     setAcc(false);
@@ -41,6 +42,9 @@ const Navbar = () => {
 
   const handleCrt = () => {
     setCrt(!crt);
+    setAcc(false);
+    setCon(false);
+    setNot(false);
   };
   const handleCrt2 = () => {
     setCrt(false);
@@ -52,6 +56,9 @@ const Navbar = () => {
 
   const handleCon = () => {
     setCon(!con);
+    setAcc(false);
+    setCrt(false);
+    setNot(false);
   };
   const handleCon2 = () => {
     setCon(false);
@@ -59,6 +66,9 @@ const Navbar = () => {
 
   const handleNot = () => {
     setNot(!not);
+    setAcc(false);
+    setCon(false);
+    setCrt(false);
   };
 
   const handleNot2 = () => {
@@ -82,7 +92,7 @@ const Navbar = () => {
           </Link>
       </div>
 
-      <div className="flex w-full  max-w-[738px] min-w-[138px] items-center items-stretch h-10 mx-2 my-6 border-C7C5C1 border-[.1px] rounded-sm ring-[#C7C5C1] ring-1 hover:ring-4 hover:ring-gray-800  ">
+      <div className="flex w-full  max-w-[738px] min-w-[138px] items-stretch h-10 mx-2 my-6 border-C7C5C1 border-[.1px] rounded-sm ring-[#C7C5C1] ring-1 hover:ring-4 hover:ring-gray-800  ">
         <button className="h-10 rounded-sm bg-[#EFEFEF] p-4 py-2">
           <AiOutlineSearch size={20}></AiOutlineSearch>
         </button>
@@ -96,6 +106,7 @@ const Navbar = () => {
       <div
         className=" flex h-full   items-center p-5 cursor-pointer hover:bg-[#EFEFEF]  "
         onMouseEnter={handleNot}
+         onTouchStart={handleNot}
         onMouseLeave={handleNot2}
       >
         <div className=" flex-row items-center">
@@ -107,7 +118,7 @@ const Navbar = () => {
           <div
             className={
               not
-                ? "h-0 w-0 -mx-5 left-0 top-0 w-[60%] h-full  ease-in-out duration-0 "
+                ? "h-0 w-0 -mx-5 left-0 top-0  ease-in-out duration-0 "
                 : "ease-in-out duration-0 fixed left-[-100%]"
             }
           >
@@ -120,19 +131,19 @@ const Navbar = () => {
                     "flex  ring-[#C7C5C1]  ring-b-1 hover:ring-4 ring-inset  hover:ring-[#0072BA] ease-in-out duration-200 cursor-pointer "
                   }
                 >
-                  <div className="flex items-center my-2 p-4 ">
+                  <div className="flex my-2 p-4 items-center  ">
                     <img
                       alt="guitar"
-                      className="border-C7C5C1 border-[.8px] h-20 w-20 p-1"
+                      className=" h-20 w-20 p-1 border-C7C5C1 border-[.8px] "
                       src={guitar}
                     ></img>
                   </div>
                   <div className="flex-col px-2 py-2  ">
-                    <button className=" bg-[#428631] rounded-xl items-center p-1">
+                    <button className="p-1 bg-[#428631] rounded-xl items-center ">
                       <p className=" mx-1 text-xs text-[#FFFFFF]">Price drop</p>
                     </button>
 
-                    <div className=" p-[.5px] w-40">
+                    <div className=" w-40 p-[.5px]">
                       <p className="text-[#362D2D] text-sm font-medium">
                         ESP James Hetfield Signature Vulture-Black Satin
                       </p>
@@ -165,11 +176,11 @@ const Navbar = () => {
                     ></img>
                   </div>
                   <div className=" px-2 py-2  ">
-                    <button className=" bg-[#428631] rounded-xl items-center p-1">
+                    <button className="items-center p-1 bg-[#428631] rounded-xl ">
                       <p className=" mx-1 text-xs text-[#FFFFFF]">Price drop</p>
                     </button>
 
-                    <div className=" p-[.5px] w-40">
+                    <div className=" w-40 p-[.5px]">
                       <p className="text-[#362D2D] text-sm font-medium ">
                         Fender Mike McCready Stratocaster Electric Guitar -
                         3-color Sunburst{" "}
@@ -194,19 +205,19 @@ const Navbar = () => {
                     "flex  ring-[#C7C5C1] ring-b-1 hover:ring-4 ring-inset  hover:ring-[#0072BA] ease-in-out duration-200 cursor-pointer "
                   }
                 >
-                  <div className="flex items-center my-2 p-4 ">
+                  <div className="flex  my-2 p-4 items-center ">
                     <img
                       alt="keyboard"
-                      className="border-C7C5C1 border-[.8px] h-20 w-20 p-1 py-4 "
+                      className="h-20 w-20 p-1 py-4 border-C7C5C1 border-[.8px]  "
                       src={key}
                     ></img>
                   </div>
                   <div className=" px-2 py-2   ">
-                    <button className=" bg-[#428631] rounded-xl items-center p-1">
+                    <button className="items-center p-1 bg-[#428631] rounded-xl ">
                       <p className=" mx-1 text-xs text-[#FFFFFF]">Price drop</p>
                     </button>
 
-                    <div className=" p-[.5px] w-40">
+                    <div className=" w-40 p-[.5px]">
                       <p className="text-[#362D2D] text-sm font-medium ">
                         Roland FP-30X Digital Piano with Speakers - Black{" "}
                       </p>
@@ -256,8 +267,8 @@ const Navbar = () => {
 
       <div className="flex-col h-full items-center p-4 hover:bg-[#EFEFEF] cursor-pointer hidden  lg:flex">
         <ul className="  ">
-          <li className="  hover:border-b-[#0072BA] hover:border-b-[.1px] h-10 w-40 ">
-            <p className="text-[#0072BA] text-2xl">(800)224-4701</p>
+          <li className=" h-10 w-40 hover:border-b-[#0072BA] hover:border-b-[.1px]  ">
+            <p className="text-2xl text-[#0072BA] ">(800)224-4701</p>
           </li>
           <li className="">
             {" "}
@@ -271,6 +282,7 @@ const Navbar = () => {
       {/*Contact us section*/}
       <div
         onMouseEnter={handleCon}
+        onTouchStart={handleCon}
         onMouseLeave={handleCon2}
         className="flex min-w-[144px] w-36 h-full  p-2 py-6  items-center   hover:bg-[#EFEFEF]  cursor-pointer  "
       >
@@ -280,16 +292,17 @@ const Navbar = () => {
           <div
             className={
               con
-                ? "w-0 h-0 flex cursor-pointer top-0 w-[60%] h-full border-r border-r-gray-900  ease-in-out duration-0"
+                ? "w-0 h-0 flex cursor-pointer top-0  border-r border-r-gray-900  ease-in-out duration-0"
                 : "ease-in-out duration-0 fixed left-[-100%]"
             }
           >
-            <div className=" absolute block my-5 -mx-2 w-60 border-C7C5C1 border-[.1px] bg-white ">
+            <div className=" absolute block w-60 my-5 -mx-2  border-C7C5C1 border-[.1px] bg-white ">
               <div className="flex  py-4 border-b-[.7px] border-b-C7C5C1  ">
-                <div className="flex justify-start items-start mx-2  ">
+                <div className="flex mx-2 justify-start items-start   ">
                   <img
-                    className="w-24 h-20 border-C7C5C1  border-[.8px] rounded-full p-1"
+                    className="w-24 h-20 p-1 border-C7C5C1  border-[.8px] rounded-full "
                     src={sup}
+                    alt="support"
                   ></img>
                 </div>
 
@@ -310,7 +323,7 @@ const Navbar = () => {
               </div>
 
               <div className="border-b-[.7px] border-b-C7C5C1">
-                <ul className="flex justify-center py-2 mx-2    ">
+                <ul className="flex py-2 mx-2 justify-center     ">
                   <li
                     onMouseEnter={handleMail}
                     onMouseLeave={handleMail}
@@ -408,8 +421,9 @@ const Navbar = () => {
       {/*Account Section */}
       <div
         onMouseEnter={handleAcc}
+        onTouchStart={handleAcc}
         onMouseLeave={handleAcc2}
-        className="flex items-center h-full p-2 hover:bg-[#EFEFEF] cursor-pointer  "
+        className="flex h-full p-2 items-center  hover:bg-[#EFEFEF] cursor-pointer  "
       >
         <div className=" items-center">
           {" "}
@@ -417,32 +431,31 @@ const Navbar = () => {
           <div
             className={
               acc
-                ? "w-0 h-0  left-0 top-0 w-[60%] h-full  ease-in-out duration-0"
+                ? "w-0 h-0  left-0 top-0   ease-in-out duration-0"
                 : "ease-in-out duration-0 fixed left-[-100%]"
             }
           >
-            <div className="block absolute  my-7  -mx-[138.9px]  w-60 border-C7C5C1 border-[.1px] bg-white">
+            <div className="block absolute w-60  my-7  -mx-[138.9px]   border-C7C5C1 border-[.1px] bg-white">
               <div className=" border-b border-b-C7C5C1 ">
-                <div className=" p-4  flex justify-center items-center w-full ">
+                <div className=" flex p-4 w-full justify-center items-center  ">
                   <ul className="">
                     <li className="flex justify-center items-center">
                       {" "}
-                      <button className=" bg-[#0072BA]  px-9 py-3">
+                      <button className=" px-9 py-3 bg-[#0072BA] ">
                         <p className=" text-lg text-white font-semibold">
                           Log in
                         </p>
                       </button>
                     </li>
-                    <li className=" text-sm my-2">
+                    <li className=" my-2 text-sm">
                       {" "}
                       <p>
                         New here?
-                        <a
+                        <div
                           className=" underline text-[#0072BA]"
-                          href="https://www.w3schools.com/tags/tag_a.asp"
                         >
                           Create your account.
-                        </a>{" "}
+                        </div>{" "}
                       </p>
                     </li>
                   </ul>
@@ -473,6 +486,7 @@ const Navbar = () => {
 {/*Shopping Cart Section*/}  
       <div
         onMouseEnter={handleCrt}
+        onTouchStart={handleCrt}
         onMouseLeave={handleCrt2}
         className="flex-col items-center hover:bg-[#EFEFEF] cursor-pointer p-2  "
       >
@@ -483,11 +497,11 @@ const Navbar = () => {
         <div
           className={
             crt
-              ? "w-0 h-0 left-0 top-0 w-[60%] h-full  ease-in-out duration-0"
+              ? "w-0 h-0 left-0 top-0   ease-in-out duration-0"
               : "ease-in-out duration-0 fixed left-[-100%]"
           }
         >
-          <div className="block absolute my-2 -mx-[168px]  w-60 border-C7C5C1 border-[.1px] bg-white ">
+          <div className="block absolute  w-60  my-2 -mx-[168px] border-C7C5C1 border-[.1px] bg-white ">
             <div className=" border-b border-b-C7C5C1  ">
               <div className="flex-col  py-2">
                 <ul className="flex  justify-center items-center">

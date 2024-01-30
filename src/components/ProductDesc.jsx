@@ -2,14 +2,9 @@ import React, { useState } from "react";
 
 
 import front from '../assets/product/front-zoom.jpg'
-import frontside from '../assets/product/front-side.png' 
-import frontzoom from '../assets/product/front-zoom.jpg'
-import back from '../assets/product/back-full.png'
-import backzoom from '../assets/product/back zoom.png'
-import fret from '../assets/product/fret.png'
+
 import head from '../assets/product/headstock.png'
-import brand from '../assets/product/brand.png'
-import supp from '../assets/product/support.png'
+
 import laid from '../assets/product/laid.png'
 
 
@@ -53,10 +48,10 @@ const ProductDesc = () => {
   return (
     <div  id="desc"  className='flex-col w-full mx-auto  mt-5'>
       
-<div className='flex sticky w-full h-10 top-0 mx-1 min-[375px]:mx-0   justify-center items-center bg-white border-[1px] border-C7C5C'>
-<a href='#desc' className={desc ?'flex h-full max-w-[307px]  w-full items-center justify-center  border-b-[2px] border-b-[#0072BA] hover:bg-[#EFEFEF]':'flex h-full max-w-[307px]  w-full items-center justify-center hover:bg-[#EFEFEF]  '}><p className='text-[#0072BA] font-medium'>Description</p></a>
-<a href='#specs' className={spec ?'flex h-full max-w-[307px]  w-full items-center justify-center  border-b-[2px] border-b-[#0072BA] hover:bg-[#EFEFEF]':'flex h-full max-w-[307px]  w-full items-center justify-center hover:bg-[#EFEFEF]  '}><p className=' text-[#0072BA] font-medium'>Specs</p></a>
-<a href='#review'  className={rev ?'flex h-full max-w-[307px]  w-full items-center justify-center  border-b-[2px] border-b-[#0072BA] hover:bg-[#EFEFEF]':'flex h-full max-w-[307px]  w-full items-center justify-center hover:bg-[#EFEFEF]  '}>
+<div className='flex sticky w-full h-10 top-0 mx-1 min-[375px]:mx-0   justify-center items-center bg-white border-[1px] border-C7C5C md:z-10 -z-10'>
+<a onClick={handleDesc} href='#desc' className={desc ?'flex h-full max-w-[307px]  w-full items-center justify-center  border-b-[2px] border-b-[#0072BA] hover:bg-[#EFEFEF]':'flex h-full max-w-[307px]  w-full items-center justify-center hover:bg-[#EFEFEF]  '}><p className='text-[#0072BA] font-medium'>Description</p></a>
+<a onClick={handleSpec} href='#specs' className={spec ?'flex h-full max-w-[307px]  w-full items-center justify-center  border-b-[2px] border-b-[#0072BA] hover:bg-[#EFEFEF]':'flex h-full max-w-[307px]  w-full items-center justify-center hover:bg-[#EFEFEF]  '}><p className=' text-[#0072BA] font-medium'>Specs</p></a>
+<a onClick={handleRev} href='#review'  className={rev ?'flex h-full max-w-[307px]  w-full items-center justify-center  border-b-[2px] border-b-[#0072BA] hover:bg-[#EFEFEF]':'flex h-full max-w-[307px]  w-full items-center justify-center hover:bg-[#EFEFEF]  '}>
 <IoIosStar color="#ff9d00"/>
   <IoIosStar color="#ff9d00"/>
   <IoIosStar color="#ff9d00"/>
@@ -80,7 +75,7 @@ const ProductDesc = () => {
 His newest signature model features the EMG Het Set, set-neck construction, and an ebony fingerboard with custom inlay.</p>
 </div>
 <div className=' max-w-[700px] w-full h-full  my-auto'>
-<img src={laid} className='max-w-[700px] w-full'></img>
+<img src={laid} className='max-w-[700px] w-full' alt="laid"></img>
 </div>
 </div>
 
@@ -88,7 +83,7 @@ His newest signature model features the EMG Het Set, set-neck construction, and 
 
 <div className='flex max-h-[650px] h-full mt-14 items-center border-b-[.7px] border-b-C7C5C1'>
 <div className='max-w-[650px] max-h-[650px] h-full w-full'>
-<img src={head} className='h-[650px]'></img>
+<img src={head} className='h-[650px]' alt="head"></img>
 </div>
 
 <div className='flex-col max-w-[750px]  w-full  justify-start'>
@@ -128,7 +123,7 @@ His newest signature model features the EMG Het Set, set-neck construction, and 
 <br/>
 Gotoh locking tuners make string changes a breeze while keeping your tuning stable. A TonePros locking Tune-o-matic bridge and tailpiece lock the guitar’s hardware down to its body, giving you optimal string vibration transfer to your guitar's body. Beyond that, the Vulture’s sleek ebony fretboard displays James's custom inlay on the 12th fret.</p>
 </div>
-<img src={front} className='max-w-[500px] max-h-[700px] w-full  h-full mx-auto'></img>
+<img src={front} className='max-w-[500px] max-h-[700px] w-full  h-full mx-auto' alt="front"></img>
 </div>
 </div>
 {/*Mobile version*/}
@@ -136,7 +131,7 @@ Gotoh locking tuners make string changes a breeze while keeping your tuning stab
 <div className=' w-full justify-center mx-auto '>
   <div className='flex-col'>
   <div className=' max-w-[700px] w-full h-full  my-auto'>
-<img src={laid} className='max-w-[700px] w-full'></img>
+<img src={laid} className='max-w-[700px] w-full' alt="laid"></img>
 </div>
 <h2 className='p-4 text-3xl font-medium text-[#362D2D]'>High-performance James Hetfield Signature</h2>
 </div>
@@ -154,7 +149,7 @@ His newest signature model features the EMG Het Set, set-neck construction, and 
 
 <div className='flex-col  h-full mt-14 items-center border-b-[.7px] border-b-C7C5C1'>
 <div className='max-w-[650px] max-h-[650px] h-full w-full'>
-<img src={head} className='h-[650px]'></img>
+<img src={head} className='h-[650px]' alt="head"></img>
 </div>
 
 <div className='flex-col max-w-[750px] mt-10 mb-4 w-full  justify-start px-2'>
@@ -180,7 +175,7 @@ His newest signature model features the EMG Het Set, set-neck construction, and 
 <div className='flex-col p-4 items-center border-b-[.7px] border-b-C7C5C1'>
 
 <div className='max-w-[750px] w-full'>
-<img src={front} className='max-w-[500px] max-h-[700px] w-full  h-full mx-auto text-[#362D2D]'></img>
+<img src={front} className='max-w-[500px] max-h-[700px] w-full  h-full mx-auto text-[#362D2D]' alt="front"></img>
 <h2 className=' text-3xl font-medium'>Eye-catching, high-performance features</h2>
 <p  className='mt-4 justify-start font-medium '>he Vulture James Hetfield signature electric guitar boasts a lot of eye-catching, high performance features. Its set-neck construction ensures maximum sustain. 
 <br/>

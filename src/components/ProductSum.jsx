@@ -19,11 +19,7 @@ import { FaHeart } from "react-icons/fa";
 
 const ProductSum = () => {
 
-  function changeimagef()
-  {
-var img= document.getElementById('image')
-img.src = front
-  }
+ 
   
   function changeimagefz()
   {
@@ -42,6 +38,7 @@ img.src = frontside
 var img= document.getElementById('image')
 img.src = back
   }
+
   function changeimagebz()
   {
 var img= document.getElementById('image')
@@ -160,67 +157,67 @@ img.src = head
       <div className='hidden xl:flex max-w-[60px] w-full   select-none'>
 <div className='flex-col'>
 <div onClick={changeimagefz}  className={fz ?' my-2 ring-[#C7C5C1]  ring-2 cursor-pointer ':'my-2 cursor-pointer  '}>
- <img onClick={handleFz} src={frontzoom} alt='front' className=' w-[60px] h-[60px] px-2 ' ></img> 
+ <img onClick={handleFz} src={frontzoom}  className=' w-[60px] h-[60px] px-2 'alt='frontz' ></img> 
 </div>
 
 <div onClick={changeimagefs}   className={f ?' my-2 ring-[#C7C5C1]  ring-2 cursor-pointer  ':'my-2 cursor-pointer  '}>
- <img  src={frontside} onClick={handleF} alt='front' className=' w-[60px] h-[60px] px-2 ' ></img> 
+ <img  src={frontside} onClick={handleF}  className=' w-[60px] h-[60px] px-2 'alt='frontside' ></img> 
 </div>
 
 
 <div onClick={changeimageh} className={h ?' my-2 ring-[#C7C5C1]  ring-2 cursor-pointer  ':'my-2 cursor-pointer '}>
- <img src={head} onClick={handleH} alt='front' className=' w-[60px] h-[60px] px-2 ' ></img> 
+ <img src={head} onClick={handleH}  className=' w-[60px] h-[60px] px-2 'alt='head' ></img> 
 </div>
 
 
 <div onClick={changeimagefr} className={fr ?' my-2 ring-[#C7C5C1]  ring-2 cursor-pointer  ':'my-2 cursor-pointer  '}>
- <img src={fret} onClick={handleFr} alt='front' className=' w-[60px] h-[60px] px-2 ' ></img> 
+ <img src={fret} onClick={handleFr}  className=' w-[60px] h-[60px] px-2 ' alt='fret' ></img> 
 </div>
 
 
 <div onClick={changeimagebz}  className={bz ?' my-2 ring-[#C7C5C1]  ring-2 cursor-pointer  ':'my-2 cursor-pointer '}>
- <img src={backzoom} onClick={handleBz} alt='front' className=' w-[60px] h-[60px] px-2 ' ></img> 
+ <img src={backzoom} onClick={handleBz}  className=' w-[60px] h-[60px] px-2 ' alt='backzoom' ></img> 
 </div>
 
 
 <div onClick={changeimageb}  className={b ?' my-2 ring-[#C7C5C1]  ring-2 cursor-pointer  ':'my-2 cursor-pointer  '}>
- <img src={back} onClick={handleB} alt='front' className=' w-[60px] h-[60px] px-2' ></img> 
+ <img src={back} onClick={handleB}  className=' w-[60px] h-[60px] px-2' alt='back' ></img> 
 </div>
       </div>
       </div>
 {/*************************************************************************/}
-  <div   className='flex-col max-w-[750px] min-w-[300px] w-full min-[0px]:max-h-[750px] xl:h-[750px] h-full   '>
+  <div   className='flex-col max-w-[750px] min-w-[300px] w-full mx-auto min-[0px]:max-h-[750px] xl:h-[750px] h-full   '>
 <img  id="image" src={front} className='max-w-[651px] max-h-[750px] w-full h-full xl:px-16 mx-auto' alt="front"></img>
  
 {/*************************************************************************/}
 <div className='hidden md:flex xl:hidden    w-full justify-center items-center   select-none'>
 
 <div  onClick={changeimagefz} className='mx-3 my-4'>
- <img src={frontzoom} alt='front' className=' w-[60px] h-[60px] px-2 ' ></img> 
+ <img src={frontzoom}  className=' w-[60px] h-[60px] px-2 'alt='frontz' ></img> 
 </div>
 
 <div  onClick={changeimagefs} className='mx-3 my-4  '>
- <img src={frontside} alt='front' className=' w-[60px] h-[60px] px-2 ' ></img> 
+ <img src={frontside}  className=' w-[60px] h-[60px] px-2 'alt='frontside' ></img> 
 </div>
 
 
 <div  onClick={changeimageh} className='mx-3 my-4 '>
- <img src={head} alt='front' className=' w-[60px] h-[60px] px-2 ' ></img> 
+ <img src={head}  className=' w-[60px] h-[60px] px-2 'alt='head' ></img> 
 </div>
 
 
 <div  onClick={changeimagefr} className='mx-3 my-4 '>
- <img src={fret} alt='front' className=' w-[60px] h-[60px] px-2 ' ></img> 
+ <img src={fret}  className=' w-[60px] h-[60px] px-2 ' alt='fret'></img> 
 </div>
 
 
 <div  onClick={changeimagebz} className='mx-3 my-4'>
- <img src={backzoom} alt='front' className=' w-[60px] h-[60px] px-2 ' ></img> 
+ <img src={backzoom}  className=' w-[60px] h-[60px] px-2 'alt='backz' ></img> 
 </div>
 
 
 <div  onClick={changeimageb} className='mx-3 my-4 '>
- <img src={back} alt='front' className=' w-[60px] h-[60px] px-2' ></img> 
+ <img src={back}  className=' w-[60px] h-[60px] px-2' alt='back' ></img> 
 </div>
       </div>
       </div>
@@ -279,7 +276,7 @@ img.src = head
 
 <div className='flex mt-6  border-b-[.7px] border-b-C7C5C select-none'>
 <div className=''>
-<img src={supp} className='w-[80px] h-[80px] rounded-full '></img>
+<img src={supp} className='w-[80px] h-[80px] rounded-full ' alt="support"></img>
 </div>
 
 <div className='flex-col mx-4'>

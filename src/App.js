@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Store from './pages/Store';
 import Product from './pages/Product';
 function App() {
+  
   return (
     <div className="App">
       <BrowserRouter>

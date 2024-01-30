@@ -4,7 +4,7 @@ import { AiFillCaretRight,AiFillCaretDown,  AiOutlineMenu,} from "react-icons/ai
 import { Menu, Transition } from '@headlessui/react'
 import Products from "./Products";
 
-import RecentlyV from './RecentlyV'
+
 const Catalog = () => {
 
   const [stk, setStk] = useState(false);
@@ -164,7 +164,7 @@ const Catalog = () => {
 <div className="flex-col">
 <div className="flex-col  border-b-[.1px] border-b-C7C5C1">
 <h2 className='py-4 text-2xl font-medium  text-[#0072BA] border-b-[.1px] border-b-C7C5C1'>Refine Your Search</h2>
-<p to='/store' className='py-4 text-2xl  text-[#362D2D] border-b-[.1px] border-b-C7C5C1'>Availability </p>
+<p  className='py-4 text-2xl  text-[#362D2D] border-b-[.1px] border-b-C7C5C1'>Availability </p>
 <Link to='/store' onMouseEnter={handleStk} onMouseLeave={handleStk2} className='flex mt-4'><input className='p-2 mr-2' type='checkbox' checked={stk ? true : false}></input><p className='text-sm text-[#362D2D] '>In Stock (15)</p></Link>
 <Link to='/store' onMouseEnter={handlePro} onMouseLeave={handlePro2} className='flex my-2 mb-4'><input className='p-2 mr-2' type='checkbox' checked={pro ? true : false}></input><p className='text-sm text-[#362D2D]'>Pre-order (25)</p></Link>
 </div>
@@ -198,7 +198,7 @@ const Catalog = () => {
 <div className="flex-col  w-full xl:ml-12 md:ml-4 mt-4  py-4 ">
 <div className="flex w-full items-center justify-between ">
 
-<Menu as="div" className="relative inline-block text-left min-[1px]:w-full md:w-fit">
+<Menu as="div" className="relative inline-block text-left min-[1px]:w-full md:w-fit -z-10">
       <div >
         <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-[#8A8A8A] max-[425px]:text-[#0072BA] shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
           Most Popular
@@ -216,44 +216,44 @@ const Catalog = () => {
         leaveTo="transform opacity-0 scale-95"
       >
         <Menu.Items className="absolute left-0 z-10  w-56 origin-top-right  rounded-sm bg-white shadow-lg ring-1 ring-[#C7C5C1] ring-opacity-5 focus:outline-none">
-          <div className="py-1 ">
+          <div className="py-1 cursor-pointer ">
             <Menu.Item>
               {({ active }) => (
-                <a
-                  href="#"
+                <div
+                
                   className={classNames(
                     active ? 'bg-gray-100 text-[#8A8A8A] ' : 'text-[#8A8A8A] max-[425px]:text-[#0072BA]',
                     'block px-4 py-2 text-sm'
                   )}
                 >
                  Most Popular
-                </a>
+                </div>
               )}
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                <a
-                  href="#"
+                <div
+                 
                   className={classNames(
                     active ? 'bg-gray-100 text-[#8A8A8A]' : 'text-[#8A8A8A] max-[425px]:text-[#0072BA]',
                     'block px-4 py-2 text-sm'
                   )}
                 >
                   Customers rating
-                </a>
+                </div>
               )}
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                <a
-                  href="#"
+                <div
+                
                   className={classNames(
                     active ? 'bg-gray-100 text-[#8A8A8A]' : 'text-[#8A8A8A] max-[425px]:text-[#0072BA]',
                     'block px-4 py-2 text-sm'
                   )}
                 >
                  Lightest Guitar
-                </a>
+                </div>
               )}
             </Menu.Item>
         
@@ -273,43 +273,43 @@ const Catalog = () => {
 
               <Menu.Item>
               {({ active }) => (
-                <a
-                  href="#"
+                <div
+                
                   className={classNames(
                     active ? 'bg-gray-100 text-[#8A8A8A]' : 'text-[#8A8A8A] max-[425px]:text-[#0072BA]',
                     'block px-4 py-2 text-sm'
                   )}
                 >
                 Price:High-Low
-                </a>
+                </div>
               )}
             </Menu.Item>
 
             <Menu.Item>
               {({ active }) => (
-                <a
-                  href="#"
+                <div
+                 
                   className={classNames(
                     active ? 'bg-gray-100 text-[#8A8A8A]' : 'text-[#8A8A8A] max-[425px]:text-[#0072BA]',
                     'block px-4 py-2 text-sm'
                   )}
                 >
                 Price:Low-High
-                </a>
+                </div>
               )}
             </Menu.Item>
 
             <Menu.Item>
               {({ active }) => (
-                <a
-                  href="#"
+                <div
+             
                   className={classNames(
                     active ? 'bg-gray-100 text-[#8A8A8A]' : 'text-[#8A8A8A] max-[425px]:text-[#0072BA]',
                     'block px-4 py-2 text-sm'
                   )}
                 >
                 Brand:A-Z
-                </a>
+                </div>
               )}
             </Menu.Item>
             

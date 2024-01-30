@@ -4,14 +4,14 @@ import { AiOutlineInstagram,AiOutlineFacebook,AiOutlineYoutube,AiOutlineTwitter 
 import { Link } from 'react-router-dom'
 const Footer = () => {
   return (
-    <div className='flex-col  mx-auto w-full  lg:h-[530px] md:h-[824px] h-[1276px] mt-24 bg-[#f2f1f0] '>
+    <div className='flex-col  mx-auto w-full  lg:h-[550px] md:h-[824px]  mt-24 bg-[#f2f1f0] '>
         <div className='md:flex max-w-[1400px] mx-auto w-full h-fit p-6 mt-6 max-[760px]:flex-col'>
 
 <div className='flex-col justify-start  lg:max-w-[380px] md:max-w-[224px] w-full md:border-r-[.7px]  md:border-C7C5C '>
 
 <div className='lg:flex  w-full   md:grid md:grid-cols-1   '>
 <div className='flex justify-center w-full md:max-w-[176px] max-[760px]:w-full lg:h-[192px] '>
- <img src={footer} className=' rounded-full w-[132px] h-[132px]'></img>   
+ <img src={footer} className=' rounded-full w-[132px] h-[132px]' alt='support'></img>   
 </div>
 
 
@@ -34,10 +34,10 @@ const Footer = () => {
 </div>
 
 <div className='flex  w-full mt-4   h-fit  justify-center lg:max-w-[379px]  md:max-w-[176px]  max-[767px]:py-4 max-[767px]:border-t-[.7px] max-[767px]:border-b-[.7px] max-[767px]:border-C7C5C '>
-<a href='*' className='mx-2'><AiOutlineFacebook size={40} className='lg:mx-2' ></AiOutlineFacebook></a>
-<a href='*' className='mx-2'> <AiOutlineYoutube  size={40} className='lg:mx-2'></AiOutlineYoutube></a> 
-<a href='*' className='mx-2'> <AiOutlineInstagram size={40} className='lg:mx-2'></AiOutlineInstagram></a> 
-<a href='*' className='mx-2'>  <AiOutlineTwitter size={40} className='lg:mx-2'></AiOutlineTwitter></a> 
+<div  className='mx-2'><AiOutlineFacebook size={40} className='lg:mx-2 cursor-pointer' ></AiOutlineFacebook></div>
+<div  className='mx-2'> <AiOutlineYoutube  size={40} className='lg:mx-2 cursor-pointer'></AiOutlineYoutube></div> 
+<div  className='mx-2'> <AiOutlineInstagram size={40} className='lg:mx-2 cursor-pointer'></AiOutlineInstagram></div> 
+<div  className='mx-2'>  <AiOutlineTwitter size={40} className='lg:mx-2 cursor-pointer'></AiOutlineTwitter></div> 
 </div>
 
 
@@ -48,13 +48,13 @@ const Footer = () => {
 <div className='flex-col lg:max-w-[218px] md:max-w-[207px]  max-[767px]:max-w-[355px]  w-full lg:ml-6'>  
 <ul>
 <Link to='/store'>
-<li className='flex '><a className='w-full h-full py-2 px-2 text-lg font-bold'>ABOUT SOURWATER</a></li>
-<li className='flex '><a className='w-full h-full py-2 px-2'>Carrers</a></li>
-<li className='flex '><a className='w-full h-full py-2 px-2'>Environmental & Social Responsibility</a></li>
-<li className='flex '><a className='w-full h-full py-2 px-2'>Our Sales Engineers</a></li>
-<li className='flex '><a className='w-full h-full py-2 px-2'>Why Choose Sweetwater?</a></li>
-<li className='flex '><a className='w-full h-full py-2 px-2'>Tour Our Campus</a></li>
-<li className='flex '><a className='w-full h-full py-2 px-2'>Press Releases</a></li>
+<li className='flex '><div className='w-full h-full py-2 px-2 text-lg font-bold cursor-pointer'>ABOUT SOURWATER</div></li>
+<li className='flex '><div className='w-full h-full py-2 px-2 cursor-pointer'>Carrers</div></li>
+<li className='flex '><div className='w-full h-full py-2 px-2 cursor-pointer'>Environmental & Social Responsibility</div></li>
+<li className='flex '><div className='w-full h-full py-2 px-2 cursor-pointer'>Our Sales Engineers</div></li>
+<li className='flex '><div className='w-full h-full py-2 px-2 cursor-pointer'>Why Choose Sweetwater?</div></li>
+<li className='flex '><div className='w-full h-full py-2 px-2 cursor-pointer'>Tour Our Campus</div></li>
+<li className='flex '><div className='w-full h-full py-2 px-2 cursor-pointer'>Press Releases</div></li>
 </Link>
 
 
@@ -68,14 +68,14 @@ const Footer = () => {
 <div className='flex-col lg:max-w-[218px] md:max-w-[207px] max-[767px]:max-w-[355px]  w-full ml-6 md:ml-0'>  
 <ul>
 <Link to='/store'>
-<li className='flex '><a className='w-full h-full py-2 px-2 text-lg font-bold'>CUSTOMER SERVICE</a></li>
-<li className='flex '><a className='w-full h-full py-2 px-2'>Free Shipping Policy</a></li>
-<li className='flex '><a className='w-full h-full py-2 px-2'>Order Status</a></li>
-<li className='flex '><a className='w-full h-full py-2 px-2'>Return Policy</a></li>
-<li className='flex '><a className='w-full h-full py-2 px-2'>Sales and Use Tax Policy</a></li>
-<li className='flex '><a className='w-full h-full py-2 px-2'>SourCare Remote</a></li>
-<li className='flex '><a className='w-full h-full py-2 px-2'>FAQ</a></li>
-<li className='flex '><a className='w-full h-full py-2 px-2'>Contact Us</a></li>
+<li className='flex '><div className='w-full h-full py-2 px-2 text-lg font-bold cursor-pointer'>CUSTOMER SERVICE</div></li>
+<li className='flex '><div className='w-full h-full py-2 px-2 cursor-pointer'>Free Shipping Policy</div></li>
+<li className='flex '><div className='w-full h-full py-2 px-2 cursor-pointer'>Order Status</div></li>
+<li className='flex '><div className='w-full h-full py-2 px-2 cursor-pointer'>Return Policy</div></li>
+<li className='flex '><div className='w-full h-full py-2 px-2 cursor-pointer'>Sales and Use Tax Policy</div></li>
+<li className='flex '><div className='w-full h-full py-2 px-2 cursor-pointer'>SourCare Remote</div></li>
+<li className='flex '><div className='w-full h-full py-2 px-2 cursor-pointer'>FAQ</div></li>
+<li className='flex '><div className='w-full h-full py-2 px-2 cursor-pointer'>Contact Us</div></li>
 </Link>
 
 </ul>
@@ -88,13 +88,13 @@ const Footer = () => {
 <div className='flex-col lg:max-w-[218px] md:max-w-[207px] max-[767px]:max-w-[355px]  w-full lg:ml-6'>  
 <ul>
 <Link to='/store'>
-<li className='flex '><a className='w-full h-full py-2 px-2 text-lg font-bold'>ORDERING</a></li>
-<li className='flex '><a className='w-full h-full py-2 px-2'>Free Catalog</a></li>
-<li className='flex '><a className='w-full h-full py-2 px-2'>Gift Cards</a></li>
-<li className='flex '><a className='w-full h-full py-2 px-2'>Bonus Bucks</a></li>
-<li className='flex '><a className='w-full h-full py-2 px-2'>Payment Options</a></li>
-<li className='flex '><a className='w-full h-full py-2 px-2'>Shipping and Delivery Times</a></li>
-<li className='flex '><a className='w-full h-full py-2 px-2'>Gear Exchange</a></li>
+<li className='flex '><div className='w-full h-full py-2 px-2 text-lg font-bold cursor-pointer'>ORDERING</div></li>
+<li className='flex '><div className='w-full h-full py-2 px-2 cursor-pointer'>Free Catalog</div></li>
+<li className='flex '><div className='w-full h-full py-2 px-2 cursor-pointer'>Gift Cards</div></li>
+<li className='flex '><div className='w-full h-full py-2 px-2 cursor-pointer'>Bonus Bucks</div></li>
+<li className='flex '><div className='w-full h-full py-2 px-2 cursor-pointer'>Payment Options</div></li>
+<li className='flex '><div className='w-full h-full py-2 px-2 cursor-pointer'>Shipping and Delivery Times</div></li>
+<li className='flex '><div className='w-full h-full py-2 px-2 cursor-pointer'>Gear Exchange</div></li>
 </Link>
 
 </ul>
@@ -108,13 +108,13 @@ const Footer = () => {
 <div className='flex-col lg:max-w-[218px] md:max-w-[207px] max-[767px]:max-w-[355px]  w-full ml-6 md:ml-0 '>  
 <ul>
 <Link to='/store'>
-<li className='flex '><a className='w-full h-full py-2 px-2 text-lg font-bold'>SERVICES</a></li>
-<li className='flex '><a className='w-full h-full py-2 px-2'>Guitar Workshop</a></li>
-<li className='flex '><a className='w-full h-full py-2 px-2'>Music Store</a></li>
-<li className='flex '><a className='w-full h-full py-2 px-2'>Events & Workshops</a></li>
-<li className='flex '><a className='w-full h-full py-2 px-2'>Piano Showroom</a></li>
-<li className='flex '><a className='w-full h-full py-2 px-2'>Music Lessons</a></li>
-<li className='flex '><a className='w-full h-full py-2 px-2'>Recording Studio</a></li>
+<li className='flex '><div className='w-full h-full py-2 px-2 text-lg font-bold cursor-pointer'>SERVICES</div></li>
+<li className='flex '><div className='w-full h-full py-2 px-2 cursor-pointer'>Guitar Workshop</div></li>
+<li className='flex '><div className='w-full h-full py-2 px-2 cursor-pointer'>Music Store</div></li>
+<li className='flex '><div className='w-full h-full py-2 px-2 cursor-pointer'>Events & Workshops</div></li>
+<li className='flex '><div className='w-full h-full py-2 px-2 cursor-pointer'>Piano Showroom</div></li>
+<li className='flex '><div className='w-full h-full py-2 px-2 cursor-pointer'>Music Lessons</div></li>
+<li className='flex '><div className='w-full h-full py-2 px-2'>Recording Studio</div></li>
 </Link>
 
 </ul>

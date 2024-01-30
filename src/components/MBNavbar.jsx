@@ -28,9 +28,11 @@ const MBNavbar = () => {
  const handleNav = () => {
     setNav(!nav);
   };
+
+  
   return (
     <div className="flex-col  md:hidden  w-full   ">
-      <div className={nav?'flex   fixed justify-between items-center h-[60px] w-full mx-auto   md:hidden  bg-white   text-black  '
+      <div className={nav?'flex   fixed justify-between items-center h-[60px] w-full mx-auto   md:hidden  bg-white   text-black z-50" '
       :"flex fixed justify-between items-center h-[60px] w-full mx-auto -my-16  md:hidden  bg-white   text-black z-50"}>
         <Link to='/home' className="flex items-center  ">
           <img src={logo} className="w-[158px] h-[60px]  " alt="" />
@@ -41,22 +43,22 @@ const MBNavbar = () => {
             onClick={handleCrt}
             className="flex-col  h-full items-center hover:bg-[#EFEFEF] cursor-pointer p-2  "
           >
-            <Link to='/store' className="items-center mt-2 ">
+            <Link to='/store' className="flex items-center mt-2 ">
               <AiOutlineShoppingCart size={30} className=" min-w-[37px] "></AiOutlineShoppingCart>
             </Link>
           </div>
 
-          <div onClick={handleNav} className="block h-full md:hidden px-4 py-6 hover:bg-[#EFEFEF]">
+          <div onClick={handleNav} className="block h-full md:hidden px-4 py-6 hover:bg-[#EFEFEF] ">
             {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
           </div>
           <div
             className={
               nav
-                ? "fixed w-[90%] z-50   left-20 top-[60px]  bg-white h-full border-r border-r-[#C7C5C] ease-in-out duration-500"
+                ? "fixed w-[100%]  h-full left-0 top-[60px]  bg-white border-r border-r-[#C7C5C] ease-in-out duration-500  z-50 "
                 : "ease-in-out duration- fixed left-[100%]"
             }
           >
-            <ul className="text-[#362D2D] ">
+            <ul className="text-[#362D2D]  ">
               <Link to='/store'>
               <li className="p-2 border-b border-b-[#C7C5C] hover:bg-[#EFEFEF] ">
                 Shop By Category

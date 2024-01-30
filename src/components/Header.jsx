@@ -558,6 +558,7 @@ import {
 
   const handleDeal= () => {
     setDeal(!deal);
+    setUg(false);
   };
   
   const handleDeal2= () => {
@@ -568,6 +569,7 @@ import {
 
   const handleUG= () => {
     setUg(!ug);
+    setDeal(false);
   };
   
   const handleUG2= () => {
@@ -577,14 +579,14 @@ import {
   return (
     <div className='flex h-10 my-2 border-b-[.7px] border-b-C7C5C  items-center justify-center md:px-4 h-14 xl:h-full  hidden md:flex      '>
 
-        <Link to='/store' onMouseEnter={handleCat}  onMouseLeave={handleCat2} className='flex max-w-[223px]  min-w-[181px]   w-full h-[40px]  justify-center items-center hover:bg-[#EFEFEF]  text-[#362D2D] hover:text-[#0072BA] cursor-pointer'>
+        <Link to='/store' onMouseEnter={handleCat}   onMouseLeave={handleCat2} className='flex max-w-[223px]  min-w-[181px]   w-full h-[40px]  justify-center items-center hover:bg-[#EFEFEF]  text-[#362D2D] hover:text-[#0072BA] cursor-pointer'>
         <div className='font-medium '><p>Shop By Category</p></div>
        <div className="flex " >
         
         <div onMouseLeave={handleGtr2}
             className={
               cat
-                ? "w-0 h-0 flex  cursor-pointer top-0 left-0 h-full   ease-in-out duration-0 " 
+                ? "flex relative w-0 h-0   cursor-pointer top-0 left-0    ease-in-out duration-0 " 
                 : "ease-in-out duration-0 fixed left-[-100%]"
             } >
             
@@ -741,9 +743,10 @@ import {
 
 
               <div onMouseLeave={handleGtr2}  
-              className={gtr?"w-0  flex -my-[2px] cursor-pointer top-0  h-[583px] ease-in-out duration-0"
+              className={gtr?"flex w-0 -my-[2px] cursor-pointer top-0 ease-in-out duration-0 z-10"
                 : "ease-in-out duration-0 fixed left-[-100%]"} >
-                      <div onMouseEnter={handleAd} className="flex-col bg-white  border-C7C5C1 border-[.1px] ">
+                  
+                      <div onMouseEnter={handleAd} className="flex-col  bg-white  border-C7C5C1 border-[.1px] ">
                      <div className="flex items-center justify-between hover:bg-[#EFEFEF]  border-b-[.7px] border-b-C7C5C1">
                       <h1 onMouseEnter={handleHdr}  className="p-2 w-[348px] text-2xl   text-[#362D2D] hover:text-[#0072BA] ">Guitars</h1>
                       <p className="w-[100px]">View all</p>
@@ -1030,7 +1033,7 @@ import {
 
 {/*Studio Section*/}
                 <div onMouseLeave={handleStd2} 
-              className={std?"w-0  flex -my-[2px] cursor-pointer top-0  h-[583px] ease-in-out duration-0"
+              className={std?"w-0  flex -my-[2px] cursor-pointer top-0  h-[583px] ease-in-out duration-0  z-10"
                 : "ease-in-out duration-0 fixed left-[-100%]"} >
                       <div onMouseEnter={handleAd} className="flex-col bg-white  border-C7C5C1 border-[.1px] ">
                       <div className="flex items-center justify-between hover:bg-[#EFEFEF]  border-b-[.7px] border-b-C7C5C1">
@@ -1104,7 +1107,7 @@ import {
                 
                       </div>
              
-                      {/*Recording SECTION*/}
+                 
                       <ul className={ad?"flex-col border-l-[.1px] h-[532px]   w-56 items-center justify-center "
                 :"hidden"}>
 <li className="flex items-center justify-center  h-[529px] p-[22px] ">
@@ -1232,7 +1235,7 @@ import {
                       </ul>
 
                       <ul>
-<div   className={four?"-my-[1px]  w-0 h-0 flex cursor-pointer top-0  h-full  ease-in-out duration-0"
+<div   className={four?"-my-[1px]  w-0 h-0 flex cursor-pointer top-0  h-full  ease-in-out duration-0 "
                 : "ease-in-out duration-0 fixed left-[-100%]"} >
                       <div onMouseLeave={handleFour2}  className="flex-col  border-b-[.0px] border-r-[.0px] h-[529px]   border-C7C5C1 border-[.1px] ">
 
@@ -1301,7 +1304,7 @@ import {
 
 {/*Mic Section*/}
 <div onMouseLeave={handleMic2} 
-              className={mic?"w-0  flex -my-[2px] cursor-pointer top-0  h-[583px] ease-in-out duration-0"
+              className={mic?"w-0  flex -my-[2px] cursor-pointer top-0  h-[583px] ease-in-out duration-0  z-10"
                 : "ease-in-out duration-0 fixed left-[-100%]"} >
                       <div onMouseEnter={handleAd} className="flex-col bg-white  border-C7C5C1 border-[.1px] ">
                       <div className="flex items-center justify-between hover:bg-[#EFEFEF]  border-b-[.7px] border-b-C7C5C1">
@@ -1358,7 +1361,7 @@ import {
                 
                       </div>
              
-                      {/*Microphones SECTION*/}
+                 
                       <ul className={ad?"flex-col border-l-[.1px] h-[532px]   w-56 items-center justify-center "
                 :"hidden"}>
 <li className="flex items-center justify-center  h-[529px] p-[22px] ">
@@ -1573,7 +1576,7 @@ import {
 
 {/*Live Section*/}
 <div onMouseLeave={handleLiv2} 
-              className={liv?"w-0  flex -my-[2px] cursor-pointer top-0  h-[583px] ease-in-out duration-0"
+              className={liv?"w-0  flex -my-[2px] cursor-pointer top-0  h-[583px] ease-in-out duration-0  z-10"
                 : "ease-in-out duration-0 fixed left-[-100%]"} >
                       <div onMouseEnter={handleAd} className="flex-col bg-white  border-C7C5C1 border-[.1px] ">
                       <div className="flex items-center justify-between hover:bg-[#EFEFEF]  border-b-[.7px] border-b-C7C5C1">
@@ -1859,7 +1862,7 @@ import {
 
 {/*Software Section*/}
                 <div onMouseLeave={handleSft2} 
-              className={sft?"w-0  flex -my-[2px] cursor-pointer top-0  h-[583px] ease-in-out duration-0"
+              className={sft?"w-0  flex -my-[2px] cursor-pointer top-0  h-[583px] ease-in-out duration-0  z-10"
                 : "ease-in-out duration-0 fixed left-[-100%]"} >
                       <div onMouseEnter={handleAd} className="flex-col bg-white  border-C7C5C1 border-[.1px] ">
                      <div className="flex items-center justify-between hover:bg-[#EFEFEF]  border-b-[.7px] border-b-C7C5C1">
@@ -2163,7 +2166,7 @@ import {
 
 {/*Bass Section*/}
                 <div onMouseLeave={handleBss2} 
-              className={bss?"w-0  flex -my-[2px] cursor-pointer top-0  h-[583px] ease-in-out duration-0"
+              className={bss?"w-0  flex -my-[2px] cursor-pointer top-0  h-[583px] ease-in-out duration-0  z-10"
                 : "ease-in-out duration-0 fixed left-[-100%]"} >
                       <div onMouseEnter={handleAd} className="flex-col bg-white  border-C7C5C1 border-[.1px] ">
                      <div className="flex items-center justify-between hover:bg-[#EFEFEF]  border-b-[.7px] border-b-C7C5C1">
@@ -2438,7 +2441,7 @@ import {
 
 {/*Keyboards Section*/}
                 <div onMouseLeave={handleKey2} 
-              className={key?"w-0  flex -my-[2px] cursor-pointer top-0  h-[583px] ease-in-out duration-0"
+              className={key?"w-0  flex -my-[2px] cursor-pointer top-0  h-[583px] ease-in-out duration-0  z-10"
                 : "ease-in-out duration-0 fixed left-[-100%]"} >
                       <div onMouseEnter={handleAd} className="flex-col bg-white  border-C7C5C1 border-[.1px] ">
                      <div className="flex items-center justify-between hover:bg-[#EFEFEF]  border-b-[.7px] border-b-C7C5C1">
@@ -2647,7 +2650,7 @@ import {
                       </ul>
 
                       <ul>
-<div   className={four?"-my-[1px]  w-0 h-0 flex cursor-pointer top-0  h-full  ease-in-out duration-0"
+<div   className={four?"-my-[1px]  w-0 h-0 flex cursor-pointer top-0   ease-in-out duration-0"
                 : "ease-in-out duration-0 fixed left-[-100%]"} >
                       <div onMouseLeave={handleFour2}  className="flex-col  border-b-[.0px] border-r-[.0px] h-[529px]   border-C7C5C1 border-[.1px] ">
 
@@ -2704,9 +2707,9 @@ import {
                 
 {/*Drums Section*/}
                 <div onMouseLeave={handleDrm2} 
-              className={drm?"w-0  flex -my-[2px] cursor-pointer top-0  h-[583px] ease-in-out duration-0"
+              className={drm?"w-0  flex -my-[2px] cursor-pointer top-0  h-[583px] ease-in-out duration-0  z-10"
                 : "ease-in-out duration-0 fixed left-[-100%]"} >
-                      <div onMouseEnter={handleAd} className="flex-col bg-white bg-white  border-C7C5C1 border-[.1px] ">
+                      <div onMouseEnter={handleAd} className="flex-col bg-white   border-C7C5C1 border-[.1px] ">
                      <div className="flex items-center justify-between hover:bg-[#EFEFEF]  border-b-[.7px] border-b-C7C5C1">
                       <h1 onMouseEnter={handleHdr}  className="p-2 w-[348px] text-2xl  text-[#362D2D] hover:text-[#0072BA] ">Drums & Percussion</h1>
                       <p className="w-[100px]">View all</p>
@@ -2963,7 +2966,7 @@ import {
 
 {/*DJ Sectiom*/}
                 <div onMouseLeave={handleDj2} 
-              className={dj?"w-0  flex -my-[2px] cursor-pointer top-0  h-[583px] ease-in-out duration-0"
+              className={dj?"w-0  flex -my-[2px] cursor-pointer top-0  h-[583px] ease-in-out duration-0  z-10"
                 : "ease-in-out duration-0 fixed left-[-100%]"} >
                       <div onMouseEnter={handleAd} className="flex-col bg-white   border-C7C5C1 border-[.1px] ">
                      <div className="flex items-center justify-between hover:bg-[#EFEFEF]  border-b-[.7px] border-b-C7C5C1">
@@ -3288,7 +3291,7 @@ import {
 
 
 <div onMouseLeave={handleOrc2} 
-              className={orc?"w-0  flex -my-[2px] cursor-pointer top-0  h-[583px] ease-in-out duration-0"
+              className={orc?"w-0  flex -my-[2px] cursor-pointer top-0  h-[583px] ease-in-out duration-0  z-10"
                 : "ease-in-out duration-0 fixed left-[-100%]"} >
                       <div onMouseEnter={handleAd} className="flex-col bg-white  border-C7C5C1 border-[.1px] ">
                      <div className="flex items-center justify-between hover:bg-[#EFEFEF]  border-b-[.7px] border-b-C7C5C1">
@@ -3559,7 +3562,7 @@ import {
 
 
                 <div onMouseLeave={handleCa2} 
-              className={ca?"w-0  flex -my-[2px] cursor-pointer top-0  h-[583px] ease-in-out duration-0"
+              className={ca?"w-0  flex -my-[2px] cursor-pointer top-0  h-[583px] ease-in-out duration-0  z-10"
                 : "ease-in-out duration-0 fixed left-[-100%]"} >
                       <div onMouseEnter={handleAd} className="flex-col bg-white  border-C7C5C1 border-[.1px] ">
                      <div className="flex items-center justify-between hover:bg-[#EFEFEF]  border-b-[.7px] border-b-C7C5C1">
@@ -3695,7 +3698,7 @@ import {
 {/*Accessories Section*/}
 
 <div onMouseLeave={handleAcc2} 
-              className={acc?"w-0  flex -my-[2px] cursor-pointer top-0  h-[583px] ease-in-out duration-0"
+              className={acc?"w-0  flex -my-[2px] cursor-pointer top-0  h-[583px] ease-in-out duration-0  z-10"
                 : "ease-in-out duration-0 fixed left-[-100%]"} >
                       <div onMouseEnter={handleAd} className="flex-col bg-white  border-C7C5C1 border-[.1px] ">
                      <div className="flex items-center justify-between hover:bg-[#EFEFEF]  border-b-[.7px] border-b-C7C5C1">
@@ -3967,7 +3970,7 @@ import {
 
 
 <div onMouseLeave={handleCC2} 
-              className={cc?"w-0  flex -my-[2px] cursor-pointer top-0  h-[583px] ease-in-out duration-0"
+              className={cc?"w-0  flex -my-[2px] cursor-pointer top-0  h-[583px] ease-in-out duration-0  z-10"
                 : "ease-in-out duration-0 fixed left-[-100%]"} >
                       <div  className="flex-col bg-white  border-C7C5C1 border-[.1px] ">
                      <div className="flex items-center justify-between hover:bg-[#EFEFEF]  border-b-[.7px] border-b-C7C5C1">
@@ -4024,7 +4027,7 @@ import {
 {/*Product Finders*/}
 
 <div onMouseLeave={handlePF2} 
-              className={pf?"w-0  flex -my-[2px] cursor-pointer top-0  h-[583px] ease-in-out duration-0"
+              className={pf?"w-0  flex -my-[2px] cursor-pointer top-0  h-[583px] ease-in-out duration-0  z-10"
                 : "ease-in-out duration-0 fixed left-[-100%]"} >
                       <div  className="flex-col bg-white  border-C7C5C1 border-[.1px] ">
                      <div className="flex items-center justify-between hover:bg-[#EFEFEF]  border-b-[.7px] border-b-C7C5C1">
@@ -4126,13 +4129,13 @@ import {
      
 {/*Deals Section*/}
 
-        <Link to='/store' onMouseEnter={handleDeal} onMouseLeave={handleDeal2} className='flex max-w-[161px] min-w-[88px]   w-full h-[40px]  justify-center items-center hover:bg-[#EFEFEF]   text-[#362D2D] hover:text-[#0072BA] cursor-pointer'><p className='font-medium'>Deals</p>
+        <Link to='/store' onMouseEnter={handleDeal} onTouchStart={handleDeal} onMouseLeave={handleDeal2} className='flex max-w-[161px] min-w-[88px]   w-full h-[40px]  justify-center items-center hover:bg-[#EFEFEF]   text-[#362D2D] hover:text-[#0072BA] cursor-pointer'><p className='font-medium'>Deals</p>
         <div className="flex-col items-center  ">
 
         <div
         className={
               deal
-                ? "w-0 h-0 relative flex cursor-pointer top-0 left-0 z-20  ease-in-out duration-0"
+                ? "w-0 h-0 relative flex cursor-pointer top-0 left-0 z-20  ease-in-out duration-0  z-10"
                 : "ease-in-out duration-0 fixed left-[-100%]"
             }
           >
@@ -4238,30 +4241,30 @@ import {
         </Link>
       
         {/*Used Gear Section*/}
-        <Link to='/store' onMouseEnter={handleUG} onMouseLeave={handleUG2}  className='flex max-w-[197px] min-w-[126px]    w-full h-[40px]    justify-center items-center hover:bg-[#EFEFEF]   text-[#362D2D] hover:text-[#0072BA] cursor-pointer'><p className='font-medium'>Used Gear</p>
+        <Link to='/store' onMouseEnter={handleUG} onTouchStart={handleUG} onMouseLeave={handleUG2}  className='flex max-w-[197px] min-w-[126px]    w-full h-[40px]    justify-center items-center hover:bg-[#EFEFEF]   text-[#362D2D] hover:text-[#0072BA] cursor-pointer'><p className='font-medium'>Used Gear</p>
         <div className="flex-col items-center  ">
 
 <div
 className={
       ug
-        ? "flex relative w-0 h-0 mx-auto cursor-pointer top-0 left-0  ease-in-out duration-0"
+        ? "flex relative w-0 h-0 mx-auto cursor-pointer top-0 left-0  ease-in-out duration-0  z-10"
         : "ease-in-out duration-0 fixed left-[-100%]"
     }
   >
     <div className=" absolute block xl:-mx-[127px] lg:-mx-[93px] xl:my-5 lg:my-[27px]  md:-mx-[92px] md:my-[27px] w-60 border-C7C5C1 border-[.1px] bg-white items-center justify-center text-[#362D2D]">
-    <div onMouseEnter={handleOne2} className="flex  h-12 justify-center items-center hover:bg-[#EFEFEF] border-b-[.7px] border-b-C7C5C1">
+    <div onMouseEnter={handleTwo2} className="flex  h-12 justify-center items-center hover:bg-[#EFEFEF] border-b-[.7px] border-b-C7C5C1">
     <h1 className=" text-2xl text-[#362D2D]"><b>GEAR</b>EXCHANGE</h1>
     </div>
       <div className="flex">
 
 <div className="flex-col w-full">
         <ul className="">
-          <li onMouseEnter={handleOne} className="flex p-2 justify-between  border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
+          <li onMouseEnter={handleTwo} className="flex p-2 justify-between  border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
         
             <p className=" text-[#362D2D]  ">Shop By Category</p>
-<div   className={one?"-my-[1px]  w-0 h-0 flex cursor-pointer top-0   ease-in-out duration-0"
+<div   className={two?"-my-[1px]  w-0 h-0 flex cursor-pointer top-0   ease-in-out duration-0"
         : "ease-in-out duration-0 fixed left-[-100%]"} >
-              <div onMouseLeave={handleOne2}  className="flex-col bg-white mx-[63px] -my-[56px] h-fit border-C7C5C1 border-[.1px]">
+              <div onMouseLeave={handleTwo2}  className="flex-col bg-white mx-[63px] -my-[56px] h-fit border-C7C5C1 border-[.1px]">
             
               <ul  className="flex-col  w-[237px] ">
               <li  className="p-2  border-b-[.7px] border-b-C7C5C1 hover:bg-[#EFEFEF] hover:text-[#0072BA] ">
@@ -4301,7 +4304,7 @@ className={
             <p className="text-[#362D2D]  ">Used Folk Instruments</p>
           </li>
         </ul>
-        <div onMouseEnter={handleOne2} className=" h-full w-10">
+        <div onMouseEnter={handleTwo2} className=" h-full w-10">
          
 
          
@@ -4319,7 +4322,7 @@ className={
 
           </li>
          
-<li onMouseEnter={handleOne2} className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] border-b-[.7px] border-b-C7C5C1">
+<li onMouseEnter={handleTwo2} className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] border-b-[.7px] border-b-C7C5C1">
             <p className="">What is Gear Exchange?</p>
           </li>
           <li className="p-2 hover:bg-[#EFEFEF] text-[#362D2D] hover:text-[#0072BA] border-b-[.7px] border-b-C7C5C1">
