@@ -267,11 +267,11 @@ const Header = () => {
             onMouseLeave={exit}
             className={
               cat
-                ? "flex relative w-0 h-0   cursor-pointer top-0 left-0    ease-in-out duration-0 "
+                ? "flex relative w-0 h-0 top-0 -left-[148px] min-[1441px]:-left-[156px] min-[1550px]:-left-[168px]  cursor-pointer  ease-in-out duration-0 "
                 : "ease-in-out duration-0 fixed left-[-100%]"
             }
           >
-            <div className="flex  absolute 2xl:-mx-[168px] xl:-mx-[157px] lg:-mx-[148px] xl:my-5 lg:my-[27px] md:-mx-[148px] md:my-[27px] bg-white   border-b-[.1px] border-C7C5C1 border-[.1px] ">
+            <div className="flex absolute xl:my-5 lg:my-[27px]  md:my-[27px] bg-white   border-b-[.1px] border-C7C5C1 border-[.1px] ">
               <div className="flex w-72 h-[579px]     ">
                 <div className="flex-col w-full  ">
                   <ul className="text-[#362D2D]">

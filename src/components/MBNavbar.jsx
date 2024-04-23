@@ -20,7 +20,7 @@ const MBNavbar = () => {
   const handleNav = () => {
     setNav(!nav);
   };
- 
+
   return (
     <div className="flex-col relative  md:hidden  w-full z-50   ">
       <div
