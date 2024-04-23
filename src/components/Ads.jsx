@@ -1,9 +1,9 @@
 import React from 'react'
-import ad1 from  '../assets/ad1.2.png'
-import ad1m from '../assets/ad1m.JPG'
-import ad2 from  '../assets/ad2.png'
-import ad3 from  '../assets/ad3.png'
-import ad4 from  '../assets/ad4.JPG'
+import ad1 from  '../assets/ads/ad1.2.png'
+import ad1m from '../assets/ads/ad1m.JPG'
+import ad2 from  '../assets/ads/ad2.png'
+import ad3 from  '../assets/ads/ad3.png'
+import ad4 from  '../assets/ads/ad4.JPG'
 
 import { Link } from 'react-router-dom'
 const Ads = () => {
@@ -22,7 +22,7 @@ const Ads = () => {
 
 <div className='flex max-w-[469px] w-full px-1 my-2 '>
   <Link to='/store' className='flex w-full'>
-<img className='' alt='ad2' src={ad2}></img>
+<img className=''  alt='ad2' src={ad2}></img>
 </Link>
 </div>
 

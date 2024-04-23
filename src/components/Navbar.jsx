@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import logo from "../assets/logo2.png";
-import guitar from "../assets/Screenshot 2023-10-01 141836.png";
-import strat from "../assets/Strat.JPG";
-import key from "../assets/Key.JPG";
-import sup from "../assets/customer-service-support.svg";
-
+import logo from "../assets/navbar/logo.png";
+import guitar from "../assets/navbar/V.png";
+import strat from "../assets/navbar/Strat.JPG";
+import key from "../assets/navbar/Key.JPG";
+import sup from "../assets/navbar/customer-service-support.svg";
 
 import {
   AiOutlineSearch,
@@ -28,68 +27,48 @@ const Navbar = () => {
   const [cell, setCell] = useState(false);
   const [supp, setSupp] = useState(false);
   const [crt, setCrt] = useState(false);
-
+  const exit = () => {
+    setAcc(false);
+    setCon(false);
+    setNot(false);
+    setCrt(false);
+  };
 
   const handleAcc = () => {
     setAcc(!acc);
-    setCrt(false);
-    setCon(false);
-    setNot(false);
-  };
-  const handleAcc2 = () => {
-    setAcc(false);
   };
 
   const handleCrt = () => {
     setCrt(!crt);
-    setAcc(false);
-    setCon(false);
-    setNot(false);
-  };
-  const handleCrt2 = () => {
-    setCrt(false);
-  };
-
-  const handleMail = () => {
-    setMail(!mail);
   };
 
   const handleCon = () => {
     setCon(!con);
-    setAcc(false);
-    setCrt(false);
-    setNot(false);
-  };
-  const handleCon2 = () => {
-    setCon(false);
   };
 
   const handleNot = () => {
     setNot(!not);
-    setAcc(false);
-    setCon(false);
-    setCrt(false);
   };
 
-  const handleNot2 = () => {
-    setNot(false);
-  };
   const handleCell = () => {
     setCell(!cell);
   };
   const handleSupp = () => {
     setSupp(!supp);
   };
+  const handleMail = () => {
+    setMail(!mail);
+  };
   return (
     <div className="flex  items-center  justify-center h-[80px] w-full hidden md:flex  px-10 -my-2 mx-auto   text-[#000] border-b-[.7px] border-b-C7C5C select-none">
-      <div  className="flex items-center h-full">
-      <Link to='/home'>
-        <img
-          src={logo}
-          className="w-full min-w-[160px] md:max-w-[160px] xl:max-w-[190px]  h-11 "
-          alt="Logo"
-        />
-          </Link>
+      <div className="flex items-center h-full">
+        <Link to="/home">
+          <img
+            src={logo}
+            className="w-full min-w-[160px] md:max-w-[160px] xl:max-w-[190px]  h-11 "
+            alt="Logo"
+          />
+        </Link>
       </div>
 
       <div className="flex w-full  max-w-[738px] min-w-[138px] items-stretch h-10 mx-2 my-6 border-C7C5C1 border-[.1px] rounded-sm ring-[#C7C5C1] ring-1 hover:ring-4 hover:ring-gray-800  ">
@@ -106,8 +85,8 @@ const Navbar = () => {
       <div
         className=" flex h-full   items-center p-5 cursor-pointer hover:bg-[#EFEFEF]  "
         onMouseEnter={handleNot}
-         onTouchStart={handleNot}
-        onMouseLeave={handleNot2}
+        onTouchStart={handleNot}
+        onMouseLeave={exit}
       >
         <div className=" flex-row items-center">
           {" "}
@@ -124,43 +103,44 @@ const Navbar = () => {
           >
             <div className="flex my-6 border-C7C5C1 border-[.5px] absolute bg-white  ">
               <div className="flex-col ">
-
-                <Link to='/product'>
-                <div
-                  className={
-                    "flex  ring-[#C7C5C1]  ring-b-1 hover:ring-4 ring-inset  hover:ring-[#0072BA] ease-in-out duration-200 cursor-pointer "
-                  }
-                >
-                  <div className="flex my-2 p-4 items-center  ">
-                    <img
-                      alt="guitar"
-                      className=" h-20 w-20 p-1 border-C7C5C1 border-[.8px] "
-                      src={guitar}
-                    ></img>
-                  </div>
-                  <div className="flex-col px-2 py-2  ">
-                    <button className="p-1 bg-[#428631] rounded-xl items-center ">
-                      <p className=" mx-1 text-xs text-[#FFFFFF]">Price drop</p>
-                    </button>
-
-                    <div className=" w-40 p-[.5px]">
-                      <p className="text-[#362D2D] text-sm font-medium">
-                        ESP James Hetfield Signature Vulture-Black Satin
-                      </p>
+                <Link to="/product">
+                  <div
+                    className={
+                      "flex  ring-[#C7C5C1]  ring-b-1 hover:ring-4 ring-inset  hover:ring-[#0072BA] ease-in-out duration-200 cursor-pointer "
+                    }
+                  >
+                    <div className="flex my-2 p-4 items-center  ">
+                      <img
+                        alt="guitar"
+                        className=" h-20 w-20 p-1 border-C7C5C1 border-[.8px] "
+                        src={guitar}
+                      ></img>
                     </div>
-                    <div className="p-[.5px]">
-                      <p className=" text-xs text-red-600">$5,699.00</p>
-                    </div>
-                    <div className="flex p-[.5px] ">
-                      {" "}
-                      <MdOutlineFavoriteBorder color="#362D2D"></MdOutlineFavoriteBorder>
-                      <p className="text-[#362D2D] text-xs font-light ">
+                    <div className="flex-col px-2 py-2  ">
+                      <button className="p-1 bg-[#428631] rounded-xl items-center ">
+                        <p className=" mx-1 text-xs text-[#FFFFFF]">
+                          Price drop
+                        </p>
+                      </button>
+
+                      <div className=" w-40 p-[.5px]">
+                        <p className="text-[#362D2D] text-sm font-medium">
+                          ESP James Hetfield Signature Vulture-Black Satin
+                        </p>
+                      </div>
+                      <div className="p-[.5px]">
+                        <p className=" text-xs text-red-600">$5,699.00</p>
+                      </div>
+                      <div className="flex p-[.5px] ">
                         {" "}
-                        Recently viewed{" "}
-                      </p>
+                        <MdOutlineFavoriteBorder color="#362D2D"></MdOutlineFavoriteBorder>
+                        <p className="text-[#362D2D] text-xs font-light ">
+                          {" "}
+                          Recently viewed{" "}
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </div>
                 </Link>
 
                 <div
@@ -283,7 +263,7 @@ const Navbar = () => {
       <div
         onMouseEnter={handleCon}
         onTouchStart={handleCon}
-        onMouseLeave={handleCon2}
+        onMouseLeave={exit}
         className="flex min-w-[144px] w-36 h-full  p-2 py-6  items-center   hover:bg-[#EFEFEF]  cursor-pointer  "
       >
         <div className="flex-col items-center  ">
@@ -422,7 +402,7 @@ const Navbar = () => {
       <div
         onMouseEnter={handleAcc}
         onTouchStart={handleAcc}
-        onMouseLeave={handleAcc2}
+        onMouseLeave={exit}
         className="flex h-full p-2 items-center  hover:bg-[#EFEFEF] cursor-pointer  "
       >
         <div className=" items-center">
@@ -451,9 +431,7 @@ const Navbar = () => {
                       {" "}
                       <p>
                         New here?
-                        <div
-                          className=" underline text-[#0072BA]"
-                        >
+                        <div className=" underline text-[#0072BA]">
                           Create your account.
                         </div>{" "}
                       </p>
@@ -483,11 +461,11 @@ const Navbar = () => {
           <AiFillCaretDown className="mx-1" size={20} />
         )}
       </div>
-{/*Shopping Cart Section*/}  
+      {/*Shopping Cart Section*/}
       <div
         onMouseEnter={handleCrt}
         onTouchStart={handleCrt}
-        onMouseLeave={handleCrt2}
+        onMouseLeave={exit}
         className="flex-col items-center hover:bg-[#EFEFEF] cursor-pointer p-2  "
       >
         <div className="items-center my-4 ">

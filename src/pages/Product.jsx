@@ -22,7 +22,6 @@ const Product = () => {
         <Navbar/>
         <MBNavbar/>
         <Header/>
-        
         <ProductSum/>
         <TopNew/>
         <ProductDesc/>

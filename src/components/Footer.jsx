@@ -33,7 +33,7 @@ const Footer = () => {
 
 </div>
 
-<div className='flex  w-full mt-4   h-fit  justify-center lg:max-w-[379px]  md:max-w-[176px]  max-[767px]:py-4 max-[767px]:border-t-[.7px] max-[767px]:border-b-[.7px] max-[767px]:border-C7C5C '>
+<div className='flex   w-full mt-4   h-fit  justify-center lg:max-w-[379px]  md:max-w-[176px]  max-[767px]:py-4 max-[767px]:border-t-[.7px] max-[767px]:border-b-[.7px] max-[767px]:border-C7C5C '>
 <div  className='mx-2'><AiOutlineFacebook size={40} className='lg:mx-2 cursor-pointer' ></AiOutlineFacebook></div>
 <div  className='mx-2'> <AiOutlineYoutube  size={40} className='lg:mx-2 cursor-pointer'></AiOutlineYoutube></div> 
 <div  className='mx-2'> <AiOutlineInstagram size={40} className='lg:mx-2 cursor-pointer'></AiOutlineInstagram></div> 

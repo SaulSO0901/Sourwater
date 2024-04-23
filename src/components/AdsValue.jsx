@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import value1 from '../assets/value1.PNG'
-import value2 from '../assets/value2.PNG'
-import value3 from '../assets/value3.PNG'
-import value4 from '../assets/value4.JPG'
-import value5 from '../assets/value5.PNG'
-import value6 from '../assets/value6.PNG'
+import value1 from '../assets/adsValue/value1.PNG'
+import value2 from '../assets/adsValue/value2.PNG'
+import value3 from '../assets/adsValue/value3.PNG'
+import value4 from '../assets/adsValue/value4.JPG'
+import value5 from '../assets/adsValue/value5.PNG'
+import value6 from '../assets/adsValue/value6.PNG'
 
 import { Link } from "react-router-dom";
 

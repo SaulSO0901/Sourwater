@@ -19,43 +19,40 @@ import { FaHeart } from "react-icons/fa";
 
 const ProductSum = () => {
 
- 
-  
   function changeimagefz()
   {
-var img= document.getElementById('image')
+    var img= document.getElementById('image')
 img.src = frontzoom
   }
   
   function changeimagefs()
   {
-var img= document.getElementById('image')
+    var img= document.getElementById('image')
 img.src = frontside
   }
   
   function changeimageb()
   {
-var img= document.getElementById('image')
+    var img= document.getElementById('image')
 img.src = back
   }
 
   function changeimagebz()
   {
-var img= document.getElementById('image')
+    var img= document.getElementById('image')
 img.src = backzoom
   }
   function changeimagefr()
   {
-var img= document.getElementById('image')
+    var img= document.getElementById('image')
 img.src = fret
   }
   function changeimageh()
   {
-var img= document.getElementById('image')
+    var img= document.getElementById('image')
 img.src = head
   }
-
-
+  
   const [f, setF] = useState(false);
   
   const [fz, setFz] = useState(true);
@@ -68,62 +65,49 @@ img.src = head
   
   const [fr, setFr] = useState(false);
 
+const remove = () =>{
+  setF(false);
+  setFz(false);
+  setH(false);
+  setB(false);
+  setBz(false);
+  setFr(false);
+}
+
   const handleF = () => {
+    remove(true);
     setF(true);
-    setFz(false);
-    setH(false);
-    setB(false);
-    setBz(false);
-    setFr(false);
   };
 
   
   const handleFz = () => {
-    setF(false);
+    remove(true);
     setFz(true);
-    setH(false);
-    setB(false);
-    setBz(false);
-    setFr(false);
+    
   };
 
   
   const handleH = () => {
-    setF(false);
-    setFz(false);
+    remove(true);
     setH(true);
-    setB(false);
-    setBz(false);
-    setFr(false);
   };
 
   
   const handleB = () => {
-    setF(false);
-    setFz(false);
-    setH(false);
+    remove(true);
     setB(true);
-    setBz(false);
-    setFr(false);
+
   };
 
   
   const handleBz = () => {
-    setF(false);
-    setFz(false);
-    setH(false);
-    setB(false);
+    remove(true);
     setBz(true);
-    setFr(false);
   };
 
   
   const handleFr = () => {
-    setF(false);
-    setFz(false);
-    setH(false);
-    setB(false);
-    setBz(false);
+    remove(true);
     setFr(true);
   };
 
@@ -294,7 +278,9 @@ img.src = head
     </div>
       </div>
       </div>
+      
   )
+  
 }
 
 export default ProductSum

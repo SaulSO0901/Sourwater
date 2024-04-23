@@ -11,6 +11,8 @@ import trend10 from '../assets/trend/trend (10).png';
 import trend11 from '../assets/trend/trend (11).png';
 import trend12 from '../assets/trend/trend (12).png';
 
+
+
 import product1 from '../assets/store/product (1).png'
 import product2 from '../assets/store/product (2).png'
 import product3 from '../assets/store/product (3).png'
@@ -35,7 +37,10 @@ import product21 from '../assets/store/product (21).png'
 import product22 from '../assets/store/product (22).png'
 
 
+
+
 export default {
+   
    trend1,
    trend2,
    trend3,
