@@ -22,7 +22,7 @@ const MBNavbar = () => {
   };
 
   return (
-    <div className="flex-col relative  md:hidden  w-full z-50   ">
+    <div className="flex-col relative md:hidden  w-full z-50   ">
       <div
         className={
           nav

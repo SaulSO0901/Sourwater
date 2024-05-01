@@ -83,7 +83,7 @@ const Navbar = () => {
 
       {/*Notif section*/}
       <div
-        className=" flex h-full   items-center p-5 cursor-pointer hover:bg-[#EFEFEF]  "
+        className=" flex h-full items-center p-5 cursor-pointer hover:bg-[#EFEFEF]  "
         onMouseEnter={handleNot}
         onTouchStart={handleNot}
         onMouseLeave={exit}
@@ -101,7 +101,7 @@ const Navbar = () => {
                 : "ease-in-out duration-0 fixed left-[-100%]"
             }
           >
-            <div className="flex my-6 border-C7C5C1 border-[.5px] absolute bg-white  ">
+            <div className="flex my-6 absolute border-C7C5C1 border-[.5px]  bg-white  ">
               <div className="flex-col ">
                 <Link to="/product">
                   <div

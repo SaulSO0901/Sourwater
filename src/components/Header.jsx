@@ -252,22 +252,18 @@ const Header = () => {
   };
 
   return (
-    <div className="flex h-10 my-2 border-b-[.7px] border-b-C7C5C  items-center justify-center md:px-4 h-14 xl:h-full  hidden md:flex      ">
+    <div className="flex h-10 my-2 items-center justify-center border-b-[.7px] border-b-C7C5C md:px-4 h-14 xl:h-full  hidden md:flex      ">
       <Link
         to="/store"
         onMouseEnter={handleCat}
         onMouseLeave={handleCat2}
         className="flex max-w-[223px]  min-w-[181px]   w-full h-[40px]  justify-center items-center hover:bg-[#EFEFEF]  text-[#362D2D] hover:text-[#0072BA] cursor-pointer"
       >
-        <div className="font-medium ">
-          <p>Shop By Category</p>
-        </div>
-        <div className="flex ">
-          <div
+         <div
             onMouseLeave={exit}
             className={
               cat
-                ? "flex relative w-0 h-0 top-0 -left-[148px] min-[1441px]:-left-[156px] min-[1550px]:-left-[168px]  cursor-pointer  ease-in-out duration-0 "
+                ? "flex  w-0 h-0 top-0   cursor-pointer  ease-in-out duration-0 "
                 : "ease-in-out duration-0 fixed left-[-100%]"
             }
           >
@@ -3953,7 +3949,13 @@ const Header = () => {
               </div>
             </div>
           </div>
+        {/*on big screen laptops it could be displayed a litlle bit off min-[1441px]:-left-[156px] min-[1550px]:-left-[168px*/}
+        <div className="w-full font-medium text-center  ">
+          <p>Shop By Category</p>
         </div>
+ 
+         
+      
         <div className="">
           {cat ? (
             <AiFillCaretUp className="" size={15} />

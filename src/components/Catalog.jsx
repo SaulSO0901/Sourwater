@@ -118,7 +118,7 @@ const Catalog = () => {
         <h2 className="w-full  text-2xl font-medium text-[#362D2D] border-b-[.7px] border-b-C7C5C1">
           Electric Guitars
         </h2>
-        <p className="w-full border-b-[.7px] border-b-C7C5C1'">
+        <p className="w-full max-[425px]:mt-auto max-[425px]:mb-1 border-b-[.7px] border-b-C7C5C1'">
           1-42 of 2111 Products
         </p>
       </div>
@@ -355,14 +355,14 @@ const Catalog = () => {
           </div>
         </div>
         {/*///////////////////////////////////////////////////////*/}
-        <div className="flex-col  w-full xl:ml-12 md:ml-4 mt-4  py-4 ">
+        <div className="flex-col  w-full xl:ml-12 md:ml-4 mt-4  py-4  ">
           <div className="flex w-full items-center justify-between ">
             <Menu
               as="div"
               className="relative  text-left min-[1px]:w-full md:w-fit "
             >
               <div>
-                <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-[#8A8A8A] max-[425px]:text-[#0072BA] shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
+                <Menu.Button className="inline-flex w-full  justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-[#8A8A8A] max-[425px]:text-[#0072BA] shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 ">
                   Most Popular
                   <AiFillCaretDown
                     className="-mr-1 h-5 w-5 text-[#8A8A8A] max-[425px]:text-[#0072BA]"
